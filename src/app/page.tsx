@@ -3,8 +3,8 @@
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import QRCode from 'qrcode'
-import logoImage from '/public/logo.png'
-import heroBackgroundImage from '/public/hero_background.png'
+import logoImage from '@/assets/logo.png'
+import heroBackgroundImage from '@/assets/hero_background.png'
 
 type TabType = 'overview' | 'schedule' | 'pricing' | 'protocols'
 
