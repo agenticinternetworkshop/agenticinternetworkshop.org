@@ -198,7 +198,7 @@ export default function Home() {
                   </div>
                 </div>
               )}
-              <a href="#" className="btn btn-primary">Register Now</a>
+              <a href="https://www.eventbrite.com/e/agentic-internet-workshop-tickets-1657366079559" className="btn btn-primary" target="_blank" rel="noopener noreferrer">Register Now</a>
               <p className="small">Pricing starts at $150 for independents/startups</p>
             </div>
           </div>
