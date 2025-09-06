@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import QRCode from 'qrcode'
 import logoImage from '@/assets/logo.png'
 import heroBackgroundImage from '@/assets/hero_background.png'
@@ -17,8 +18,8 @@ export default function Home() {
     // Generate QR code for registration
     const generateQR = async () => {
       try {
-        // Use the current origin with basePath for QR code
-        const registrationUrl = `${window.location.origin}/agenticinternetworkshop.org/register`
+        // Use Eventbrite registration URL
+        const registrationUrl = 'https://www.eventbrite.com/e/agentic-internet-workshop-tickets-1657366079559'
         const qrDataUrl = await QRCode.toDataURL(registrationUrl, {
           width: 200,
           margin: 2,
@@ -40,7 +41,9 @@ export default function Home() {
     const handleScroll = () => {
       const scrolled = window.pageYOffset
       const hero = document.querySelector('.hero') as HTMLElement
-      if (hero) {
+      
+      // Only apply parallax on desktop (viewport width > 960px)
+      if (hero && window.innerWidth > 960) {
         // Apply the background image and parallax effect
         hero.style.backgroundImage = `
           radial-gradient(1200px 500px at 50% -20%, color-mix(in oklab, var(--accent-200) 55%, transparent), transparent 70%),
@@ -49,6 +52,13 @@ export default function Home() {
         // Create a more subtle parallax effect
         const speed = 0.5
         hero.style.transform = `translateY(${scrolled * speed}px)`
+      } else if (hero) {
+        // On mobile, just set the background without parallax
+        hero.style.backgroundImage = `
+          radial-gradient(1200px 500px at 50% -20%, color-mix(in oklab, var(--accent-200) 55%, transparent), transparent 70%),
+          url(${heroBackgroundImage.src})
+        `
+        hero.style.transform = 'none'
       }
     }
 
@@ -67,8 +77,17 @@ export default function Home() {
     // Initial call to set background
     handleScroll()
     
+    // Handle resize to toggle parallax on/off
+    const handleResize = () => {
+      handleScroll()
+    }
+    
     window.addEventListener('scroll', throttledScroll)
-    return () => window.removeEventListener('scroll', throttledScroll)
+    window.addEventListener('resize', handleResize)
+    return () => {
+      window.removeEventListener('scroll', throttledScroll)
+      window.removeEventListener('resize', handleResize)
+    }
   }, [])
 
   const handleNavClick = (section: string) => {
@@ -84,8 +103,10 @@ export default function Home() {
       <header className="site-header">
         <nav className="navbar container">
           <div className="brand">
-            <Image src={logoImage} alt="Agentic Internet Workshop Logo" width={48} height={48} />
-            Agentic Internet Workshop
+            <Link href="/">
+              <Image src={logoImage} alt="Agentic Internet Workshop Logo" width={48} height={48} />
+              Agentic Internet Workshop
+            </Link>
           </div>
           <div className="nav-links">
             <a 
@@ -94,6 +115,9 @@ export default function Home() {
             >
               About
             </a>
+            <Link href="/details" className="nav-link">
+              Details
+            </Link>
             <a 
               onClick={() => handleNavClick('register')} 
               className={`nav-link ${activeNav === 'register' ? 'active' : ''}`}
@@ -127,7 +151,7 @@ export default function Home() {
                 <strong>Legacy:</strong> From OpenID Connect & OAuth to agentic protocols
               </div>
               <div className="highlight-item">
-                <strong>Mission:</strong> Define standards for agent-to-agent communication
+                <strong>Mission:</strong> Provide neutral space for protocol definition & collaboration
               </div>
               <div className="highlight-item">
                 <strong>Vision:</strong> Protect human integrity, judgment & creativity
