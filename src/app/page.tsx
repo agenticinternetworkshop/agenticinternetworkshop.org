@@ -105,11 +105,23 @@ export default function Home() {
           <div className="container">
             <div className="kicker">
               <span>🚀</span>
-              IIW-Inspired™ Event
+              IIW-Inspired™ Event • October 24, 2025
             </div>
             
             <h1>Agentic Internet Workshop</h1>
-            <p className="lede">Advancing protocols for how agents connect to each other, people, organizations, services, and things in the agentic web.</p>
+            <p className="lede">Building on 20+ years of Internet Identity Workshop legacy, we're advancing the next generation of protocols for how agents connect, collaborate, and preserve human judgment in an agentic world.</p>
+            
+            <div className="hero-highlights">
+              <div className="highlight-item">
+                <strong>Legacy:</strong> From OpenID Connect & OAuth to agentic protocols
+              </div>
+              <div className="highlight-item">
+                <strong>Mission:</strong> Define standards for agent-to-agent communication
+              </div>
+              <div className="highlight-item">
+                <strong>Vision:</strong> Protect human integrity, judgment & creativity
+              </div>
+            </div>
             
             <div className="meta-row">
               <div className="meta">
@@ -365,8 +377,6 @@ export default function Home() {
             </div>
             
             <a href="#" className="btn btn-ghost">Contact Us About Sponsorship</a>
-            
-            <p className="small" style={{marginTop: 'var(--space-6)'}}>We welcome participation from leading organizations including Salesforce, Google, Cisco, CrewAI, Anthropic, and many others working on agentic systems.</p>
           </div>
         </section>
       </main>

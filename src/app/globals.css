@@ -199,6 +199,41 @@ p  { margin: 0 0 var(--space-4); color: var(--text-muted); font-size: var(--fs-1
   margin-right: auto;
 }
 
+/* Hero highlights */
+.hero-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-4);
+  margin: var(--space-8) 0 var(--space-6) 0;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.highlight-item {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid var(--accent-200);
+  border-radius: var(--radius-md);
+  padding: var(--space-4) var(--space-5);
+  backdrop-filter: blur(8px);
+  box-shadow: var(--shadow-sm);
+  text-align: left;
+}
+
+.highlight-item strong {
+  color: var(--accent-700);
+  font-weight: 600;
+  font-size: var(--fs-14);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.highlight-item {
+  font-size: var(--fs-14);
+  color: var(--text);
+  line-height: 1.4;
+}
+
 /* Key meta row (date, venue, capacity) */
 .meta-row {
   margin-top: var(--space-6);
@@ -427,6 +462,10 @@ p  { margin: 0 0 var(--space-4); color: var(--text-muted); font-size: var(--fs-1
   .hero { 
     padding-block: var(--space-16) var(--space-12);
     background-attachment: scroll; /* Disable parallax on mobile for better performance */
+  }
+  .hero-highlights {
+    grid-template-columns: 1fr;
+    margin: var(--space-6) 0;
   }
   .tab-nav { flex-wrap: wrap; }
 }
