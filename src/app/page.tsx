@@ -3,6 +3,8 @@
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import QRCode from 'qrcode'
+import logoImage from '/public/logo.png'
+import heroBackgroundImage from '/public/hero_background.png'
 
 type TabType = 'overview' | 'schedule' | 'pricing' | 'protocols'
 
@@ -15,7 +17,8 @@ export default function Home() {
     // Generate QR code for registration
     const generateQR = async () => {
       try {
-        const registrationUrl = 'https://agentic-internet-workshop.com/register'
+        // Use the current origin with basePath for QR code
+        const registrationUrl = `${window.location.origin}/agenticinternetworkshop.org/register`
         const qrDataUrl = await QRCode.toDataURL(registrationUrl, {
           width: 200,
           margin: 2,
@@ -38,6 +41,11 @@ export default function Home() {
       const scrolled = window.pageYOffset
       const hero = document.querySelector('.hero') as HTMLElement
       if (hero) {
+        // Apply the background image and parallax effect
+        hero.style.backgroundImage = `
+          radial-gradient(1200px 500px at 50% -20%, color-mix(in oklab, var(--accent-200) 55%, transparent), transparent 70%),
+          url(${heroBackgroundImage.src})
+        `
         // Create a more subtle parallax effect
         const speed = 0.5
         hero.style.transform = `translateY(${scrolled * speed}px)`
@@ -56,6 +64,9 @@ export default function Home() {
       }
     }
 
+    // Initial call to set background
+    handleScroll()
+    
     window.addEventListener('scroll', throttledScroll)
     return () => window.removeEventListener('scroll', throttledScroll)
   }, [])
@@ -73,7 +84,7 @@ export default function Home() {
       <header className="site-header">
         <nav className="navbar container">
           <div className="brand">
-            <Image src="/logo.png" alt="Agentic Internet Workshop Logo" width={48} height={48} />
+            <Image src={logoImage} alt="Agentic Internet Workshop Logo" width={48} height={48} />
             Agentic Internet Workshop
           </div>
           <div className="nav-links">

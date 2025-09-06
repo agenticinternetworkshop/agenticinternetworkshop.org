@@ -155,9 +155,7 @@ p  { margin: 0 0 var(--space-4); color: var(--text-muted); font-size: var(--fs-1
 /* Hero */
 .hero {
   padding-block: var(--space-20) var(--space-16);
-  background:
-    radial-gradient(1200px 500px at 50% -20%, color-mix(in oklab, var(--accent-200) 55%, transparent), transparent 70%),
-    url('/hero_background.png');
+  /* Background will be set dynamically via JavaScript */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
