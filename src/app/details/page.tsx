@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import logoImage from '@/assets/logo.png'
+import logoImage from '@/assets/logo_transparent.png'
 
 export default function DetailsPage() {
   const [activeNav, setActiveNav] = useState('details')
@@ -70,77 +70,102 @@ export default function DetailsPage() {
               <div className="protocol-grid">
                 <div className="protocol-column">
                   <ul>
-                    <li>AI Preferences (IETF AIPREF)</li>
-                    <li>Web Bot Authentication (BOF at IETF)</li>
-                    <li>AI Agents Side Meeting at last IETF</li>
-                    <li>AI agent applications in 6G network Side Meeting at IETF</li>
-                    <li>The Impact of AI Agent on Network Infrastructure Side Meeting at IETF</li>
-                    <li>AI Agent Protocol Community Group (CG) W3C</li>
-                    <li>AI KR W3C</li>
-                    <li>AI Identity Management CG OpenID Foundation</li>
-                    <li>AI and Trust WG Trust over IP</li>
+                    <li><a href="https://datatracker.ietf.org/group/aipref/about/" target="_blank" rel="noopener noreferrer">AI Preferences</a> (IETF AIPREF)</li>
+                    <li><a href="https://datatracker.ietf.org/wg/webbotauth/about/" target="_blank" rel="noopener noreferrer">Web Bot Authentication</a> (BOF at IETF)</li>
+                    <li><a href="https://trello.com/c/3pdVLL9w/39-1430-1630-ai-agent-protocols" target="_blank" rel="noopener noreferrer">AI Agents</a> Side Meeting at last IETF</li>
+                    <li><a href="https://trello.com/c/v0XjZxf0/48-1100-1300-ai-agent-applications-in-6g-network" target="_blank" rel="noopener noreferrer">AI agent applications in 6G network</a> Side Meeting at IETF</li>
+                    <li><a href="https://trello.com/c/tgZesNpH/53-1800-2000-the-impact-of-ai-agent-on-network-infrastructure" target="_blank" rel="noopener noreferrer">The Impact of AI Agent on Network Infrastructure</a> Side Meeting at IETF</li>
+                    <li><a href="https://www.w3.org/community/agentprotocol/" target="_blank" rel="noopener noreferrer">AI Agent Protocol Community Group (CG)</a> W3C</li>
+                    <li><a href="https://www.w3.org/community/aikr/" target="_blank" rel="noopener noreferrer">AI KR</a> W3C</li>
+                    <li><a href="https://openid.net/cg/artificial-intelligence-identity-management-community-group/" target="_blank" rel="noopener noreferrer">AI Identity Management CG</a> OpenID Foundation</li>
+                    <li><a href="https://lf-toip.atlassian.net/wiki/spaces/HOME/pages/22982892/AI+Human+Trust+Working+Group" target="_blank" rel="noopener noreferrer">AI and Trust WG</a> Trust over IP</li>
                   </ul>
                 </div>
                 <div className="protocol-column">
                   <ul>
                     <li>Trusted AI Agents Decentralized Identity Foundation</li>
-                    <li>Linux Foundation Digital Trust</li>
-                    <li>A2A, MCP, NLWeb</li>
-                    <li>KYAPay Protocol</li>
-                    <li>Agent to Agent Protocol (A2A)</li>
-                    <li>Agentic Profiles (A2A + DIDs)</li>
-                    <li>Decentralized Identifiers</li>
-                    <li>GNAP, OAuth</li>
-                    <li>Trust Spanning Protocol</li>
+                    <li><a href="https://www.linuxfoundation.org/projects/digital-trust" target="_blank" rel="noopener noreferrer">Linux Foundation Digital Trust</a></li>
+                    <li><a href="https://github.com/a2aproject/A2A" target="_blank" rel="noopener noreferrer">A2A</a>, <a href="https://modelcontextprotocol.io/docs/getting-started/intro" target="_blank" rel="noopener noreferrer">MCP</a>, <a href="https://github.com/nlweb-ai/NLWeb" target="_blank" rel="noopener noreferrer">NLWeb</a></li>
+                    <li><a href="https://github.com/skyfire-xyz/kyapay" target="_blank" rel="noopener noreferrer">KYAPay Protocol</a></li>
+                    <li><a href="https://www.a2aprotocol.net/" target="_blank" rel="noopener noreferrer">Agent to Agent Protocol (A2A)</a></li>
+                    <li><a href="https://agenticprofile.ai/" target="_blank" rel="noopener noreferrer">Agentic Profiles (A2A + DIDs)</a></li>
+                    <li><a href="https://www.w3.org/TR/did-1.1/" target="_blank" rel="noopener noreferrer">Decentralized Identifiers</a></li>
+                    <li><a href="https://datatracker.ietf.org/wg/gnap/about/" target="_blank" rel="noopener noreferrer">GNAP</a>, <a href="https://datatracker.ietf.org/wg/oauth/about/" target="_blank" rel="noopener noreferrer">OAuth</a></li>
+                    <li><a href="https://trustoverip.github.io/tswg-tsp-specification/" target="_blank" rel="noopener noreferrer">Trust Spanning Protocol</a></li>
                   </ul>
                 </div>
               </div>
               
               <h2>Recommended Reading</h2>
               <ul className="reading-list">
-                <li>A Survey of AI Agent Protocols</li>
-                <li>On Being Agentic</li>
+                <li><a href="https://arxiv.org/abs/2504.16736" target="_blank" rel="noopener noreferrer">A Survey of AI Agent Protocols</a> - Comprehensive analysis of existing agent protocols with systematic classification</li>
+                <li><a href="https://projectvrm.org/2025/08/28/on-being-agentic/" target="_blank" rel="noopener noreferrer">On Being Agentic</a> - Doc Searls' perspective on personal AI and agency in the agentic web</li>
                 <li><em>(please share additional reading you recommend)</em></li>
               </ul>
               
               <h2>Tentative Schedule</h2>
-              <div className="schedule-detailed">
-                <div className="schedule-item">
-                  <div className="schedule-time">8:00 AM</div>
-                  <div className="schedule-desc">Doors open, breakfast and coffee</div>
-                </div>
-                <div className="schedule-item">
-                  <div className="schedule-time">9:00 AM - 10:00 AM</div>
-                  <div className="schedule-desc">Agenda Creation in Opening Circle</div>
-                </div>
-                <div className="schedule-item">
-                  <div className="schedule-time">10:00 AM - 11:00 AM</div>
-                  <div className="schedule-desc">Session 1</div>
-                </div>
-                <div className="schedule-item">
-                  <div className="schedule-time">11:00 AM - 12:00 PM</div>
-                  <div className="schedule-desc">Session 2</div>
-                </div>
-                <div className="schedule-item">
-                  <div className="schedule-time">12:00 PM - 1:00 PM</div>
-                  <div className="schedule-desc">Lunch</div>
-                </div>
-                <div className="schedule-item">
-                  <div className="schedule-time">1:00 PM - 2:00 PM</div>
-                  <div className="schedule-desc">Session 3</div>
-                </div>
-                <div className="schedule-item">
-                  <div className="schedule-time">2:00 PM - 3:00 PM</div>
-                  <div className="schedule-desc">Session 4</div>
-                </div>
-                <div className="schedule-item">
-                  <div className="schedule-time">3:00 PM - 4:00 PM</div>
-                  <div className="schedule-desc">Session Summaries in Closing Circle</div>
-                </div>
-                <div className="schedule-item">
-                  <div className="schedule-time">4:30 PM</div>
-                  <div className="schedule-desc">Post event social TBD</div>
-                </div>
+              <div className="schedule-table-wrapper">
+                <table className="schedule-table">
+                  <thead>
+                    <tr>
+                      <th>Time</th>
+                      <th>Activity</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>8:00 AM</strong></td>
+                      <td>Registration & Welcome</td>
+                      <td>Doors open, breakfast and coffee</td>
+                    </tr>
+                    <tr>
+                      <td><strong>9:00 AM - 10:00 AM</strong></td>
+                      <td>Opening Circle</td>
+                      <td>Agenda Creation using Open Space Technology</td>
+                    </tr>
+                    <tr>
+                      <td><strong>10:00 AM - 11:00 AM</strong></td>
+                      <td>Session 1</td>
+                      <td>Community-driven discussions</td>
+                    </tr>
+                    <tr>
+                      <td><strong>11:00 AM - 12:00 PM</strong></td>
+                      <td>Session 2</td>
+                      <td>Community-driven discussions</td>
+                    </tr>
+                    <tr className="highlight">
+                      <td><strong>12:00 PM - 1:00 PM</strong></td>
+                      <td>Lunch</td>
+                      <td>Networking and informal discussions</td>
+                    </tr>
+                    <tr>
+                      <td><strong>1:00 PM - 2:00 PM</strong></td>
+                      <td>Session 3</td>
+                      <td>Community-driven discussions</td>
+                    </tr>
+                    <tr>
+                      <td><strong>2:00 PM - 3:00 PM</strong></td>
+                      <td>Session 4</td>
+                      <td>Community-driven discussions</td>
+                    </tr>
+                    <tr>
+                      <td><strong>3:00 PM - 4:00 PM</strong></td>
+                      <td>Closing Circle</td>
+                      <td>Session Summaries and Next Steps</td>
+                    </tr>
+                    <tr className="optional">
+                      <td><strong>4:30 PM</strong></td>
+                      <td>Post-Event Social</td>
+                      <td>Optional networking (TBD)</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              
+              <div className="callout">
+                <strong>📝 Open Space Technology</strong><br />
+                The agenda will be co-created by participants in the opening circle. Anyone can propose a topic for discussion, ensuring the content is driven by the community's interests and needs.
               </div>
               
               <h2>Cost</h2>

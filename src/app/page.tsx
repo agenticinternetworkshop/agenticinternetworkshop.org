@@ -4,10 +4,10 @@ import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import QRCode from 'qrcode'
-import logoImage from '@/assets/logo.png'
+import logoImage from '@/assets/logo_transparent.png'
 import heroBackgroundImage from '@/assets/hero_background.png'
 
-type TabType = 'overview' | 'schedule' | 'pricing' | 'protocols'
+type TabType = 'overview' | 'schedule' | 'pricing' | 'protocols' | 'sponsors'
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<TabType>('overview')
@@ -138,6 +138,9 @@ export default function Home() {
         {/* Hero Section */}
         <section className="hero">
           <div className="container">
+            <div className="hero-logo">
+              <Image src={logoImage} alt="Agentic Internet Workshop Logo" width={288} />
+            </div>
             <div className="kicker">
               <span>🚀</span>
               IIW-Inspired™ Event • October 24, 2025
@@ -230,6 +233,12 @@ export default function Home() {
               onClick={() => setActiveTab('protocols')}
             >
               Protocols
+            </button>
+            <button 
+              className={`tab-button ${activeTab === 'sponsors' ? 'active' : ''}`} 
+              onClick={() => setActiveTab('sponsors')}
+            >
+              Sponsors
             </button>
           </div>
 
@@ -400,6 +409,76 @@ export default function Home() {
                 </div>
               </div>
             </div>
+
+            {/* Sponsors Tab */}
+            <div className={`tab-content ${activeTab === 'sponsors' ? 'active' : ''}`}>
+              <div className="section-header">
+                <h2>Sponsorship Opportunities</h2>
+                <p className="description">Support this important gathering of protocol innovators and gain visibility in the agentic AI community</p>
+              </div>
+              
+              <div className="sponsorship-table-wrapper">
+                <table className="sponsorship-table">
+                  <thead>
+                    <tr>
+                      <th>Sponsorship</th>
+                      <th>Available</th>
+                      <th>Cost</th>
+                      <th>Passes</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Lunch</td>
+                      <td>1</td>
+                      <td>$3,750</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>Breakfast</td>
+                      <td>1</td>
+                      <td>$1,750</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <td>Snack Table</td>
+                      <td>1</td>
+                      <td>$1,500</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <td>Barista</td>
+                      <td>1</td>
+                      <td>$2,000</td>
+                      <td>1</td>
+                    </tr>
+                    <tr className="sold">
+                      <td>Wifi</td>
+                      <td>1</td>
+                      <td>SOLD</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <td>Open Gifting</td>
+                      <td>1</td>
+                      <td>$600</td>
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <td>Documentation Center</td>
+                      <td>1</td>
+                      <td>$1,000</td>
+                      <td>0</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              
+              <div className="callout">
+                <strong>📧 Contact Us</strong><br />
+                Interested in sponsoring? Contact us at <a href="mailto:phil@windley.org">phil@windley.org</a> to discuss sponsorship opportunities.
+              </div>
+            </div>
           </div>
         </section>
 
@@ -411,7 +490,7 @@ export default function Home() {
               <p className="description">Interested in sponsoring this important gathering of protocol innovators?</p>
             </div>
             
-            <a href="#" className="btn btn-ghost">Contact Us About Sponsorship</a>
+            <a href="mailto:phil@windley.org" className="btn btn-ghost">Contact Us About Sponsorship</a>
           </div>
         </section>
       </main>
