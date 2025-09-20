@@ -7,7 +7,7 @@ import QRCode from 'qrcode'
 import logoImage from '@/assets/logo_transparent.png'
 import heroBackgroundImage from '@/assets/hero_background.png'
 
-type TabType = 'overview' | 'schedule' | 'pricing' | 'protocols' | 'sponsors'
+type TabType = 'overview' | 'schedule' | 'pricing' | 'protocols' | 'reading' | 'sponsors'
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<TabType>('overview')
@@ -117,6 +117,9 @@ export default function Home() {
             </a>
             <Link href="/details" className="nav-link">
               Details
+            </Link>
+            <Link href="/topics" className="nav-link">
+              Topics
             </Link>
             <a 
               onClick={() => handleNavClick('register')} 
@@ -235,6 +238,12 @@ export default function Home() {
               Protocols
             </button>
             <button 
+              className={`tab-button ${activeTab === 'reading' ? 'active' : ''}`} 
+              onClick={() => setActiveTab('reading')}
+            >
+              Suggested Reading
+            </button>
+            <button 
               className={`tab-button ${activeTab === 'sponsors' ? 'active' : ''}`} 
               onClick={() => setActiveTab('sponsors')}
             >
@@ -334,26 +343,26 @@ export default function Home() {
             <div className={`tab-content ${activeTab === 'pricing' ? 'active' : ''}`}>
               <div className="section-header">
                 <h2>Registration Pricing</h2>
-                <p className="description">Pricing is based on organization type and includes all sessions, meals, and documentation</p>
+                <p className="description">This event is for those implementing and creating protocols for AgenticAI. Pricing is based on organization type and includes all sessions, meals, and documentation</p>
               </div>
               
               <div className="pricing">
                 <div className="card price-card">
-                  <h3>Independents / Startups</h3>
+                  <h3>Independent / Startups</h3>
                   <div className="price">$150</div>
-                  <p className="note">Perfect for individual researchers and small teams</p>
+                  <p className="note">For those who can provide reference to your work in the AgentAI field</p>
                 </div>
                 
                 <div className="card price-card">
-                  <h3>Regular / Corporate</h3>
+                  <h3>Corporate / Regular</h3>
                   <div className="price">$300</div>
-                  <p className="note">For established companies and organizations</p>
+                  <p className="note">For those who can provide reference to your work in the AgentAI field</p>
                 </div>
                 
                 <div className="card price-card">
-                  <h3>Without Submission</h3>
+                  <h3>Non-AgentAI Builders</h3>
                   <div className="price">$1200</div>
-                  <p className="note">If you don&apos;t have current work to submit</p>
+                  <p className="note">Venture Capitalists, etc. - people who want to observe</p>
                 </div>
               </div>
               
@@ -407,6 +416,51 @@ export default function Home() {
                   <span className="badge">Decentralized AI Agent Alliance</span>
                   <span className="badge">First Person Project / H2H</span>
                 </div>
+              </div>
+            </div>
+
+            {/* Suggested Reading Tab */}
+            <div className={`tab-content ${activeTab === 'reading' ? 'active' : ''}`}>
+              <div className="section-header">
+                <h2>Suggested Reading</h2>
+                <p className="description">When people registered we asked folks for suggested reading for attendees before the event. Here is the list.</p>
+              </div>
+              
+              <div className="reading-grid">
+                <div className="card">
+                  <h3>Foundational</h3>
+                  <ul className="reading-list">
+                    <li><a href="https://arxiv.org/pdf/2504.16736" target="_blank" rel="noopener noreferrer">A Survey of AI Agent Protocols</a></li>
+                    <li><a href="https://projectvrm.org/2025/08/28/on-being-agentic/" target="_blank" rel="noopener noreferrer">On Being Agentic</a></li>
+                    <li><a href="https://arxiv.org/abs/2506.12003" target="_blank" rel="noopener noreferrer">Upgrade or Switch: Do We Need a Next-Gen Trusted Architecture for the Internet of AI Agents?</a></li>
+                  </ul>
+                </div>
+                
+                <div className="card">
+                  <h3>Identity & Trust Infrastructure</h3>
+                  <ul className="reading-list">
+                    <li><a href="https://sphericalcowconsulting.com/2025/08/26/bot-incentives/" target="_blank" rel="noopener noreferrer">Bot or Not? Why Incentives Matter More Than Identity</a></li>
+                    <li><a href="https://sphericalcowconsulting.com/2025/09/02/roads-robots-and-responsibility/" target="_blank" rel="noopener noreferrer">Roads, Robots, and Responsibility: Why Agentic AI Needs Identity Infrastructure</a></li>
+                    <li><a href="https://sphericalcowconsulting.com/2025/09/09/ai-permissions-vs-human-permissions/" target="_blank" rel="noopener noreferrer">AI Permissions vs. Human Permissions: What Really Changes?</a></li>
+                    <li><a href="https://datatracker.ietf.org/doc/draft-oauth-ai-agents-on-behalf-of-user/" target="_blank" rel="noopener noreferrer">Draft OAuth AI Agents on Behalf of User</a></li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div className="card reading-full-width">
+                <h3>Further Reading</h3>
+                <ul className="reading-list">
+                  <li><a href="https://code.sgo.to/2014/09/05/ws-rest-2014-keynote.html" target="_blank" rel="noopener noreferrer">WS-REST 2014 Keynote</a> - <em>Historical perspective on HTTP, APIs and identity</em></li>
+                  <li><a href="http://collab101.org/" target="_blank" rel="noopener noreferrer">Collab101.org</a> - <em>Personal vlog and insights</em></li>
+                  <li><a href="https://firstperson.network/" target="_blank" rel="noopener noreferrer">The First Person Project White Paper</a></li>
+                  <li><a href="https://gluufederation.medium.com/" target="_blank" rel="noopener noreferrer">Gluu Federation Articles</a></li>
+                  <li><a href="https://github.com/dickhardt/email-verification-protocol" target="_blank" rel="noopener noreferrer">Email Verifications Protocol</a></li>
+                </ul>
+              </div>
+              
+              <div className="callout">
+                <strong>📚 Additional Resources</strong><br />
+                These readings provide essential context for understanding the current state of agentic AI protocols and the challenges we'll be addressing at the workshop.
               </div>
             </div>
 

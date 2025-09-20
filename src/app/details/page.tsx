@@ -25,6 +25,9 @@ export default function DetailsPage() {
             <Link href="/details" className={`nav-link ${activeNav === 'details' ? 'active' : ''}`}>
               Details
             </Link>
+            <Link href="/topics" className={`nav-link ${activeNav === 'topics' ? 'active' : ''}`}>
+              Topics
+            </Link>
             <Link href="/#register" className={`nav-link ${activeNav === 'register' ? 'active' : ''}`}>
               Register
             </Link>
@@ -169,19 +172,19 @@ export default function DetailsPage() {
               </div>
               
               <h2>Cost</h2>
-              <p>We are asking attendees to submit a link of or description about their work on protocols that are relevant to AgenticAI.</p>
+              <p>This event is for those implementing and creating protocols for AgenticAI. We are asking attendees to submit a link of or description about their work on protocols that are relevant to AgenticAI.</p>
               <div className="pricing-details">
                 <div className="price-item">
                   <div className="price-amount">$150</div>
-                  <div className="price-description">Independent Attendee</div>
+                  <div className="price-description">Independent / Startups<br/><small>For those who can provide reference to your work in the AgentAI field</small></div>
                 </div>
                 <div className="price-item">
                   <div className="price-amount">$300</div>
-                  <div className="price-description">Regular Attendee</div>
+                  <div className="price-description">Corporate / Regular<br/><small>For those who can provide reference to your work in the AgentAI field</small></div>
                 </div>
                 <div className="price-item">
                   <div className="price-amount">$1200</div>
-                  <div className="price-description">If you don't have a submission about your current work in the field</div>
+                  <div className="price-description">Non-AgentAI Builders<br/><small>Venture Capitalists, etc. - people who want to observe</small></div>
                 </div>
               </div>
               
