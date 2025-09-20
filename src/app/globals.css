@@ -803,6 +803,104 @@ p  { margin: 0 0 var(--space-4); color: var(--text-muted); font-size: var(--fs-1
   color: var(--text-muted);
 }
 
+/* Reading Grid */
+.reading-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+  margin: var(--space-8) 0;
+}
+
+.reading-grid .card h3 {
+  color: var(--accent-700);
+  margin-bottom: var(--space-4);
+  font-size: var(--fs-20);
+}
+
+.reading-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.reading-list li {
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--divider);
+}
+
+.reading-list li:last-child {
+  border-bottom: none;
+}
+
+.reading-list a {
+  color: var(--accent-600);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.reading-list a:hover {
+  color: var(--accent-700);
+  text-decoration: underline;
+}
+
+.reading-list em {
+  color: var(--text-muted);
+  font-style: italic;
+  font-size: var(--fs-14);
+}
+
+.reading-full-width {
+  grid-column: 1 / -1;
+  margin-top: var(--space-6);
+}
+
+/* Topics Page */
+.topics-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.topics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+  margin: var(--space-8) 0;
+}
+
+.topics-grid .card h3 {
+  color: var(--accent-700);
+  margin-bottom: var(--space-4);
+  font-size: var(--fs-20);
+}
+
+.topic-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.topic-list li {
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--divider);
+  color: var(--text-muted);
+  line-height: 1.5;
+  font-size: var(--fs-16);
+}
+
+.topic-list li:last-child {
+  border-bottom: none;
+}
+
+.topic-list li:hover {
+  color: var(--text);
+  background: var(--bg-alt);
+  margin: 0 calc(-1 * var(--space-4));
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-sm);
+  transition: all 0.2s ease;
+}
+
 /* Responsive details page */
 @media (max-width: 960px) {
   .protocol-grid {
@@ -847,5 +945,15 @@ p  { margin: 0 0 var(--space-4); color: var(--text-muted); font-size: var(--fs-1
   
   .schedule-table td:nth-child(2) {
     width: 160px;
+  }
+  
+  .reading-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+  
+  .topics-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
   }
 }
