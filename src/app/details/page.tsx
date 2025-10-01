@@ -82,6 +82,7 @@ export default function DetailsPage() {
                     <li><a href="https://www.w3.org/community/aikr/" target="_blank" rel="noopener noreferrer">AI KR</a> W3C</li>
                     <li><a href="https://openid.net/cg/artificial-intelligence-identity-management-community-group/" target="_blank" rel="noopener noreferrer">AI Identity Management CG</a> OpenID Foundation</li>
                     <li><a href="https://lf-toip.atlassian.net/wiki/spaces/HOME/pages/22982892/AI+Human+Trust+Working+Group" target="_blank" rel="noopener noreferrer">AI and Trust WG</a> Trust over IP</li>
+                    <li><a href="hhttps://projnanda.github.io/projnanda/#" target="_blank" rel="noopener noreferrer">Project NANDA</a></li>
                   </ul>
                 </div>
                 <div className="protocol-column">
@@ -103,6 +104,7 @@ export default function DetailsPage() {
               <ul className="reading-list">
                 <li><a href="https://arxiv.org/abs/2504.16736" target="_blank" rel="noopener noreferrer">A Survey of AI Agent Protocols</a> - Comprehensive analysis of existing agent protocols with systematic classification</li>
                 <li><a href="https://projectvrm.org/2025/08/28/on-being-agentic/" target="_blank" rel="noopener noreferrer">On Being Agentic</a> - Doc Searls' perspective on personal AI and agency in the agentic web</li>
+                <li><a href="https://arxiv.org/abs/2506.12003" target="_blank" rel="noopener noreferrer">Upgrade or Switch: Do We Need a Next-Gen Trusted Architecture for the Internet of AI Agents?</a></li>
                 <li><em>(please share additional reading you recommend)</em></li>
               </ul>
               
