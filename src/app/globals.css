@@ -488,6 +488,58 @@ p  { margin: 0 0 var(--space-4); color: var(--text-muted); font-size: var(--fs-1
   }
 }
 
+/* Header responsive fixes */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    gap: var(--space-4);
+  }
+  
+  .brand {
+    flex: 1;
+    min-width: 0; /* Allow text to wrap */
+  }
+  
+  .brand a {
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+  
+  .nav-links {
+    margin-left: 0;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+  
+  .nav-links a {
+    padding: 6px 8px;
+    font-size: var(--fs-14);
+  }
+}
+
+@media (max-width: 480px) {
+  .brand {
+    font-size: var(--fs-16);
+  }
+  
+  .brand a {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-1);
+  }
+  
+  .nav-links {
+    gap: var(--space-1);
+  }
+  
+  .nav-links a {
+    padding: 4px 6px;
+    font-size: var(--fs-12);
+  }
+}
+
 /* Focus & a11y */
 :focus-visible {
   outline: 2px solid color-mix(in oklab, var(--accent-300) 60%, transparent);
