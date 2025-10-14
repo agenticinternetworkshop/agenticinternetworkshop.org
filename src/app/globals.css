@@ -164,6 +164,8 @@ p  { margin: 0 0 var(--space-4); color: var(--text-muted); font-size: var(--fs-1
 .nav-links a:hover { background: var(--bg-alt); text-decoration: none; }
 .nav-links a.active { background: var(--accent-100); color: var(--accent-700); }
 
+.header-cta { margin-left: var(--space-4); }
+
 /* Hero */
 .hero {
   padding-block: var(--space-20) var(--space-16);
@@ -486,6 +488,11 @@ p  { margin: 0 0 var(--space-4); color: var(--text-muted); font-size: var(--fs-1
   .registration-section {
     background: var(--bg) !important;
   }
+  /* Who's Coming page responsive */
+  .company-items {
+    grid-template-columns: 1fr;
+    gap: var(--space-2);
+  }
 }
 
 /* Header responsive fixes */
@@ -516,6 +523,14 @@ p  { margin: 0 0 var(--space-4); color: var(--text-muted); font-size: var(--fs-1
   .nav-links a {
     padding: 6px 8px;
     font-size: var(--fs-14);
+  }
+  
+  .header-cta {
+    margin-left: 0;
+    margin-top: var(--space-3);
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -555,6 +570,45 @@ p  { margin: 0 0 var(--space-4); color: var(--text-muted); font-size: var(--fs-1
 .details-content {
   max-width: 800px;
   margin: 0 auto;
+}
+
+/* Who's Coming Page Styles */
+.whos-coming-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.companies-list {
+  margin: var(--space-8) 0;
+}
+
+.companies-list h3 {
+  color: var(--accent-700);
+  margin-bottom: var(--space-6);
+  font-size: var(--fs-24);
+  text-align: center;
+}
+
+.company-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-3);
+}
+
+.company-item {
+  padding: var(--space-2) var(--space-3);
+  background: var(--bg-alt);
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-14);
+  color: var(--text);
+  border-left: 3px solid var(--accent-300);
+  transition: all 0.2s ease;
+}
+
+.company-item:hover {
+  background: var(--accent-50);
+  border-left-color: var(--accent-500);
+  transform: translateX(2px);
 }
 
 .details-content h2 {
