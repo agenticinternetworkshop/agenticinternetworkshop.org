@@ -70,9 +70,11 @@ export default function WhosComingPage() {
                 <div className="company-items">
                   <div className="company-item">Google</div>
                   <div className="company-item">Okta</div>
+                  <div className="company-item">Consumer Reports</div>
                   <div className="company-item">Adobe</div>
                   <div className="company-item">Indeed</div>
                   <div className="company-item">Amazon Web Services</div>
+                  <div className="company-item">JLINC</div>
                   <div className="company-item">121&0n2</div>
                   <div className="company-item">Adiuco</div>
                   <div className="company-item">Advatar Systems AB</div>
@@ -96,7 +98,6 @@ export default function WhosComingPage() {
                   <div className="company-item">Hellō</div>
                   <div className="company-item">IDv4</div>
                   <div className="company-item">Identity Praxis, Inc.</div>
-                  <div className="company-item">JLINC</div>
                   <div className="company-item">LoginID</div>
                   <div className="company-item">Microsoft</div>
                   <div className="company-item">RichCanvas LLC</div>
