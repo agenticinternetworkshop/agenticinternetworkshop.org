@@ -6,8 +6,9 @@ import Link from 'next/link'
 import QRCode from 'qrcode'
 import logoImage from '@/assets/logo_transparent.png'
 import heroBackgroundImage from '@/assets/hero_background.png'
+import SponsorCard from '@/components/SponsorCard'
 
-type TabType = 'overview' | 'schedule' | 'pricing' | 'protocols' | 'reading' | 'sponsors'
+type TabType = 'overview' | 'schedule' | 'pricing' | 'protocols' | 'reading' | 'sponsors' | 'become-sponsor'
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<TabType>('overview')
@@ -257,10 +258,10 @@ export default function Home() {
               Suggested Reading
             </button>
             <button 
-              className={`tab-button ${activeTab === 'sponsors' ? 'active' : ''}`} 
-              onClick={() => setActiveTab('sponsors')}
+              className={`tab-button ${activeTab === 'become-sponsor' ? 'active' : ''}`} 
+              onClick={() => setActiveTab('become-sponsor')}
             >
-              Sponsors
+              Become a Sponsor
             </button>
           </div>
 
@@ -483,6 +484,12 @@ export default function Home() {
                 <h2>Sponsorship Opportunities</h2>
                 <p className="description">Support this important gathering of protocol innovators and gain visibility in the agentic AI community</p>
               </div>
+
+              {/* Sponsor Text */}
+              <div className="sponsors-text">
+                <p className="description">Sponsors keep conference fees low, by supporting the virtual platform, unConference set-up, providing meals and more, making AIW available to all who want to attend, participate and contribute.</p>
+                <p className="description"><strong>Support the collaborative work that gets accomplished at every AIW!</strong></p>
+              </div>
               
               <div className="sponsorship-table-wrapper">
                 <table className="sponsorship-table">
@@ -552,6 +559,88 @@ export default function Home() {
                 Interested in sponsoring? Contact us at <a href="mailto:phil@windley.org">phil@windley.org</a> to discuss sponsorship opportunities.
               </div>
             </div>
+
+            {/* Become a Sponsor Tab */}
+            <div className={`tab-content ${activeTab === 'become-sponsor' ? 'active' : ''}`}>
+              <div className="section-header">
+                <h2>Become a Sponsor</h2>
+                <p className="description">Support this important gathering of protocol innovators and gain visibility in the agentic AI community</p>
+              </div>
+
+              {/* Sponsor Text */}
+              <div className="sponsors-text">
+                <p className="description">Sponsors keep conference fees low, by supporting the virtual platform, unConference set-up, providing meals and more, making AIW available to all who want to attend, participate and contribute.</p>
+                <p className="description"><strong>Support the collaborative work that gets accomplished at every AIW!</strong></p>
+              </div>
+              
+              <div className="sponsorship-table-wrapper">
+                <table className="sponsorship-table">
+                  <thead>
+                    <tr>
+                      <th>Sponsorship</th>
+                      <th>Available</th>
+                      <th>Cost</th>
+                      <th>Passes</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="sold">
+                      <td>Breakfast</td>
+                      <td>1</td>
+                      <td>SOLD</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <td>Lunch</td>
+                      <td>1</td>
+                      <td>$3,750</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>Snack Table</td>
+                      <td>1</td>
+                      <td>$1,500</td>
+                      <td>1</td>
+                    </tr>
+                    <tr className="sold">
+                      <td>Barista</td>
+                      <td>1</td>
+                      <td>SOLD</td>
+                      <td>1</td>
+                    </tr>
+                    <tr className="sold">
+                      <td>Wifi</td>
+                      <td>1</td>
+                      <td>SOLD</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <td>Open Gifting</td>
+                      <td>1</td>
+                      <td>$600</td>
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <td>Documentation Center</td>
+                      <td>1</td>
+                      <td>$1,000</td>
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <td>Qiqochat Workshop Hub</td>
+                      <td>1</td>
+                      <td>$1,000</td>
+                      <td>0</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              
+              <div className="callout">
+                <strong>📧 Contact Us</strong><br />
+                Interested in sponsoring? Contact us at <a href="mailto:phil@windley.org">phil@windley.org</a> to discuss sponsorship opportunities.
+              </div>
+            </div>
           </div>
         </section>
 
@@ -559,8 +648,32 @@ export default function Home() {
         <section className="section center" id="sponsors">
           <div className="container">
             <div className="section-header">
-              <h2>Sponsors</h2>
-              <p className="description">Interested in sponsoring this important gathering of protocol innovators?</p>
+              <h2>Our Sponsors</h2>
+              <p className="description">Thank you to our sponsors who make this workshop possible</p>
+            </div>
+
+            {/* Sponsor Cards */}
+            <div className="sponsor-cards">
+              <SponsorCard 
+                logo="/sponsors/consumer_reports.png"
+                alt="Consumer Reports"
+                title="Breakfast Sponsor"
+              />
+              <SponsorCard 
+                logo="/sponsors/aws.png"
+                alt="Amazon Web Services"
+                title="Barista Sponsor"
+              />
+              <SponsorCard 
+                logo="/sponsors/jlinc.png"
+                alt="JLINC"
+                title="WiFi Sponsor"
+              />
+            </div>
+
+            <div className="sponsors-text">
+              <p className="description">Sponsors keep conference fees low, by supporting the virtual platform, unConference set-up, providing meals and more, making AIW available to all who want to attend, participate and contribute.</p>
+              <p className="description"><strong>Support the collaborative work that gets accomplished at every AIW!</strong></p>
             </div>
             
             <a href="mailto:phil@windley.org" className="btn btn-ghost">Contact Us About Sponsorship</a>
