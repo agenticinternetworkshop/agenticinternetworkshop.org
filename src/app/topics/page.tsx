@@ -28,12 +28,25 @@ export default function TopicsPage() {
             <Link href="/topics" className={`nav-link ${activeNav === 'topics' ? 'active' : ''}`}>
               Topics
             </Link>
+            <Link href="/whos-coming" className={`nav-link ${activeNav === 'whos-coming' ? 'active' : ''}`}>
+              Who's Coming
+            </Link>
             <Link href="/#register" className={`nav-link ${activeNav === 'register' ? 'active' : ''}`}>
               Register
             </Link>
             <Link href="/#sponsors" className={`nav-link ${activeNav === 'sponsors' ? 'active' : ''}`}>
               Sponsors
             </Link>
+          </div>
+          <div className="header-cta">
+            <a 
+              href="https://www.eventbrite.com/e/agentic-internet-workshop-tickets-1657366079559" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="btn btn-primary"
+            >
+              Get Tickets
+            </a>
           </div>
         </nav>
       </header>
@@ -58,10 +71,11 @@ export default function TopicsPage() {
                   <ul className="topic-list">
                     <li>The role of decentralized identity in personal AI agents</li>
                     <li>The role of SSI in agentic identity and inter-agent protocols</li>
-                    <li>Identity, trust in general for AgenticAI</li>
                     <li>Trust & identity</li>
+                    <li>Identity, trust in general for AgenticAI</li>
                     <li>How to anchor agents to ground truth</li>
                     <li>DIDs and DIDCOMM are central to the overall Web 7.9 Agentic OS architecture</li>
+                    <li>How is trust maintained across a network of downstream services?</li>
                   </ul>
                 </div>
 
@@ -74,6 +88,8 @@ export default function TopicsPage() {
                     <li>Agents access control who are accessing on behalf of users</li>
                     <li>Particularly interested in delegation issues as well as dynamic authorization</li>
                     <li>I would like to see how state management tokens are held in a secure way so that there is no privacy loss</li>
+                    <li>How will cryptographic tokens represent delegation?</li>
+                    <li>How to express security policies to authorize access, enforce restrictions, and track obligations?</li>
                   </ul>
                 </div>
 
@@ -87,14 +103,15 @@ export default function TopicsPage() {
                     <li>A2A protocol and cross app for Agentic AI</li>
                     <li>ERC-8004, A2A, MCP</li>
                     <li>The current state of standard and to see if an issue we see is being discussed or not</li>
+                    <li>Agent to agent negotiation</li>
                   </ul>
                 </div>
 
                 <div className="card">
-                  <h3>Credential Management</h3>
+                  <h3>Credential Management & Registries</h3>
                   <ul className="topic-list">
-                    <li>The role of credential managers in the agentic AI ecosystem</li>
                     <li>Agentic Internet Registries</li>
+                    <li>The role of credential managers in the agentic AI ecosystem</li>
                     <li>How to incorporate an access layer and a payment layer in a decentralized way</li>
                   </ul>
                 </div>
@@ -108,19 +125,8 @@ export default function TopicsPage() {
                 </div>
 
                 <div className="card">
-                  <h3>Agent Communication & Negotiation</h3>
-                  <ul className="topic-list">
-                    <li>Agent to agent negotiation</li>
-                    <li>There is a ton of work going on in very different places. I'm hoping to leave this day with a better sense of who is doing what</li>
-                  </ul>
-                </div>
-
-                <div className="card">
                   <h3>Governance & Security</h3>
                   <ul className="topic-list">
-                    <li>How will cryptographic tokens represent delegation?</li>
-                    <li>How is trust maintained across a network of downstream services?</li>
-                    <li>How to express security policies to authorize access, enforce restrictions, and track obligations?</li>
                     <li>How will we govern agentic AI? What tools are needed that don't exist today? What are the limits of identity for governance?</li>
                     <li>What are the risks of delay while security and culture evolves to keep pace with existing progress?</li>
                   </ul>
@@ -133,6 +139,26 @@ export default function TopicsPage() {
                     <li>There is a ton of work going on in very different places. I'm hoping to leave this day with a better sense of who is doing what</li>
                   </ul>
                 </div>
+              </div>
+
+              <div className="callout">
+                <strong>📚 Recommended Reading</strong><br />
+                We ask attendees when they register for suggestions. Here are some recommended resources:
+                <ul style={{marginTop: 'var(--space-3)', paddingLeft: 'var(--space-6)'}}>
+                  <li><a href="#" target="_blank" rel="noopener noreferrer">A Survey of AI Agent Protocols</a></li>
+                  <li><a href="#" target="_blank" rel="noopener noreferrer">On Being Agentic</a></li>
+                  <li><a href="#" target="_blank" rel="noopener noreferrer">Upgrade or Switch: Do We Need a Next-Gen Trusted Architecture for the Internet of AI Agents?</a></li>
+                  <li><a href="https://code.sgo.to" target="_blank" rel="noopener noreferrer">HTTP, APIs and identity articles at code.sgo.to</a></li>
+                  <li><a href="https://code.sgo.to/2014/09/05/ws-rest-2014-keynote.html" target="_blank" rel="noopener noreferrer">WS-REST 2014 Keynote</a></li>
+                  <li><a href="https://collab101.org" target="_blank" rel="noopener noreferrer">Collaboration vlog at collab101.org</a></li>
+                  <li><a href="#" target="_blank" rel="noopener noreferrer">Bot or Not? Why Incentives Matter More Than Identity</a></li>
+                  <li><a href="#" target="_blank" rel="noopener noreferrer">Roads, Robots, and Responsibility: Why Agentic AI Needs Identity Infrastructure</a></li>
+                  <li><a href="#" target="_blank" rel="noopener noreferrer">AI Permissions vs. Human Permissions: What Really Changes?</a></li>
+                  <li><a href="https://gluufederation.medium.com/" target="_blank" rel="noopener noreferrer">Articles at gluufederation.medium.com</a></li>
+                  <li><a href="#" target="_blank" rel="noopener noreferrer">Draft OAuth AI Agents on Behalf of User</a></li>
+                  <li><a href="https://firstperson.network" target="_blank" rel="noopener noreferrer">The First Person Project White Paper at firstperson.network</a></li>
+                  <li><a href="#" target="_blank" rel="noopener noreferrer">Email Verifications Protocol</a></li>
+                </ul>
               </div>
 
               <div className="callout">

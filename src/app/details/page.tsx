@@ -28,12 +28,25 @@ export default function DetailsPage() {
             <Link href="/topics" className={`nav-link ${activeNav === 'topics' ? 'active' : ''}`}>
               Topics
             </Link>
+            <Link href="/whos-coming" className={`nav-link ${activeNav === 'whos-coming' ? 'active' : ''}`}>
+              Who's Coming
+            </Link>
             <Link href="/#register" className={`nav-link ${activeNav === 'register' ? 'active' : ''}`}>
               Register
             </Link>
             <Link href="/#sponsors" className={`nav-link ${activeNav === 'sponsors' ? 'active' : ''}`}>
               Sponsors
             </Link>
+          </div>
+          <div className="header-cta">
+            <a 
+              href="https://www.eventbrite.com/e/agentic-internet-workshop-tickets-1657366079559" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="btn btn-primary"
+            >
+              Get Tickets
+            </a>
           </div>
         </nav>
       </header>

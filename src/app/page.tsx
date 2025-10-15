@@ -121,6 +121,9 @@ export default function Home() {
             <Link href="/topics" className="nav-link">
               Topics
             </Link>
+            <Link href="/whos-coming" className="nav-link">
+              Who's Coming
+            </Link>
             <a 
               onClick={() => handleNavClick('register')} 
               className={`nav-link ${activeNav === 'register' ? 'active' : ''}`}
@@ -132,6 +135,16 @@ export default function Home() {
               className={`nav-link ${activeNav === 'sponsors' ? 'active' : ''}`}
             >
               Sponsors
+            </a>
+          </div>
+          <div className="header-cta">
+            <a 
+              href="https://www.eventbrite.com/e/agentic-internet-workshop-tickets-1657366079559" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="btn btn-primary"
+            >
+              Get Tickets
             </a>
           </div>
         </nav>
@@ -482,6 +495,12 @@ export default function Home() {
                     </tr>
                   </thead>
                   <tbody>
+                     <tr className="sold">
+                      <td>Breakfast</td>
+                      <td>1</td>
+                      <td>SOLD</td>
+                      <td>1</td>
+                    </tr>   
                     <tr>
                       <td>Lunch</td>
                       <td>1</td>
@@ -489,21 +508,15 @@ export default function Home() {
                       <td>2</td>
                     </tr>
                     <tr>
-                      <td>Breakfast</td>
-                      <td>1</td>
-                      <td>$1,750</td>
-                      <td>1</td>
-                    </tr>
-                    <tr>
                       <td>Snack Table</td>
                       <td>1</td>
                       <td>$1,500</td>
                       <td>1</td>
                     </tr>
-                    <tr>
+                    <tr className="sold">
                       <td>Barista</td>
                       <td>1</td>
-                      <td>$2,000</td>
+                      <td>SOLD</td>
                       <td>1</td>
                     </tr>
                     <tr className="sold">
@@ -520,6 +533,12 @@ export default function Home() {
                     </tr>
                     <tr>
                       <td>Documentation Center</td>
+                      <td>1</td>
+                      <td>$1,000</td>
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <td>Qiqochat Workshop Hub</td>
                       <td>1</td>
                       <td>$1,000</td>
                       <td>0</td>
