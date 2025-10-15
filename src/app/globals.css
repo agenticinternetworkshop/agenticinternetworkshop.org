@@ -934,12 +934,13 @@ p  { margin: 0 0 var(--space-4); color: var(--text-muted); font-size: var(--fs-1
 /* Sponsor Cards */
 .sponsor-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--space-6);
   margin: var(--space-8) 0;
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
+  justify-items: center;
 }
 
 .sponsor-card {
@@ -954,7 +955,9 @@ p  { margin: 0 0 var(--space-4); color: var(--text-muted); font-size: var(--fs-1
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  min-height: 200px;
+  height: 200px;
+  width: 280px;
+  position: relative;
 }
 
 .sponsor-card:hover {
@@ -971,7 +974,9 @@ p  { margin: 0 0 var(--space-4); color: var(--text-muted); font-size: var(--fs-1
   object-fit: contain;
   border-radius: var(--radius-sm);
   margin-bottom: auto;
+  margin-top: auto;
   flex-shrink: 0;
+  align-self: center;
 }
 
 .sponsor-card h4 {
@@ -1202,11 +1207,12 @@ p  { margin: 0 0 var(--space-4); color: var(--text-muted); font-size: var(--fs-1
   .sponsor-cards {
     grid-template-columns: 1fr;
     gap: var(--space-4);
-    max-width: 400px;
+    max-width: 320px;
   }
   
   .sponsor-card {
-    min-height: 180px;
+    height: 180px;
+    width: 280px;
     padding: var(--space-4);
   }
   
