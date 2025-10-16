@@ -104,6 +104,7 @@ export default function TopicsPage() {
                     <li>Cryptographic tokens for delegation and dynamic authorization</li>
                     <li>MCP security frameworks and evaluation</li>
                     <li>How to ensure fairness and accountability across the agentic web</li>
+                    <li>Security, Identity, & Trust (human-in-the-loop by default): Credential safety for UI-driven agents with E2E channels and explicit user approval</li>
                   </ul>
                 </div>
 
@@ -140,6 +141,7 @@ export default function TopicsPage() {
                   <ul className="topic-list">
                     <li>I'm interested in learning how / whether the web and browsers can help</li>
                     <li>My goal for XMLUI is that a developer using agents to build XMLUI apps will enjoy a level of MCP support that reliably steers agents to correct patterns. I don't think this requires more or different protocols, it does require discovery and application of practical techniques. agentic experiences, and in what ways they may need to change</li>
+                    <li>Browser-native Agents (beyond APIs): Computer-Use agents that operate UIs like humans—navigating, clicking, form-filling—expanding automation to services without clean APIs</li>
                   </ul>
                 </div>
 
@@ -152,6 +154,8 @@ export default function TopicsPage() {
                     <li>Decentralized agentic swarms</li>
                     <li>Infrastructure requirements for the agentic web</li>
                     <li>Governance models and limits of identity in AI governance</li>
+                    <li>Enterprise Guidance & Benchmarks (operating models): What's actually working in agentic AI deployments and governance frameworks</li>
+                    <li>Infra Economics (design for throughput, cost, energy): Optimizing SLAs around end-to-end assurance, data quality, and resilience</li>
                   </ul>
                 </div>
 
@@ -160,6 +164,7 @@ export default function TopicsPage() {
                   <ul className="topic-list">
                     <li>Semantic interoperability</li>
                     <li>Modeling social and collaborative agentic situations</li>
+                    <li>Agentic DevEx (from "vibe coding" to ADEs): Agentic Development Environments that let engineers delegate tasks to agents with deterministic intervention</li>
                   </ul>
                 </div>
 
