@@ -73,6 +73,7 @@ export default function TopicsPage() {
                     <li>The role of SSI in agentic identity and inter-agent protocols</li>
                     <li>Trust & identity</li>
                     <li>Identity, trust in general for AgenticAI</li>
+                    <li>Trust and identity frameworks for Agentic AI</li>
                     <li>How to anchor agents to ground truth</li>
                     <li>DIDs and DIDCOMM are central to the overall Web 7.9 Agentic OS architecture</li>
                     <li>How is trust maintained across a network of downstream services?</li>
@@ -80,7 +81,16 @@ export default function TopicsPage() {
                 </div>
 
                 <div className="card">
-                  <h3>Access Control & Permissions</h3>
+                  <h3>Agentic Commerce & Markets</h3>
+                  <ul className="topic-list">
+                    <li>How will agentic commerce work? What are the UX, liability, and payment implications?</li>
+                    <li>AI agent marketplaces and negotiation mechanisms</li>
+                    <li>Equitable compute/resources for agentic AI markets</li>
+                  </ul>
+                </div>
+
+                <div className="card">
+                  <h3>Security, Access & Policy</h3>
                   <ul className="topic-list">
                     <li>AI permissions vs Human permissions</li>
                     <li>Managing access rights</li>
@@ -90,6 +100,10 @@ export default function TopicsPage() {
                     <li>I would like to see how state management tokens are held in a secure way so that there is no privacy loss</li>
                     <li>How will cryptographic tokens represent delegation?</li>
                     <li>How to express security policies to authorize access, enforce restrictions, and track obligations?</li>
+                    <li>Access control and delegation in agentic systems</li>
+                    <li>Cryptographic tokens for delegation and dynamic authorization</li>
+                    <li>MCP security frameworks and evaluation</li>
+                    <li>How to ensure fairness and accountability across the agentic web</li>
                   </ul>
                 </div>
 
@@ -104,6 +118,11 @@ export default function TopicsPage() {
                     <li>ERC-8004, A2A, MCP</li>
                     <li>The current state of standard and to see if an issue we see is being discussed or not</li>
                     <li>Agent to agent negotiation</li>
+                    <li>MCP, A2A, ERC-8004, and beyond</li>
+                    <li>Why OAuth isn't a fit for MCP</li>
+                    <li>Browser integration and the role of credential managers</li>
+                    <li>Agentic Internet registries and credential registries</li>
+                    <li>Project NANDA & Agentic Registries</li>
                   </ul>
                 </div>
 
@@ -125,18 +144,32 @@ export default function TopicsPage() {
                 </div>
 
                 <div className="card">
-                  <h3>Governance & Security</h3>
+                  <h3>Governance & Infrastructure</h3>
                   <ul className="topic-list">
                     <li>How will we govern agentic AI? What tools are needed that don't exist today? What are the limits of identity for governance?</li>
                     <li>What are the risks of delay while security and culture evolves to keep pace with existing progress?</li>
+                    <li>Policy derivations with AI agents</li>
+                    <li>Decentralized agentic swarms</li>
+                    <li>Infrastructure requirements for the agentic web</li>
+                    <li>Governance models and limits of identity in AI governance</li>
+                  </ul>
+                </div>
+
+                <div className="card">
+                  <h3>Human-Agent Experience & Design</h3>
+                  <ul className="topic-list">
+                    <li>Semantic interoperability</li>
+                    <li>Modeling social and collaborative agentic situations</li>
                   </ul>
                 </div>
 
                 <div className="card">
                   <h3>Research & Collaboration</h3>
                   <ul className="topic-list">
-                    <li>MIT-NANDA</li>
+                    <li>Project NANDA</li>
                     <li>There is a ton of work going on in very different places. I'm hoping to leave this day with a better sense of who is doing what</li>
+                    <li>Ongoing work at Project NANDA and other research initiatives</li>
+                    <li>Mapping who's working on what across the ecosystem</li>
                   </ul>
                 </div>
               </div>
