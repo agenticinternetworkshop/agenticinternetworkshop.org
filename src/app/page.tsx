@@ -669,6 +669,11 @@ export default function Home() {
                 alt="JLINC"
                 title="WiFi Sponsor"
               />
+              <SponsorCard 
+                logo="/sponsors/glide.png"
+                alt="Glide Identity"
+                title="Snacks Sponsor"
+              />
             </div>
 
             <div className="sponsors-text">
