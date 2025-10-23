@@ -154,8 +154,8 @@ export default function TopicsPage() {
                     <li>Decentralized agentic swarms</li>
                     <li>Infrastructure requirements for the agentic web</li>
                     <li>Governance models and limits of identity in AI governance</li>
-                    <li>Enterprise Guidance & Benchmarks (operating models): What's actually working in agentic AI deployments and governance frameworks</li>
-                    <li>Infra Economics (design for throughput, cost, energy): Optimizing SLAs around end-to-end assurance, data quality, and resilience</li>
+                    <li>Enterprise Guidance & Benchmarks: What's actually working in agentic AI deployments and governance frameworks</li>
+                    <li>Infra Economics: Optimizing infrastructure for throughput, cost, and energy efficiency in agentic systems</li>
                   </ul>
                 </div>
 
@@ -164,7 +164,7 @@ export default function TopicsPage() {
                   <ul className="topic-list">
                     <li>Semantic interoperability</li>
                     <li>Modeling social and collaborative agentic situations</li>
-                    <li>Agentic DevEx (from "vibe coding" to ADEs): Agentic Development Environments that let engineers delegate tasks to agents with deterministic intervention</li>
+                    <li>Agentic DevEx: Development environments that integrate AI agents for coding assistance and task delegation</li>
                   </ul>
                 </div>
 
