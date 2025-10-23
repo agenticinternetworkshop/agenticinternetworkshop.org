@@ -674,6 +674,11 @@ export default function Home() {
                 alt="Glide Identity"
                 title="Snacks Sponsor"
               />
+              <SponsorCard 
+                logo="/sponsors/agentoverlay.png"
+                alt="Agent Overlay"
+                title="Open Gifting Sponsor"
+              />
             </div>
 
             <div className="sponsors-text">
