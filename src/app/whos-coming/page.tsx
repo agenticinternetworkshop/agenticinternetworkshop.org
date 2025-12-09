@@ -78,6 +78,7 @@ export default function WhosComingPage() {
                   <div className="company-item">121&0n2</div>
                   <div className="company-item">Adiuco</div>
                   <div className="company-item">Advatar Systems AB</div>
+                  <div className="company-item">Agent Overlay</div>
                   <div className="company-item">Agentry, Inc.</div>
                   <div className="company-item">Arcade.dev</div>
                   <div className="company-item">AVRWell</div>
