@@ -6,6 +6,9 @@ interface EventCardProps {
 }
 
 export function EventCard({ event }: EventCardProps) {
+  // Show approximate attendee count for archived events
+  const attendeeCount = event.eventId === '1' ? '~125' : event.attendees.length.toString()
+
   return (
     <Link href={`/events/${event.eventId}`} className="event-card">
       <div className="event-card-header">
@@ -16,7 +19,7 @@ export function EventCard({ event }: EventCardProps) {
         <div className="event-card-date">{event.date}</div>
         <div className="event-card-location">{event.location.name}</div>
         {event.attendees && event.attendees.length > 0 && (
-          <div className="event-card-attendees">{event.attendees.length} Attendees</div>
+          <div className="event-card-attendees">{attendeeCount} Attendees</div>
         )}
       </div>
       <div className="event-card-footer">

@@ -256,20 +256,20 @@ export const events: Record<string, Event> = {
     sponsors: [
       {
         id: 'sponsor-aiw2-1',
-        name: 'Breakfast Sponsor',
-        tier: 'Breakfast',
-        logoUrl: '/sponsors/placeholder.png',
-        websiteUrl: '#',
-        description: 'Breakfast Sponsor',
-        isAvailable: true
-      },
-      {
-        id: 'sponsor-aiw2-2',
         name: 'Lunch Sponsor',
         tier: 'Lunch',
         logoUrl: '/sponsors/placeholder.png',
         websiteUrl: '#',
         description: 'Lunch Sponsor',
+        isAvailable: true
+      },
+      {
+        id: 'sponsor-aiw2-2',
+        name: 'Breakfast Sponsor',
+        tier: 'Breakfast',
+        logoUrl: '/sponsors/placeholder.png',
+        websiteUrl: '#',
+        description: 'Breakfast Sponsor',
         isAvailable: true
       },
       {
@@ -315,15 +315,6 @@ export const events: Record<string, Event> = {
         logoUrl: '/sponsors/placeholder.png',
         websiteUrl: '#',
         description: 'Documentation Center Sponsor',
-        isAvailable: true
-      },
-      {
-        id: 'sponsor-aiw2-8',
-        name: 'Qiqochat Workshop Hub Sponsor',
-        tier: 'Qiqochat Workshop Hub',
-        logoUrl: '/sponsors/placeholder.png',
-        websiteUrl: '#',
-        description: 'Qiqochat Workshop Hub Sponsor',
         isAvailable: true
       }
     ],

@@ -30,22 +30,15 @@ export function ArchivedTopicsPageClient({ event }: ArchivedTopicsPageClientProp
               </div>
 
               <div className="topics-grid">
-                {/* Group topics by category */}
-                {Object.entries(
-                  event.topics.reduce((acc, topic) => {
-                    if (!acc[topic.category]) {
-                      acc[topic.category] = []
-                    }
-                    acc[topic.category].push(topic)
-                    return acc
-                  }, {} as Record<string, typeof event.topics>)
-                ).map(([category, topics]) => (
-                  <div key={category} className="card">
-                    <h3>{category}</h3>
+                {event.topics.map((topic) => (
+                  <div key={topic.id} className="card">
+                    <h3>{topic.title}</h3>
                     <ul className="topic-list">
-                      {topics.map((topic) => (
-                        <li key={topic.id}>{topic.title}</li>
-                      ))}
+                      {topic.description.split(', ').map((item, index) => {
+                        // Remove "Topics include: " prefix from first item
+                        const cleanItem = index === 0 ? item.replace(/^Topics include:\s*/i, '') : item
+                        return cleanItem.trim() ? <li key={index}>{cleanItem.trim()}</li> : null
+                      })}
                     </ul>
                   </div>
                 ))}

@@ -110,13 +110,14 @@ export default function Home() {
           <div className="brand">
             <Link href="/">
               <Image src={logoImage} alt="Agentic Internet Workshop Logo" width={48} height={48} />
-              Agentic Internet Workshop
+              Agentic Internet Workshop #2
             </Link>
           </div>
           <div className="nav-links">
-            <a 
-              onClick={() => handleNavClick('about')} 
+            <a
+              onClick={() => handleNavClick('about')}
               className={`nav-link ${activeNav === 'about' ? 'active' : ''}`}
+              style={{ cursor: 'pointer' }}
             >
               About
             </a>
@@ -129,15 +130,17 @@ export default function Home() {
             <Link href="/whos-coming" className="nav-link">
               Who's Coming
             </Link>
-            <a 
-              onClick={() => handleNavClick('register')} 
+            <a
+              onClick={() => handleNavClick('register')}
               className={`nav-link ${activeNav === 'register' ? 'active' : ''}`}
+              style={{ cursor: 'pointer' }}
             >
               Register
             </a>
-            <a 
-              onClick={() => handleNavClick('sponsors')} 
+            <a
+              onClick={() => handleNavClick('sponsors')}
               className={`nav-link ${activeNav === 'sponsors' ? 'active' : ''}`}
+              style={{ cursor: 'pointer' }}
             >
               Sponsors
             </a>
@@ -167,7 +170,7 @@ export default function Home() {
               IIW-Inspired™ Event • {event.date}
             </div>
             
-            <h1>Agentic Internet Workshop</h1>
+            <h1>Agentic Internet Workshop #2</h1>
             <p className="lede">Building on 20+ years of Internet Identity Workshop legacy, we're advancing the next generation of protocols for how agents connect, collaborate, and preserve human judgment in an agentic world.</p>
             
             <div className="hero-highlights">
@@ -370,17 +373,11 @@ export default function Home() {
                   <div className="price">$150</div>
                   <p className="note">For those who can provide reference to your work in the AgentAI field</p>
                 </div>
-                
+
                 <div className="card price-card">
                   <h3>Corporate / Regular</h3>
                   <div className="price">$300</div>
                   <p className="note">For those who can provide reference to your work in the AgentAI field</p>
-                </div>
-                
-                <div className="card price-card">
-                  <h3>Non-AgentAI Builders</h3>
-                  <div className="price">$1200</div>
-                  <p className="note">Venture Capitalists, etc. - people who want to observe</p>
                 </div>
               </div>
               
