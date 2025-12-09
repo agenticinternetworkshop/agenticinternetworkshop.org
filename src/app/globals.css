@@ -130,7 +130,7 @@ p  { margin: 0 0 var(--space-4); color: var(--text-muted); font-size: var(--fs-1
   border-bottom: 1px solid var(--divider);
 }
 .navbar {
-  display: flex; align-items: center; gap: var(--space-6);
+  display: flex; align-items: center; gap: var(--space-8);
   padding: var(--space-4) 0;
 }
 .brand {
@@ -141,6 +141,7 @@ p  { margin: 0 0 var(--space-4); color: var(--text-muted); font-size: var(--fs-1
   font-size: var(--fs-20);
   font-weight: 700;
   letter-spacing: -0.01em;
+  flex-shrink: 0;
 }
 
 .brand a {
@@ -173,12 +174,12 @@ p  { margin: 0 0 var(--space-4); color: var(--text-muted); font-size: var(--fs-1
   margin-left: var(--space-1);
 }
 
-.nav-links { margin-left: auto; display: flex; gap: var(--space-4); flex-shrink: 0; }
-.nav-links a { padding: 8px 10px; border-radius: 10px; cursor: pointer; }
+.nav-links { margin-left: auto; display: flex; gap: var(--space-5); flex-shrink: 0; }
+.nav-links a { padding: 8px 12px; border-radius: 10px; cursor: pointer; white-space: nowrap; }
 .nav-links a:hover { background: var(--bg-alt); text-decoration: none; }
 .nav-links a.active { background: var(--accent-100); color: var(--accent-700); }
 
-.header-cta { margin-left: var(--space-4); }
+.header-cta { margin-left: var(--space-6); flex-shrink: 0; }
 
 /* Hero */
 .hero {

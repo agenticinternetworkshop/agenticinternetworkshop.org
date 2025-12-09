@@ -234,8 +234,8 @@ export const events: Record<string, Event> = {
   '2': {
     eventId: '2',
     eventNumber: 2,
-    date: 'May 9, 2026',
-    dateISO: '2026-05-09',
+    date: 'May 1, 2026',
+    dateISO: '2026-05-01',
     location: {
       name: 'Computer History Museum',
       address: '1401 N Shoreline Blvd',
