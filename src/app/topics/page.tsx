@@ -4,8 +4,11 @@ import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import logoImage from '@/assets/logo_transparent.png'
+import { getCurrentEvent } from '@/lib/eventData'
+import { TopicSourceNotice } from '@/components/TopicSourceNotice'
 
 export default function TopicsPage() {
+  const event = getCurrentEvent()
   const [activeNav, setActiveNav] = useState('topics')
 
   return (
@@ -60,9 +63,11 @@ export default function TopicsPage() {
             </div>
 
             <div className="topics-content">
+              <TopicSourceNotice event={event} />
+
               <div className="callout">
                 <strong>🌐 Open Space Technology</strong><br />
-                We use Open Space Technology to co-create the agenda live the morning of the event. Below is the list of what attendees shared with us as they registered about topics they hope to learn about, want to present about and topics to discuss with others at the event. It is important to note this list is not used to "create the agenda" that is done by everyone gathered in person October 24th beginning at 9am.
+                We use Open Space Technology to co-create the agenda live the morning of the event. Below is the list of what attendees shared with us as they registered about topics they hope to learn about, want to present about and topics to discuss with others at the event. It is important to note this list is not used to "create the agenda" that is done by everyone gathered in person the morning of the workshop beginning at 9am.
               </div>
 
               <div className="topics-grid">

@@ -1,13 +1,14 @@
 import type { Metadata } from 'next'
 import { Inter, Urbanist } from 'next/font/google'
 import './globals.css'
+import { EventContextProvider } from '@/lib/EventContext'
 
-const inter = Inter({ 
+const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter'
 })
 
-const urbanist = Urbanist({ 
+const urbanist = Urbanist({
   subsets: ['latin'],
   variable: '--font-urbanist'
 })
@@ -25,7 +26,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${urbanist.variable}`}>
-        {children}
+        <EventContextProvider>
+          {children}
+        </EventContextProvider>
       </body>
     </html>
   )
