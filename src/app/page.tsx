@@ -7,10 +7,14 @@ import QRCode from 'qrcode'
 import logoImage from '@/assets/logo_transparent.png'
 import heroBackgroundImage from '@/assets/hero_background.png'
 import SponsorCard from '@/components/SponsorCard'
+import { EventCard } from '@/components/EventCard'
+import { getCurrentEvent, getArchivedEvents } from '@/lib/eventData'
 
 type TabType = 'overview' | 'schedule' | 'pricing' | 'protocols' | 'reading' | 'sponsors' | 'become-sponsor'
 
 export default function Home() {
+  const event = getCurrentEvent()
+  const archivedEvents = getArchivedEvents()
   const [activeTab, setActiveTab] = useState<TabType>('overview')
   const [activeNav, setActiveNav] = useState('about')
   const [qrCodeUrl, setQrCodeUrl] = useState<string>('')
@@ -106,13 +110,14 @@ export default function Home() {
           <div className="brand">
             <Link href="/">
               <Image src={logoImage} alt="Agentic Internet Workshop Logo" width={48} height={48} />
-              Agentic Internet Workshop
+              Agentic Internet Workshop #2
             </Link>
           </div>
           <div className="nav-links">
-            <a 
-              onClick={() => handleNavClick('about')} 
+            <a
+              onClick={() => handleNavClick('about')}
               className={`nav-link ${activeNav === 'about' ? 'active' : ''}`}
+              style={{ cursor: 'pointer' }}
             >
               About
             </a>
@@ -125,15 +130,17 @@ export default function Home() {
             <Link href="/whos-coming" className="nav-link">
               Who's Coming
             </Link>
-            <a 
-              onClick={() => handleNavClick('register')} 
+            <a
+              onClick={() => handleNavClick('register')}
               className={`nav-link ${activeNav === 'register' ? 'active' : ''}`}
+              style={{ cursor: 'pointer' }}
             >
               Register
             </a>
-            <a 
-              onClick={() => handleNavClick('sponsors')} 
+            <a
+              onClick={() => handleNavClick('sponsors')}
               className={`nav-link ${activeNav === 'sponsors' ? 'active' : ''}`}
+              style={{ cursor: 'pointer' }}
             >
               Sponsors
             </a>
@@ -160,10 +167,10 @@ export default function Home() {
             </div>
             <div className="kicker">
               <span>🚀</span>
-              IIW-Inspired™ Event • October 24, 2025
+              IIW-Inspired™ Event • {event.date}
             </div>
             
-            <h1>Agentic Internet Workshop</h1>
+            <h1>Agentic Internet Workshop #2</h1>
             <p className="lede">Building on 20+ years of Internet Identity Workshop legacy, we're advancing the next generation of protocols for how agents connect, collaborate, and preserve human judgment in an agentic world.</p>
             
             <div className="hero-highlights">
@@ -181,15 +188,15 @@ export default function Home() {
             <div className="meta-row">
               <div className="meta">
                 <div className="label">Date</div>
-                <div className="value">October 24, 2025</div>
+                <div className="value">{event.date}</div>
               </div>
               <div className="meta">
                 <div className="label">Venue</div>
-                <div className="value">Computer History Museum</div>
+                <div className="value">{event.location.name}</div>
               </div>
               <div className="meta">
                 <div className="label">Capacity</div>
-                <div className="value">200 People Max</div>
+                <div className="value">{event.details.capacity ? `${event.details.capacity} People Max` : 'TBD'}</div>
               </div>
             </div>
           </div>
@@ -366,17 +373,11 @@ export default function Home() {
                   <div className="price">$150</div>
                   <p className="note">For those who can provide reference to your work in the AgentAI field</p>
                 </div>
-                
+
                 <div className="card price-card">
                   <h3>Corporate / Regular</h3>
                   <div className="price">$300</div>
                   <p className="note">For those who can provide reference to your work in the AgentAI field</p>
-                </div>
-                
-                <div className="card price-card">
-                  <h3>Non-AgentAI Builders</h3>
-                  <div className="price">$1200</div>
-                  <p className="note">Venture Capitalists, etc. - people who want to observe</p>
                 </div>
               </div>
               
@@ -654,41 +655,44 @@ export default function Home() {
 
             {/* Sponsor Cards */}
             <div className="sponsor-cards">
-              <SponsorCard 
-                logo="/sponsors/consumer_reports.png"
-                alt="Consumer Reports"
-                title="Breakfast Sponsor"
-              />
-              <SponsorCard 
-                logo="/sponsors/aws.png"
-                alt="Amazon Web Services"
-                title="Barista Sponsor"
-              />
-              <SponsorCard 
-                logo="/sponsors/jlinc.png"
-                alt="JLINC"
-                title="WiFi Sponsor"
-              />
-              <SponsorCard 
-                logo="/sponsors/glide.png"
-                alt="Glide Identity"
-                title="Snacks Sponsor"
-              />
-              <SponsorCard 
-                logo="/sponsors/agentoverlay.png"
-                alt="Agent Overlay"
-                title="Open Gifting Sponsor"
-              />
+              {event.sponsors.map((sponsor) => (
+                <SponsorCard
+                  key={sponsor.id}
+                  logo={sponsor.logoUrl}
+                  alt={sponsor.name}
+                  title={sponsor.description || `${sponsor.tier} Sponsor`}
+                  isSold={sponsor.isSold}
+                  isAvailable={sponsor.isAvailable}
+                />
+              ))}
             </div>
 
             <div className="sponsors-text">
               <p className="description">Sponsors keep conference fees low, by supporting the virtual platform, unConference set-up, providing meals and more, making AIW available to all who want to attend, participate and contribute.</p>
               <p className="description"><strong>Support the collaborative work that gets accomplished at every AIW!</strong></p>
             </div>
-            
+
             <a href="mailto:phil@windley.org" className="btn btn-ghost">Contact Us About Sponsorship</a>
           </div>
         </section>
+
+        {/* Previous Events Section */}
+        {archivedEvents.length > 0 && (
+          <section className="section center" id="previous-events">
+            <div className="container">
+              <div className="section-header">
+                <h2>Previous Events</h2>
+                <p className="description">Explore our past workshops and their archived content</p>
+              </div>
+
+              <div className="event-cards">
+                {archivedEvents.map((archivedEvent) => (
+                  <EventCard key={archivedEvent.eventId} event={archivedEvent} />
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
       </main>
 
       <footer className="site-footer">

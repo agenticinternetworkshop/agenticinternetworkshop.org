@@ -1,57 +1,19 @@
 'use client'
 
 import { useState } from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
-import logoImage from '@/assets/logo_transparent.png'
-import { getCurrentEvent } from '@/lib/eventData'
+import { SiteHeader } from '@/components/SiteHeader'
+import { Event } from '@/lib/types'
 
-export default function DetailsPage() {
-  const event = getCurrentEvent()
-  const [activeNav, setActiveNav] = useState('details')
+interface ArchivedDetailsPageClientProps {
+  event: Event
+}
+
+export function ArchivedDetailsPageClient({ event }: ArchivedDetailsPageClientProps) {
+  const [activeNav] = useState('details')
 
   return (
     <>
-      <header className="site-header">
-        <nav className="navbar container">
-          <div className="brand">
-            <Link href="/">
-              <Image src={logoImage} alt="Agentic Internet Workshop Logo" width={48} height={48} />
-              Agentic Internet Workshop
-            </Link>
-          </div>
-          <div className="nav-links">
-            <Link href="/" className={`nav-link ${activeNav === 'about' ? 'active' : ''}`}>
-              About
-            </Link>
-            <Link href="/details" className={`nav-link ${activeNav === 'details' ? 'active' : ''}`}>
-              Details
-            </Link>
-            <Link href="/topics" className={`nav-link ${activeNav === 'topics' ? 'active' : ''}`}>
-              Topics
-            </Link>
-            <Link href="/whos-coming" className={`nav-link ${activeNav === 'whos-coming' ? 'active' : ''}`}>
-              Who's Coming
-            </Link>
-            <Link href="/#register" className={`nav-link ${activeNav === 'register' ? 'active' : ''}`}>
-              Register
-            </Link>
-            <Link href="/#sponsors" className={`nav-link ${activeNav === 'sponsors' ? 'active' : ''}`}>
-              Sponsors
-            </Link>
-          </div>
-          <div className="header-cta">
-            <a 
-              href="https://www.eventbrite.com/e/agentic-internet-workshop-tickets-1657366079559" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="btn btn-primary"
-            >
-              Get Tickets
-            </a>
-          </div>
-        </nav>
-      </header>
+      <SiteHeader event={event} activeNav={activeNav} />
 
       <main>
         <section className="section">
@@ -63,11 +25,11 @@ export default function DetailsPage() {
 
             <div className="details-content">
               <p><em>An Internet Identity Workshop Inspired Event, Hosted by the IIW Foundation</em> <em>(IIW #41 is October 21-23)</em></p>
-              
+
               <p>The AgenticAI space is developing rapidly. Significant innovation is happening around protocols for how agents connect to each other, people, organizations, services, and things.</p>
-              
+
               <p>The goal of this one-day workshop is to bring individuals working on Agentic AI Protocols together to advance the field in a productive and generative manner.</p>
-              
+
               <h2>What is the value of participation?</h2>
               <ul className="value-list">
                 <li>Share your AgenticAI protocol work with others innovating protocols and get feedback.</li>
@@ -77,13 +39,13 @@ export default function DetailsPage() {
                 <li>Discern if there is alignment for future work and collaboration.</li>
                 <li>Consider how we can protect humanity, human integrity, judgment and creativity with these protocol stacks</li>
               </ul>
-              
+
               <p>The agenda will be set in the opening circle by the people who are gathered at the event using a process called Open Space Technology. Anyone in attendance can put a topic on the agenda.</p>
-              
+
               <p><strong>The event builds on the legacy of the Internet Identity Workshop</strong>, a forum that has been meeting twice a year since 2005. In the first 10 years of the community's life, we defined protocols such as OpenID Connect and OAuth, which are used a billion times a day on the internet today. In the second 10 years, we worked on decentralized identity protocols, like Decentralized IDentifiers, Verifiable Credentials, Trust Spanning Protocol, DIDComm, OpenID4VC and many others. <strong>Now, with this event, we want to focus on the agentic web and how personal and corporate agents can best engage with each other.</strong></p>
-              
+
               <p><em>Notes will be collected in all sessions and made publicly available.</em></p>
-              
+
               <h2>Places where AI & AI Agent Protocols are being worked on:</h2>
               <div className="protocol-grid">
                 <div className="protocol-column">
@@ -114,7 +76,7 @@ export default function DetailsPage() {
                   </ul>
                 </div>
               </div>
-              
+
               <h2>Recommended Reading</h2>
               <ul className="reading-list">
                 <li><a href="https://arxiv.org/abs/2504.16736" target="_blank" rel="noopener noreferrer">A Survey of AI Agent Protocols</a> - Comprehensive analysis of existing agent protocols with systematic classification</li>
@@ -122,7 +84,7 @@ export default function DetailsPage() {
                 <li><a href="https://arxiv.org/abs/2506.12003" target="_blank" rel="noopener noreferrer">Upgrade or Switch: Do We Need a Next-Gen Trusted Architecture for the Internet of AI Agents?</a></li>
                 <li><em>(please share additional reading you recommend)</em></li>
               </ul>
-              
+
               <h2>Tentative Schedule</h2>
               <div className="schedule-table-wrapper">
                 <table className="schedule-table">
@@ -182,12 +144,12 @@ export default function DetailsPage() {
                   </tbody>
                 </table>
               </div>
-              
+
               <div className="callout">
                 <strong>📝 Open Space Technology</strong><br />
                 The agenda will be co-created by participants in the opening circle. Anyone can propose a topic for discussion, ensuring the content is driven by the community's interests and needs.
               </div>
-              
+
               <h2>Cost</h2>
               <p>This event is for those implementing and creating protocols for AgenticAI. We are asking attendees to submit a link of or description about their work on protocols that are relevant to AgenticAI.</p>
               <div className="pricing-details">
@@ -204,19 +166,19 @@ export default function DetailsPage() {
                   <div className="price-description">Non-AgentAI Builders<br/><small>Venture Capitalists, etc. - people who want to observe</small></div>
                 </div>
               </div>
-              
+
               {event.details.capacity && (
                 <div className="callout">
                   <strong>📝 Maximum Number of Attendees: {event.details.capacity}</strong>
                 </div>
               )}
-              
+
               <h2>Event Hosts & Organizers</h2>
               <div className="organizers">
                 <p><strong>Event Hosts:</strong> Andor Kesselman, Kaliya Young</p>
                 <p><strong>IIW Co-Founders:</strong> Phil Windley, Doc Searls</p>
               </div>
-              
+
               <h2>Location</h2>
               <div className="location-info">
                 <h3>{event.location.name}</h3>
@@ -224,21 +186,21 @@ export default function DetailsPage() {
                   {event.location.address}<br/>
                   {event.location.city}, {event.location.state} {event.location.zipCode}
                 </p>
-                
+
                 <div className="map-container">
-                  <iframe 
+                  <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.0123456789!2d-122.0776843!3d37.4145694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb7495bec0189%3A0x7c17d44a466baf9b!2sComputer%20History%20Museum!5e0!3m2!1sen!2sus!4v1234567890123"
-                    width="100%" 
-                    height="400" 
-                    style={{ border: 0, borderRadius: 'var(--radius-md)' }} 
-                    allowFullScreen 
-                    loading="lazy" 
+                    width="100%"
+                    height="400"
+                    style={{ border: 0, borderRadius: 'var(--radius-md)' }}
+                    allowFullScreen
+                    loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                     title="Computer History Museum Location"
                   ></iframe>
                 </div>
               </div>
-              
+
               <h2>Potential Topics</h2>
               <p>The agenda will be co-created the day of the event by attendees. These are simply ideas folks have submitted as they register and shared to give perspective on what folks going into the event are thinking about discussing.</p>
               <p><em>Coming soon</em></p>

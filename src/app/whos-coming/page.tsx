@@ -4,8 +4,11 @@ import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import logoImage from '@/assets/logo_transparent.png'
+import { getCurrentEvent } from '@/lib/eventData'
+import { WhosComingEmptyState } from '@/components/WhosComingEmptyState'
 
 export default function WhosComingPage() {
+  const event = getCurrentEvent()
   const [activeNav, setActiveNav] = useState('whos-coming')
 
   return (
@@ -60,62 +63,32 @@ export default function WhosComingPage() {
             </div>
 
             <div className="whos-coming-content">
-              <div className="callout">
-                <strong>🌐 Diverse Representation</strong><br />
-                The workshop brings together a diverse group of organizations working on agentic AI protocols, identity infrastructure, and related technologies. This mix of established companies, startups, and research organizations creates a rich environment for collaboration and knowledge sharing.
-              </div>
+              {event.attendees.length === 0 ? (
+                <WhosComingEmptyState />
+              ) : (
+                <>
+                  <div className="callout">
+                    <strong>🌐 Diverse Representation</strong><br />
+                    The workshop brings together a diverse group of organizations working on agentic AI protocols, identity infrastructure, and related technologies. This mix of established companies, startups, and research organizations creates a rich environment for collaboration and knowledge sharing.
+                  </div>
 
-              <div className="companies-list">
-                <h3>Participating Organizations</h3>
-                <div className="company-items">
-                  <div className="company-item">Google</div>
-                  <div className="company-item">Okta</div>
-                  <div className="company-item">Consumer Reports</div>
-                  <div className="company-item">Adobe</div>
-                  <div className="company-item">Indeed</div>
-                  <div className="company-item">Amazon Web Services</div>
-                  <div className="company-item">JLINC</div>
-                  <div className="company-item">121&0n2</div>
-                  <div className="company-item">Adiuco</div>
-                  <div className="company-item">Advatar Systems AB</div>
-                  <div className="company-item">Agentry, Inc.</div>
-                  <div className="company-item">Arcade.dev</div>
-                  <div className="company-item">AVRWell</div>
-                  <div className="company-item">Ayra</div>
-                  <div className="company-item">Beyond Identity</div>
-                  <div className="company-item">BOTLabs GmbH</div>
-                  <div className="company-item">CIVICS.com Consulting Services</div>
-                  <div className="company-item">Companion Intelligence</div>
-                  <div className="company-item">Data Transfer Initiative</div>
-                  <div className="company-item">DataPal</div>
-                  <div className="company-item">Digital Trust Venture Partners</div>
-                  <div className="company-item">Dock Labs</div>
-                  <div className="company-item">First Person Project</div>
-                  <div className="company-item">Future Forge Innovation</div>
-                  <div className="company-item">Galaniprojects GmbH</div>
-                  <div className="company-item">Glide Identity</div>
-                  <div className="company-item">Gluu</div>
-                  <div className="company-item">Hellō</div>
-                  <div className="company-item">IDv4</div>
-                  <div className="company-item">Identity Praxis, Inc.</div>
-                  <div className="company-item">LoginID</div>
-                  <div className="company-item">Microsoft</div>
-                  <div className="company-item">RichCanvas LLC</div>
-                  <div className="company-item">Self</div>
-                  <div className="company-item">Solibre</div>
-                  <div className="company-item">Spherical Cow Consulting</div>
-                  <div className="company-item">Swisscom</div>
-                  <div className="company-item">Tauxbe Data</div>
-                  <div className="company-item">Verana Foundation</div>
-                  <div className="company-item">WSO2</div>
-                  <div className="company-item">XMLUI.org</div>
-                </div>
-              </div>
+                  <div className="companies-list">
+                    <h3>Participating Organizations</h3>
+                    <div className="company-items">
+                      {event.attendees.map((attendee) => (
+                        <div key={attendee.id} className="company-item">
+                          {attendee.affiliation || attendee.name}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
 
-              <div className="callout">
-                <strong>💡 Want to Join?</strong><br />
-                If your organization is working on agentic AI protocols, identity infrastructure, or related technologies, we'd love to have you join us. <a href="https://www.eventbrite.com/e/agentic-internet-workshop-tickets-1657366079559" target="_blank" rel="noopener noreferrer">Register now</a> to be part of this collaborative workshop.
-              </div>
+                  <div className="callout">
+                    <strong>💡 Want to Join?</strong><br />
+                    If your organization is working on agentic AI protocols, identity infrastructure, or related technologies, we'd love to have you join us. Register now to be part of this collaborative workshop.
+                  </div>
+                </>
+              )}
             </div>
           </div>
         </section>
