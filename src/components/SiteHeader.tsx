@@ -83,7 +83,7 @@ export function SiteHeader({ event, activeNav = 'about', onNavClick }: SiteHeade
         {!isArchived && (
           <div className="header-cta">
             <a
-              href="https://www.eventbrite.com/e/agentic-internet-workshop-tickets-1657366079559"
+              href="https://www.eventbrite.com/e/agentic-internet-workshop-2-tickets-1976356257769?aff=oddtdtcreator"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary"
