@@ -321,7 +321,10 @@ export const events: Record<string, Event> = {
     schedule: [],
     details: {
       contactEmail: 'phil@windley.org',
-      isRegistrationOpen: false
+      isRegistrationOpen: false,
+      registrationUrl: 'https://www.eventbrite.com/e/agentic-internet-workshop-2-tickets-1976356257769?aff=oddtdtcreator',
+      contactEmail: 'phil@windley.org',
+
     }
   }
 }
