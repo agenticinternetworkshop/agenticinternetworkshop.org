@@ -24,7 +24,7 @@ export default function Home() {
     const generateQR = async () => {
       try {
         // Use Eventbrite registration URL
-        const registrationUrl = 'https://www.eventbrite.com/e/agentic-internet-workshop-tickets-1657366079559'
+        const registrationUrl = 'https://www.eventbrite.com/e/agentic-internet-workshop-2-tickets-1976356257769?aff=oddtdtcreator'
         const qrDataUrl = await QRCode.toDataURL(registrationUrl, {
           width: 200,
           margin: 2,
@@ -110,7 +110,7 @@ export default function Home() {
           <div className="brand">
             <Link href="/">
               <Image src={logoImage} alt="Agentic Internet Workshop Logo" width={48} height={48} />
-              Agentic Internet Workshop #2
+              <span className="brand-text">Agentic Internet Workshop #2</span>
             </Link>
           </div>
           <div className="nav-links">
@@ -147,7 +147,7 @@ export default function Home() {
           </div>
           <div className="header-cta">
             <a 
-              href="https://www.eventbrite.com/e/agentic-internet-workshop-tickets-1657366079559" 
+              href="https://www.eventbrite.com/e/agentic-internet-workshop-2-tickets-1976356257769?aff=oddtdtcreator"
               target="_blank" 
               rel="noopener noreferrer"
               className="btn btn-primary"
@@ -225,7 +225,7 @@ export default function Home() {
                   </div>
                 </div>
               )}
-              <a href="https://www.eventbrite.com/e/agentic-internet-workshop-tickets-1657366079559" className="btn btn-primary" target="_blank" rel="noopener noreferrer">Register Now</a>
+              <a href="https://www.eventbrite.com/e/agentic-internet-workshop-2-tickets-1976356257769?aff=oddtdtcreator" className="btn btn-primary" target="_blank" rel="noopener noreferrer">Register Now</a>
               <p className="small">Pricing starts at $150 for independents/startups</p>
             </div>
           </div>
