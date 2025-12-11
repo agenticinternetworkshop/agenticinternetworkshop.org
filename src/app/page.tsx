@@ -23,8 +23,8 @@ export default function Home() {
     // Generate QR code for registration
     const generateQR = async () => {
       try {
-        // Use Eventbrite registration URL
-        const registrationUrl = 'https://www.eventbrite.com/e/agentic-internet-workshop-2-tickets-1976356257769?aff=oddtdtcreator'
+        // Use Eventbrite registration URL from event data
+        const registrationUrl = event.details.registrationUrl || 'https://www.eventbrite.com/e/agentic-internet-workshop-2-tickets-1976356257769?aff=oddtdtcreator'
         const qrDataUrl = await QRCode.toDataURL(registrationUrl, {
           width: 200,
           margin: 2,
@@ -39,7 +39,7 @@ export default function Home() {
       }
     }
     generateQR()
-  }, [])
+  }, [event.details.registrationUrl])
 
   useEffect(() => {
     // Enhanced parallax effect with smooth animation
