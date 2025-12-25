@@ -171,7 +171,8 @@ export default function Home() {
             </div>
             
             <h1>Agentic Internet Workshop #2</h1>
-            <p className="lede">Building on 20+ years of Internet Identity Workshop legacy, we're advancing the next generation of protocols for how agents connect, collaborate, and preserve human judgment in an agentic world.</p>
+            <p className="lede">Friday May 1st 2026</p>
+            <p className="lede">For our 2nd event we continue to build on the 20+ year legacy of Internet Identity Workshop. We are advancing the next generation of protocols for how agents connect, collaborate, and preserve human judgment in an agentic world.</p>
             
             <div className="hero-highlights">
               <div className="highlight-item">
@@ -196,7 +197,7 @@ export default function Home() {
               </div>
               <div className="meta">
                 <div className="label">Capacity</div>
-                <div className="value">{event.details.capacity ? `${event.details.capacity} People Max` : 'TBD'}</div>
+                <div className="value">Upto {event.details.capacity ? `${event.details.capacity} people` : '300 people'}</div>
               </div>
             </div>
           </div>
@@ -207,6 +208,13 @@ export default function Home() {
           <div className="container">
             <h2>Register for the Workshop</h2>
             <p className="mw-tight">Join protocol innovators, researchers, and builders working on the future of agentic systems. Registration requires submission of your current work in the AI Agent/Protocol space.</p>
+
+            <div className="callout" style={{marginTop: 'var(--space-6)', marginBottom: 'var(--space-4)'}}>
+              <strong>🔗 Internet Identity Workshop #42</strong><br />
+              Internet Identity Workshop #42 is happening April 28-30th in the same venue. We are considering doing an interop day parallel to IIW on April 30th.
+            </div>
+
+            <p className="mw-tight" style={{marginBottom: 'var(--space-6)'}}>See the <a href="https://docs.google.com/document/d/1sHMxXpU4tSdx4DcWQxuNXBr3Jt9Ejx8QEnOdHnSy8Ss/edit?tab=t.0" target="_blank" rel="noopener noreferrer">Book of Proceedings for the First Agentic Internet Workshop</a>.</p>
             
             <div className="qr-section">
               {qrCodeUrl ? (
@@ -277,9 +285,9 @@ export default function Home() {
             <div className={`tab-content ${activeTab === 'overview' ? 'active' : ''}`}>
               <div className="section-header">
                 <h2>Building on 20+ Years of Protocol Innovation</h2>
-                <p className="description">The Agentic Internet Workshop builds on the legacy of the Internet Identity Workshop, which helped shape foundational protocols such as OpenID Connect, OAuth, and Decentralized Identifiers.</p>
+                <p className="description">The 2nd Agentic Internet Workshop builds on the legacy of the Internet Identity Workshop, which helped shape foundational protocols such as OpenID Connect, OAuth, and Decentralized Identifiers.</p>
               </div>
-              
+
               <div className="grid-2">
                 <div className="card">
                   <h3>What You&apos;ll Gain</h3>
@@ -291,15 +299,17 @@ export default function Home() {
                     <li>Explore how to protect humanity, human integrity, and creativity</li>
                   </ul>
                 </div>
-                
+
                 <div className="card">
                   <h3>Event Format</h3>
                   <p>The event uses <strong>Open Space Technology</strong> - an unconference format where participants co-create the agenda in the opening circle. Anyone can propose a topic for discussion.</p>
-                  
+
                   <div className="callout">
                     <strong>📝 Collaborative Documentation</strong><br />
                     Notes from all sessions will be collected and made publicly available to advance the field.
                   </div>
+
+                  <p style={{marginTop: 'var(--space-4)'}}>You can see the <a href="https://docs.google.com/document/d/1sHMxXpU4tSdx4DcWQxuNXBr3Jt9Ejx8QEnOdHnSy8Ss/edit?tab=t.0" target="_blank" rel="noopener noreferrer">Book of Proceedings of AIW #1 Here</a>.</p>
                 </div>
               </div>
             </div>

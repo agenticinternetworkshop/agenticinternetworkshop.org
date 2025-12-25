@@ -59,7 +59,7 @@ export default function WhosComingPage() {
           <div className="container">
             <div className="section-header">
               <h1>Who's Coming</h1>
-              <p className="description">Organizations and companies that will be represented at the Agentic Internet Workshop</p>
+              <p className="description">Participating Organizations at the 1st workshop. As people register for the 2nd workshop we will add them.</p>
             </div>
 
             <div className="whos-coming-content">

@@ -62,11 +62,16 @@ export default function DetailsPage() {
             </div>
 
             <div className="details-content">
-              <p><em>An Internet Identity Workshop Inspired Event, Hosted by the IIW Foundation</em> <em>(IIW #41 is October 21-23)</em></p>
-              
+              <p><em>An Internet Identity Workshop Inspired Event, Hosted by the IIW Foundation (IIW #42 is April 28-30)</em></p>
+
               <p>The AgenticAI space is developing rapidly. Significant innovation is happening around protocols for how agents connect to each other, people, organizations, services, and things.</p>
-              
-              <p>The goal of this one-day workshop is to bring individuals working on Agentic AI Protocols together to advance the field in a productive and generative manner.</p>
+
+              <p>This will be our 2nd workshop and our goal is to bring together individuals and organizations working on Agentic AI Protocols together to advance the field in a productive and generative manner.</p>
+
+              <div className="callout" style={{marginTop: 'var(--space-6)', marginBottom: 'var(--space-6)'}}>
+                <strong>🔗 Interoperability Day</strong><br />
+                We are considering having an Interoperability day preceeding the workshop on April 30th in the same venue in parallel with the last day of IIW.
+              </div>
               
               <h2>What is the value of participation?</h2>
               <ul className="value-list">
@@ -79,10 +84,8 @@ export default function DetailsPage() {
               </ul>
               
               <p>The agenda will be set in the opening circle by the people who are gathered at the event using a process called Open Space Technology. Anyone in attendance can put a topic on the agenda.</p>
-              
-              <p><strong>The event builds on the legacy of the Internet Identity Workshop</strong>, a forum that has been meeting twice a year since 2005. In the first 10 years of the community's life, we defined protocols such as OpenID Connect and OAuth, which are used a billion times a day on the internet today. In the second 10 years, we worked on decentralized identity protocols, like Decentralized IDentifiers, Verifiable Credentials, Trust Spanning Protocol, DIDComm, OpenID4VC and many others. <strong>Now, with this event, we want to focus on the agentic web and how personal and corporate agents can best engage with each other.</strong></p>
-              
-              <p><em>Notes will be collected in all sessions and made publicly available.</em></p>
+
+              <p><em>Notes will be collected in all sessions and made publicly available. You can read the <a href="https://docs.google.com/document/d/1sHMxXpU4tSdx4DcWQxuNXBr3Jt9Ejx8QEnOdHnSy8Ss/edit?tab=t.0" target="_blank" rel="noopener noreferrer">Book of Proceedings from AWI #1</a>.</em></p>
               
               <h2>Places where AI & AI Agent Protocols are being worked on:</h2>
               <div className="protocol-grid">
@@ -197,19 +200,13 @@ export default function DetailsPage() {
                 </div>
                 <div className="price-item">
                   <div className="price-amount">$300</div>
-                  <div className="price-description">Corporate / Regular<br/><small>For those who can provide reference to your work in the AgentAI field</small></div>
-                </div>
-                <div className="price-item">
-                  <div className="price-amount">$1200</div>
-                  <div className="price-description">Non-AgentAI Builders<br/><small>Venture Capitalists, etc. - people who want to observe</small></div>
+                  <div className="price-description">Corporate / Regular<br/><small>Venture Capitalists, etc. - people who want to observe</small></div>
                 </div>
               </div>
-              
-              {event.details.capacity && (
-                <div className="callout">
-                  <strong>📝 Maximum Number of Attendees: {event.details.capacity}</strong>
-                </div>
-              )}
+
+              <div className="callout" style={{marginTop: 'var(--space-6)'}}>
+                <strong>📝 Number of attendees Upto 300</strong>
+              </div>
               
               <h2>Event Hosts & Organizers</h2>
               <div className="organizers">
@@ -239,9 +236,6 @@ export default function DetailsPage() {
                 </div>
               </div>
               
-              <h2>Potential Topics</h2>
-              <p>The agenda will be co-created the day of the event by attendees. These are simply ideas folks have submitted as they register and shared to give perspective on what folks going into the event are thinking about discussing.</p>
-              <p><em>Coming soon</em></p>
 
               <div className="cta-section">
                 <h2>Ready to Join?</h2>
