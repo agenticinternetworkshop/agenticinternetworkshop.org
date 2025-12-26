@@ -80,8 +80,8 @@ export function SiteHeader({ event, activeNav = 'about', onNavClick }: SiteHeade
             </>
           )}
         </div>
-        {!isArchived && (
-          <div className="header-cta">
+        <div className="header-cta">
+          {!isArchived ? (
             <a
               href="https://www.eventbrite.com/e/agentic-internet-workshop-2-tickets-1976356257769?aff=oddtdtcreator"
               target="_blank"
@@ -90,8 +90,17 @@ export function SiteHeader({ event, activeNav = 'about', onNavClick }: SiteHeade
             >
               Get Tickets
             </a>
-          </div>
-        )}
+          ) : (
+            <a
+              href="/bop/1.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary"
+            >
+              Book of Proceedings
+            </a>
+          )}
+        </div>
       </nav>
     </header>
   )
