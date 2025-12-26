@@ -85,7 +85,7 @@ export default function DetailsPage() {
               
               <p>The agenda will be set in the opening circle by the people who are gathered at the event using a process called Open Space Technology. Anyone in attendance can put a topic on the agenda.</p>
 
-              <p><em>Notes will be collected in all sessions and made publicly available. You can read the <a href="https://docs.google.com/document/d/1sHMxXpU4tSdx4DcWQxuNXBr3Jt9Ejx8QEnOdHnSy8Ss/edit?tab=t.0" target="_blank" rel="noopener noreferrer">Book of Proceedings from AWI #1</a>.</em></p>
+              <p><em>Notes will be collected in all sessions and made publicly available. You can read the <a href="/bop/1.pdf" target="_blank" rel="noopener noreferrer">Book of Proceedings from AWI #1</a>. Visit the <a href="/events/1">legacy AIW #1 site</a> for more information about our first event.</em></p>
               
               <h2>Places where AI & AI Agent Protocols are being worked on:</h2>
               <div className="protocol-grid">

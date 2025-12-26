@@ -214,7 +214,7 @@ export default function Home() {
               Internet Identity Workshop #42 is happening April 28-30th in the same venue. We are considering doing an interop day parallel to IIW on April 30th.
             </div>
 
-            <p className="mw-tight" style={{marginBottom: 'var(--space-6)'}}>See the <a href="https://docs.google.com/document/d/1sHMxXpU4tSdx4DcWQxuNXBr3Jt9Ejx8QEnOdHnSy8Ss/edit?tab=t.0" target="_blank" rel="noopener noreferrer">Book of Proceedings for the First Agentic Internet Workshop</a>.</p>
+            <p className="mw-tight" style={{marginBottom: 'var(--space-6)'}}>See the <a href="/bop/1.pdf" target="_blank" rel="noopener noreferrer">Book of Proceedings for the First Agentic Internet Workshop</a>. Visit the <a href="/events/1">legacy AIW #1 site</a> for more information about our first event.</p>
             
             <div className="qr-section">
               {qrCodeUrl ? (
@@ -309,7 +309,7 @@ export default function Home() {
                     Notes from all sessions will be collected and made publicly available to advance the field.
                   </div>
 
-                  <p style={{marginTop: 'var(--space-4)'}}>You can see the <a href="https://docs.google.com/document/d/1sHMxXpU4tSdx4DcWQxuNXBr3Jt9Ejx8QEnOdHnSy8Ss/edit?tab=t.0" target="_blank" rel="noopener noreferrer">Book of Proceedings of AIW #1 Here</a>.</p>
+                  <p style={{marginTop: 'var(--space-4)'}}>You can see the <a href="/bop/1.pdf" target="_blank" rel="noopener noreferrer">Book of Proceedings of AIW #1 Here</a>. Visit the <a href="/events/1">legacy AIW #1 site</a> for more information.</p>
                 </div>
               </div>
             </div>
