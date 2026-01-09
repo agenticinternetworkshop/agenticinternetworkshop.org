@@ -297,6 +297,7 @@ export default function Home() {
                     <li>Gain in-depth understanding of key AgenticAI use-cases</li>
                     <li>Discover alignment opportunities for future collaboration</li>
                     <li>Explore how to protect humanity, human integrity, and creativity</li>
+                    <li>Have a fun time!</li>
                   </ul>
                 </div>
 
