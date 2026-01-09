@@ -14,7 +14,7 @@ const urbanist = Urbanist({
 })
 
 export const metadata: Metadata = {
-  title: 'Agentic Internet Workshop - October 24, 2025',
+  title: 'HI!',
   description: 'Advancing protocols for how agents connect to each other, people, organizations, services, and things in the agentic web.',
 }
 
