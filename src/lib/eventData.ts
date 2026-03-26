@@ -246,13 +246,91 @@ export const events: Record<string, Event> = {
     status: 'current',
     topics: [
       {
-        id: 'topic-placeholder',
-        title: 'Topics Coming Soon',
-        description: 'We\'ll be asking attendees!',
+        id: 'aiw2-topic-1',
+        title: 'Agent Identity and Credentials',
+        description: 'Topics include: Agent identity and authorisation using verifiable credentials and DIDs, Non-human agent provenance and accountability (DIDs / KERI-style), Protocol-level identity, provenance, and non-repudiation for agents, Proof of Control and verified credentials for personal agents, Extending OpenID4VP and the EUDI wallet architecture to agent-to-agent flows, Agent-to-agent identity, authentication, and trust establishment using digital credentials (VCs, MDLs, EUDI wallets), What does the "relying party" look like when it\'s an agent, not a human clicking a consent screen?, AI agent automation with human identity, Where the industry is headed on identity with agents, Emerging protocols for agentic identity and permissions',
+        category: 'Identity & Privacy'
+      },
+      {
+        id: 'aiw2-topic-2',
+        title: 'Delegation and Authorization',
+        description: 'Topics include: Agent-to-agent (A2A) delegation without impersonation, Delegated authorization (OAuth, MCP), GNAP vs OAuth patterns for agent authorization, Building on existing protocols like OAuth and AuthZEN for fine-grained authorization in agentic systems, Cryptographic proof of delegation for AI agents, Cryptogram-based delegation, Enforcing least-privilege at the tool-call layer when agents delegate to sub-agents, Delegation of responsibility with constraints in agents, Capability-based vs policy-based approaches for agent-to-agent delegation, Interoperability between agent authorization primitives and existing identity protocols like WIMSE, Identity and fine-grained authorization in agentic systems, How intent and obligations travel alongside A2A / MCP calls',
+        category: 'Technical Protocols'
+      },
+      {
+        id: 'aiw2-topic-3',
+        title: 'Trust Frameworks and Verification',
+        description: 'Topics include: Trust frameworks for autonomous agents: how a receiving agent verifies a presenting agent is authorised to act on behalf of a person or organisation, Cryptographic trust decisions without human-in-the-loop consent, Trust boundaries and threat modeling for multi-agent systems, Proof of intent with AI agents',
+        category: 'Identity & Privacy'
+      },
+      {
+        id: 'aiw2-topic-4',
+        title: 'Policy, Permissions, and Governance',
+        description: 'Topics include: Where policy enforcement should live in multi-agent systems, Agent permissions and scoped capabilities (allow/ask/deny/escalate), Policy portability across frameworks (OpenCode, Claude Code, Codex-style), Governance of agentic AI, Embedding alignment in protocols to mitigate and prevent catastrophic risks',
+        category: 'Policy & Governance'
+      },
+      {
+        id: 'aiw2-topic-5',
+        title: 'Safety, Security, and Human Control',
+        description: 'Topics include: Human approval UX and interruption/rollback mechanisms, Agent-user interaction protocols to prevent agents escaping human control or causing damage to people/infrastructure, Secure tool invocation (shell, file, network, API/MCP), Safe defaults and sandbox design for local-first workflows, Securing agents in the enterprise, Agentic AI security trends, Standardized audit logs and telemetry for agent actions, Real-world case studies on preventing unsafe agent actions in local and cloud workflows, Practical patterns for trustworthy agent systems: permissioning, runtime observability, policy enforcement, human-in-the-loop controls',
+        category: 'Technical Protocols'
+      },
+      {
+        id: 'aiw2-topic-6',
+        title: 'Personal Agents and Data',
+        description: 'Topics include: Personal data, memory, and secure authorization of agents, Consent-aware edge and embodied agents (robots, sensors)',
+        category: 'Identity & Privacy'
+      },
+      {
+        id: 'aiw2-topic-7',
+        title: 'Infrastructure and Protocols',
+        description: 'Topics include: AgenticDNS, Browsers, Practical patterns for agent delegation, non-human provenance, and policy enforcement (beyond standards meetings toward demonstrable, interoperable patterns)',
+        category: 'Technical Protocols'
+      },
+      {
+        id: 'aiw2-topic-8',
+        title: 'AI and Media',
+        description: 'Topics include: AI and media',
         category: 'Other'
       }
     ],
-    attendees: [],
+    attendees: [
+      { id: 'aiw2-att-1', name: 'Debbie Bucci' },
+      { id: 'aiw2-att-2', name: 'Alan Karp', role: 'Principled Architect', affiliation: 'SitePassword', socialLinks: { website: 'https://alanhkarp.com' } },
+      { id: 'aiw2-att-3', name: 'When Leggett', role: 'CTO', affiliation: 'Human.ing', socialLinks: { website: 'https://human.ing' } },
+      { id: 'aiw2-att-4', name: 'Swan Black', role: 'CEO', affiliation: 'Human.ing', socialLinks: { website: 'https://human.ing' } },
+      { id: 'aiw2-att-5', name: 'Mike Parkhill', role: 'Head of Engineering', affiliation: 'Dock Labs', socialLinks: { website: 'https://dock.io' } },
+      { id: 'aiw2-att-6', name: 'Romain Lenglet' },
+      { id: 'aiw2-att-7', name: 'Jonathan Rayback', role: 'Owner', affiliation: 'Future Forge Innovation' },
+      { id: 'aiw2-att-8', name: 'Abdul Farooqui', role: 'CTO', affiliation: 'SymSoft Solutions, LLC', socialLinks: { website: 'https://www.symsoftsolutions.com' } },
+      { id: 'aiw2-att-9', name: 'Savita Farooqui', role: 'Founder', affiliation: 'SymSoft Solutions, LLC', socialLinks: { website: 'https://www.symsoftsolutions.com' } },
+      { id: 'aiw2-att-10', name: 'Santosh Tripathi' },
+      { id: 'aiw2-att-11', name: 'Brian Best', role: 'Engineer', affiliation: 'vouched.id', socialLinks: { website: 'https://kya.vouched.id' } },
+      { id: 'aiw2-att-12', name: 'Dylan Hobbs', role: 'Principal Engineer', affiliation: 'vouched.id', socialLinks: { website: 'https://kya.vouched.id' } },
+      { id: 'aiw2-att-13', name: 'Michael Becker', role: 'CEO', affiliation: 'Identity Praxis, Inc.', socialLinks: { website: 'https://www.identitypraxis.com' } },
+      { id: 'aiw2-att-14', name: 'Michael Schwartz', role: 'Founder / CEO', affiliation: 'Gluu', socialLinks: { website: 'https://gluu.org' } },
+      { id: 'aiw2-att-15', name: 'Harshit Kumar', role: 'Principal Security Software Engineer' },
+      { id: 'aiw2-att-16', name: 'Ken Adler', role: 'Technical Fellow', affiliation: 'Indeed', socialLinks: { website: 'http://indeed.com' } },
+      { id: 'aiw2-att-17', name: 'Samuel Goto', role: 'SWE', affiliation: 'Google', socialLinks: { website: 'https://code.sgo.to' } },
+      { id: 'aiw2-att-18', name: 'Mark Scott', role: 'Information Security Consultant', affiliation: 'Authentic Data Enterprises' },
+      { id: 'aiw2-att-19', name: 'George Fletcher', role: 'Identity Standards Architect', affiliation: 'Practical Identity LLC' },
+      { id: 'aiw2-att-20', name: 'Lisa Dusseault', role: 'CTO', affiliation: 'Data Transfer Initiative', socialLinks: { website: 'http://dtinit.org' } },
+      { id: 'aiw2-att-21', name: 'Steven McCown', role: 'Chief Architect', affiliation: 'Anonyome Labs', socialLinks: { website: 'http://anonyome.com' } },
+      { id: 'aiw2-att-22', name: 'Omri Gazitt', role: 'Independent' },
+      { id: 'aiw2-att-23', name: 'Tor Hagemann' },
+      { id: 'aiw2-att-24', name: 'Jason Chow' },
+      { id: 'aiw2-att-25', name: 'Rob De Feo', role: 'CTO', affiliation: 'Vidos', socialLinks: { website: 'https://vidos.id' } },
+      { id: 'aiw2-att-26', name: 'Thomas Hardjono' },
+      { id: 'aiw2-att-27', name: 'Niki Aimable Niyikiza', affiliation: 'Tenuo', socialLinks: { website: 'https://tenuo.ai' } },
+      { id: 'aiw2-att-28', name: 'Philippe Le Hegaret', role: 'VP, Technical Strategy', affiliation: 'W3C' },
+      { id: 'aiw2-att-29', name: 'Denny Wong', role: 'Founder', affiliation: 'Linfra.co', socialLinks: { website: 'https://linfra.co' } },
+      { id: 'aiw2-att-30', name: 'Tim Boeckmann', role: 'CEO', affiliation: 'Vidos', socialLinks: { website: 'https://vidos.id' } },
+      { id: 'aiw2-att-31', name: 'Joe Andrieu', role: 'President', affiliation: 'Legendary Requirements', socialLinks: { website: 'https://legreq.com/' } },
+      { id: 'aiw2-att-32', name: 'Erica Connell', role: 'Director of Media', affiliation: 'Legendary Requirements', socialLinks: { website: 'https://legreq.com/' } },
+      { id: 'aiw2-att-33', name: 'Kevin Triplett' },
+      { id: 'aiw2-att-34', name: 'Lauren Paer', role: 'Programs Manager', affiliation: 'Sabbatical' },
+      { id: 'aiw2-att-35', name: 'Tim Cappalli', role: 'Sr. Architect, Identity Standards', affiliation: 'Okta', socialLinks: { website: 'https://timcappalli.me' } }
+    ],
     sponsors: [
       {
         id: 'sponsor-aiw2-1',
