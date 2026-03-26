@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { SiteHeader } from '@/components/SiteHeader'
 import { Event } from '@/lib/types'
+import { getTopicBullets } from '@/lib/topicBullets'
 
 interface ArchivedTopicsPageClientProps {
   event: Event
@@ -34,11 +35,9 @@ export function ArchivedTopicsPageClient({ event }: ArchivedTopicsPageClientProp
                   <div key={topic.id} className="card">
                     <h3>{topic.title}</h3>
                     <ul className="topic-list">
-                      {topic.description.split(', ').map((item, index) => {
-                        // Remove "Topics include: " prefix from first item
-                        const cleanItem = index === 0 ? item.replace(/^Topics include:\s*/i, '') : item
-                        return cleanItem.trim() ? <li key={index}>{cleanItem.trim()}</li> : null
-                      })}
+                      {getTopicBullets(topic).map((item, index) => (
+                        <li key={index}>{item}</li>
+                      ))}
                     </ul>
                   </div>
                 ))}

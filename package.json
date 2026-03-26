@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "verify:aiw2": "node scripts/verify-aiw2-content.mjs http://127.0.0.1:3000"
   },
   "dependencies": {
     "next": "14.0.0",

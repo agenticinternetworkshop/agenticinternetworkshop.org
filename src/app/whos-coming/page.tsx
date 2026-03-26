@@ -6,6 +6,7 @@ import Link from 'next/link'
 import logoImage from '@/assets/logo_transparent.png'
 import { getCurrentEvent } from '@/lib/eventData'
 import { WhosComingEmptyState } from '@/components/WhosComingEmptyState'
+import { AttendeeMarkdownLine } from '@/components/AttendeeMarkdownLine'
 
 export default function WhosComingPage() {
   const event = getCurrentEvent()
@@ -42,9 +43,9 @@ export default function WhosComingPage() {
             </Link>
           </div>
           <div className="header-cta">
-            <a 
-              href="https://www.eventbrite.com/e/agentic-internet-workshop-2-tickets-1976356257769?aff=oddtdtcreator" 
-              target="_blank" 
+            <a
+              href="https://www.eventbrite.com/e/agentic-internet-workshop-2-tickets-1976356257769?aff=oddtdtcreator"
+              target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary"
             >
@@ -58,8 +59,11 @@ export default function WhosComingPage() {
         <section className="section">
           <div className="container">
             <div className="section-header">
-              <h1>Who's Coming</h1>
-              <p className="description">Participating Organizations at the 1st workshop. As people register for the 2nd workshop we will add them.</p>
+              <h1>Who&apos;s Coming — AIW #{event.eventNumber}</h1>
+              <p className="description">
+                Registered participants for AIW #{event.eventNumber} ({event.date}). Names, roles, and affiliations are
+                shown as submitted during registration.
+              </p>
             </div>
 
             <div className="whos-coming-content">
@@ -68,24 +72,28 @@ export default function WhosComingPage() {
               ) : (
                 <>
                   <div className="callout">
-                    <strong>🌐 Diverse Representation</strong><br />
-                    The workshop brings together a diverse group of organizations working on agentic AI protocols, identity infrastructure, and related technologies. This mix of established companies, startups, and research organizations creates a rich environment for collaboration and knowledge sharing.
+                    <strong>🌐 Diverse Representation</strong>
+                    <br />
+                    The workshop brings together people from companies, startups, standards bodies, and research—working
+                    on agentic AI protocols, identity infrastructure, and related technologies.
                   </div>
 
-                  <div className="companies-list">
-                    <h3>Participating Organizations</h3>
-                    <div className="company-items">
+                  <div className="attendees-block">
+                    <h3>Registered participants</h3>
+                    <ul className="attendee-list">
                       {event.attendees.map((attendee) => (
-                        <div key={attendee.id} className="company-item">
-                          {attendee.affiliation || attendee.name}
-                        </div>
+                        <li key={attendee.id} className="attendee-line">
+                          <AttendeeMarkdownLine attendee={attendee} />
+                        </li>
                       ))}
-                    </div>
+                    </ul>
                   </div>
 
                   <div className="callout">
-                    <strong>💡 Want to Join?</strong><br />
-                    If your organization is working on agentic AI protocols, identity infrastructure, or related technologies, we'd love to have you join us. Register now to be part of this collaborative workshop.
+                    <strong>💡 Want to Join?</strong>
+                    <br />
+                    If you are working on agentic AI protocols, identity infrastructure, or related technologies,
+                    we&apos;d love to have you join us. Register now to be part of this collaborative workshop.
                   </div>
                 </>
               )}
@@ -97,8 +105,12 @@ export default function WhosComingPage() {
       <footer className="site-footer">
         <div className="container">
           <p>&copy; 2025 Agentic Internet Workshop. Hosted by IIW Foundation.</p>
-          <p><strong>Event Hosts:</strong> Andor Kesselman & Kaliya Young</p>
-          <p><strong>IIW Co-Founders:</strong> Phil Windley, Doc Searls</p>
+          <p>
+            <strong>Event Hosts:</strong> Andor Kesselman & Kaliya Young
+          </p>
+          <p>
+            <strong>IIW Co-Founders:</strong> Phil Windley, Doc Searls
+          </p>
         </div>
       </footer>
     </>

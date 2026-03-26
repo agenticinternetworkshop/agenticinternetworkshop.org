@@ -63,6 +63,8 @@ export interface Topic {
   id: string
   title: string
   description: string
+  /** When set (e.g. AIW2), used for display instead of parsing `description`. */
+  bullets?: string[]
   proposedBy?: string
   category: TopicCategory
   sourceEventId?: string
