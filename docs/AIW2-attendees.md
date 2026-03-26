@@ -1,0 +1,37 @@
+# AIW2 Attendees
+
+- Debbie Bucci
+- Alan Karp — Principled Architect, [SitePassword](https://alanhkarp.com)
+- When Leggett — CTO, [Human.ing](https://human.ing)
+- Swan Black — CEO, [Human.ing](https://human.ing)
+- Mike Parkhill — Head of Engineering, [Dock Labs](https://dock.io)
+- Romain Lenglet
+- Jonathan Rayback — Owner, Future Forge Innovation
+- Abdul Farooqui — CTO, [SymSoft Solutions, LLC](https://www.symsoftsolutions.com)
+- Savita Farooqui — Founder, [SymSoft Solutions, LLC](https://www.symsoftsolutions.com)
+- Santosh Tripathi
+- Brian Best — Engineer, [vouched.id](https://kya.vouched.id)
+- Dylan Hobbs — Principal Engineer, [vouched.id](https://kya.vouched.id)
+- Michael Becker — CEO, [Identity Praxis, Inc.](https://www.identitypraxis.com)
+- Michael Schwartz — Founder / CEO, [Gluu](https://gluu.org)
+- Harshit Kumar — Principal Security Software Engineer
+- Ken Adler — Technical Fellow, [Indeed](http://indeed.com)
+- Samuel Goto — SWE, [Google](https://code.sgo.to)
+- Mark Scott — Information Security Consultant, Authentic Data Enterprises
+- George Fletcher — Identity Standards Architect, Practical Identity LLC
+- Lisa Dusseault — CTO, [Data Transfer Initiative](http://dtinit.org)
+- Steven McCown — Chief Architect, [Anonyome Labs](http://anonyome.com)
+- Omri Gazitt — Independent
+- Tor Hagemann
+- Jason Chow
+- Rob De Feo — CTO, [Vidos](https://vidos.id)
+- Thomas Hardjono
+- Niki Aimable Niyikiza — [Tenuo](https://tenuo.ai)
+- Philippe Le Hegaret — VP, Technical Strategy, W3C
+- Denny Wong — Founder, [Linfra.co](https://linfra.co)
+- Tim Boeckmann — CEO, [Vidos](https://vidos.id)
+- Joe Andrieu — President, [Legendary Requirements](https://legreq.com/)
+- Erica Connell — Director of Media, [Legendary Requirements](https://legreq.com/)
+- Kevin Triplett
+- Lauren Paer — Programs Manager, Sabbatical
+- Tim Cappalli — Sr. Architect, Identity Standards, [Okta](https://timcappalli.me)
