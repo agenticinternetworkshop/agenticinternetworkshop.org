@@ -547,9 +547,9 @@ export default function Home() {
                       <td>$1,500</td>
                       <td>1</td>
                     </tr>
-                    <tr>
+                    <tr className="done">
                       <td>Barista</td>
-                      <td>1</td>
+                      <td>Done</td>
                       <td>$2,000</td>
                       <td>1</td>
                     </tr>
@@ -580,7 +580,7 @@ export default function Home() {
                   </tbody>
                 </table>
               </div>
-              
+
               <div className="callout">
                 <strong>📧 Contact Us</strong><br />
                 Interested in sponsoring? Contact us at <a href="mailto:phil@windley.org">phil@windley.org</a> to discuss sponsorship opportunities.
@@ -629,9 +629,9 @@ export default function Home() {
                       <td>$1,500</td>
                       <td>1</td>
                     </tr>
-                    <tr>
+                    <tr className="done">
                       <td>Barista</td>
-                      <td>1</td>
+                      <td>Done</td>
                       <td>$2,000</td>
                       <td>1</td>
                     </tr>

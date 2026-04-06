@@ -42,6 +42,7 @@ export default function SponsorCard({
             width={width}
             height={height}
             className="sponsor-card-image"
+            style={{ objectFit: 'contain' }}
           />
           <h4>{title}</h4>
         </>

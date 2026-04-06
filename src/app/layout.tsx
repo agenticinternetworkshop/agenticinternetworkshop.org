@@ -14,7 +14,7 @@ const urbanist = Urbanist({
 })
 
 export const metadata: Metadata = {
-  title: 'HI!',
+  title: 'AIW',
   description: 'Advancing protocols for how agents connect to each other, people, organizations, services, and things in the agentic web.',
 }
 

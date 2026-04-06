@@ -881,6 +881,22 @@ p  { margin: 0 0 var(--space-4); color: var(--text-muted); font-size: var(--fs-1
   font-style: normal;
 }
 
+.sponsorship-table tr.done {
+  background: var(--bg-alt);
+  opacity: 0.7;
+}
+
+.sponsorship-table tr.done td {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.sponsorship-table tr.done td:nth-child(2) {
+  color: var(--accent-600);
+  font-weight: 600;
+  font-style: normal;
+}
+
 /* Sponsor Logos */
 .sponsors-section {
   margin: var(--space-12) 0;
