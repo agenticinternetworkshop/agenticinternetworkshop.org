@@ -1022,8 +1022,7 @@ p  { margin: 0 0 var(--space-4); color: var(--text-muted); font-size: var(--fs-1
   transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: var(--space-4);
+  justify-content: space-between;
   align-items: center;
   height: 200px;
   width: 280px;
@@ -1043,6 +1042,8 @@ p  { margin: 0 0 var(--space-4); color: var(--text-muted); font-size: var(--fs-1
   height: auto;
   object-fit: contain;
   border-radius: var(--radius-sm);
+  margin-bottom: auto;
+  margin-top: auto;
   flex-shrink: 0;
   align-self: center;
 }
