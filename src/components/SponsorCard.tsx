@@ -42,6 +42,7 @@ export default function SponsorCard({
               src={logo}
               alt={alt}
               className="sponsor-card-image"
+              style={{ width: `${width}px`, height: 'auto' }}
             />
           ) : (
             <Image
