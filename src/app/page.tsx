@@ -16,6 +16,22 @@ export default function Home() {
   const event = getCurrentEvent()
   const archivedEvents = getArchivedEvents()
   const [activeTab, setActiveTab] = useState<TabType>('overview')
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search)
+    const tab = params.get('tab') as TabType
+    const validTabs: TabType[] = ['overview', 'schedule', 'pricing', 'protocols', 'reading', 'sponsors', 'become-sponsor']
+    if (tab && validTabs.includes(tab)) {
+      setActiveTab(tab)
+    }
+  }, [])
+
+  const handleTabChange = (tab: TabType) => {
+    setActiveTab(tab)
+    const url = new URL(window.location.href)
+    url.searchParams.set('tab', tab)
+    window.history.pushState(null, '', url.toString())
+  }
   const [activeNav, setActiveNav] = useState('about')
   const [qrCodeUrl, setQrCodeUrl] = useState<string>('')
 
@@ -242,39 +258,39 @@ export default function Home() {
         {/* Tabs Section */}
         <section className="tabs-container" id="about">
           <div className="tab-nav">
-            <button 
-              className={`tab-button ${activeTab === 'overview' ? 'active' : ''}`} 
-              onClick={() => setActiveTab('overview')}
+            <button
+              className={`tab-button ${activeTab === 'overview' ? 'active' : ''}`}
+              onClick={() => handleTabChange('overview')}
             >
               Overview
             </button>
-            <button 
-              className={`tab-button ${activeTab === 'schedule' ? 'active' : ''}`} 
-              onClick={() => setActiveTab('schedule')}
+            <button
+              className={`tab-button ${activeTab === 'schedule' ? 'active' : ''}`}
+              onClick={() => handleTabChange('schedule')}
             >
               Schedule
             </button>
-            <button 
-              className={`tab-button ${activeTab === 'pricing' ? 'active' : ''}`} 
-              onClick={() => setActiveTab('pricing')}
+            <button
+              className={`tab-button ${activeTab === 'pricing' ? 'active' : ''}`}
+              onClick={() => handleTabChange('pricing')}
             >
               Pricing
             </button>
-            <button 
-              className={`tab-button ${activeTab === 'protocols' ? 'active' : ''}`} 
-              onClick={() => setActiveTab('protocols')}
+            <button
+              className={`tab-button ${activeTab === 'protocols' ? 'active' : ''}`}
+              onClick={() => handleTabChange('protocols')}
             >
               Protocols
             </button>
-            <button 
-              className={`tab-button ${activeTab === 'reading' ? 'active' : ''}`} 
-              onClick={() => setActiveTab('reading')}
+            <button
+              className={`tab-button ${activeTab === 'reading' ? 'active' : ''}`}
+              onClick={() => handleTabChange('reading')}
             >
               Suggested Reading
             </button>
-            <button 
-              className={`tab-button ${activeTab === 'become-sponsor' ? 'active' : ''}`} 
-              onClick={() => setActiveTab('become-sponsor')}
+            <button
+              className={`tab-button ${activeTab === 'become-sponsor' ? 'active' : ''}`}
+              onClick={() => handleTabChange('become-sponsor')}
             >
               Become a Sponsor
             </button>
@@ -513,34 +529,34 @@ export default function Home() {
                     </tr>
                   </thead>
                   <tbody>
-                     <tr className="sold">
+                    <tr>
                       <td>Breakfast</td>
                       <td>1</td>
-                      <td>SOLD</td>
+                      <td>$1,750</td>
                       <td>1</td>
-                    </tr>   
+                    </tr>
                     <tr>
                       <td>Lunch</td>
                       <td>1</td>
                       <td>$3,750</td>
                       <td>2</td>
                     </tr>
-                    <tr className="sold">
+                    <tr>
                       <td>Snack Table</td>
                       <td>1</td>
-                      <td>SOLD</td>
+                      <td>$1,500</td>
                       <td>1</td>
                     </tr>
-                    <tr className="sold">
+                    <tr className="done">
                       <td>Barista</td>
-                      <td>1</td>
-                      <td>SOLD</td>
+                      <td>Done</td>
+                      <td>$2,000</td>
                       <td>1</td>
                     </tr>
-                    <tr className="sold">
+                    <tr>
                       <td>Wifi</td>
                       <td>1</td>
-                      <td>SOLD</td>
+                      <td>$1,500</td>
                       <td>1</td>
                     </tr>
                     <tr>
@@ -564,7 +580,7 @@ export default function Home() {
                   </tbody>
                 </table>
               </div>
-              
+
               <div className="callout">
                 <strong>📧 Contact Us</strong><br />
                 Interested in sponsoring? Contact us at <a href="mailto:phil@windley.org">phil@windley.org</a> to discuss sponsorship opportunities.
@@ -595,10 +611,10 @@ export default function Home() {
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="sold">
+                    <tr>
                       <td>Breakfast</td>
                       <td>1</td>
-                      <td>SOLD</td>
+                      <td>$1,750</td>
                       <td>1</td>
                     </tr>
                     <tr>
@@ -613,16 +629,16 @@ export default function Home() {
                       <td>$1,500</td>
                       <td>1</td>
                     </tr>
-                    <tr className="sold">
+                    <tr className="done">
                       <td>Barista</td>
-                      <td>1</td>
-                      <td>SOLD</td>
+                      <td>Done</td>
+                      <td>$2,000</td>
                       <td>1</td>
                     </tr>
-                    <tr className="sold">
+                    <tr>
                       <td>Wifi</td>
                       <td>1</td>
-                      <td>SOLD</td>
+                      <td>$1,500</td>
                       <td>1</td>
                     </tr>
                     <tr>

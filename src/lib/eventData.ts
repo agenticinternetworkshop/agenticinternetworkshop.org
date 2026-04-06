@@ -428,12 +428,12 @@ export const events: Record<string, Event> = {
       },
       {
         id: 'sponsor-aiw2-4',
-        name: 'Barista Sponsor',
+        name: 'Skyfire',
         tier: 'Barista',
-        logoUrl: '/sponsors/placeholder.png',
-        websiteUrl: '#',
+        logoUrl: '/sponsors/skyfire.svg',
+        websiteUrl: 'https://skyfire.xyz',
         description: 'Barista Sponsor',
-        isAvailable: true
+        isAvailable: false
       },
       {
         id: 'sponsor-aiw2-5',
