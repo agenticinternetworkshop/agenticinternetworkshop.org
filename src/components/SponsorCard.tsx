@@ -36,14 +36,22 @@ export default function SponsorCard({
         </div>
       ) : (
         <>
-          <Image
-            src={logo}
-            alt={alt}
-            width={width}
-            height={height}
-            className="sponsor-card-image"
-            style={{ objectFit: 'contain' }}
-          />
+          {logo.endsWith('.svg') ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              src={logo}
+              alt={alt}
+              className="sponsor-card-image"
+            />
+          ) : (
+            <Image
+              src={logo}
+              alt={alt}
+              width={width}
+              height={height}
+              className="sponsor-card-image"
+            />
+          )}
           <h4>{title}</h4>
         </>
       )}
