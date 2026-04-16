@@ -437,12 +437,12 @@ export const events: Record<string, Event> = {
       },
       {
         id: 'sponsor-aiw2-5',
-        name: 'WiFi Sponsor',
+        name: 'JLINC',
         tier: 'WiFi',
-        logoUrl: '/sponsors/placeholder.png',
-        websiteUrl: '#',
+        logoUrl: '/sponsors/jlinc.png',
+        websiteUrl: 'https://www.jlinc.com',
         description: 'WiFi Sponsor',
-        isAvailable: true
+        isAvailable: false
       },
       {
         id: 'sponsor-aiw2-6',

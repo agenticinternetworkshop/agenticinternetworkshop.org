@@ -553,9 +553,9 @@ export default function Home() {
                       <td>$2,000</td>
                       <td>1</td>
                     </tr>
-                    <tr>
+                    <tr className="done">
                       <td>Wifi</td>
-                      <td>1</td>
+                      <td>Done</td>
                       <td>$1,500</td>
                       <td>1</td>
                     </tr>
@@ -635,9 +635,9 @@ export default function Home() {
                       <td>$2,000</td>
                       <td>1</td>
                     </tr>
-                    <tr>
+                    <tr className="done">
                       <td>Wifi</td>
-                      <td>1</td>
+                      <td>Done</td>
                       <td>$1,500</td>
                       <td>1</td>
                     </tr>
