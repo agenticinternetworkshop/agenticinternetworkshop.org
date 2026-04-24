@@ -247,92 +247,163 @@ export const events: Record<string, Event> = {
     topics: [
       {
         id: 'aiw2-topic-1',
-        title: 'Agent Identity and Credentials',
+        title: 'Agent Delegation & Authorization',
         description:
-          'Topics include: Agent identity and authorisation using verifiable credentials and DIDs, Non-human agent provenance and accountability (DIDs / KERI-style), Protocol-level identity, provenance, and non-repudiation for agents, Proof of Control and verified credentials for personal agents, Extending OpenID4VP and the EUDI wallet architecture to agent-to-agent flows, Agent-to-agent identity, authentication, and trust establishment using digital credentials (VCs, MDLs, EUDI wallets), What does the "relying party" look like when it\'s an agent, not a human clicking a consent screen?, AI agent automation with human identity, Where the industry is headed on identity with agents, Emerging protocols for agentic identity and permissions',
+          'Topics include: Delegated authorization and delegation semantics/chains, Cryptographic proof of delegation for AI agents, GNAP vs OAuth patterns for agent authorization, OAuth 2.1 extensions, SPIFFE/SPIRE hybrid patterns, Scoped, time- and task-bound agent tokens, The "4-legged identity problem": User → advisor → agent → resource, Delegated authentication for multi-party commerce, Proof of intent with AI agents, A2A delegation without impersonation, Privilege delegation, zcap-ld as local policies, Monotonic delegation of permissions on agents, How intent and obligations travel alongside A2A / MCP calls',
         bullets: [
-          'Agent identity and authorisation using verifiable credentials and DIDs',
-          'Non-human agent provenance and accountability (DIDs / KERI-style)',
-          'Protocol-level identity, provenance, and non-repudiation for agents',
-          'Proof of Control and verified credentials for personal agents',
-          'Extending OpenID4VP and the EUDI wallet architecture to agent-to-agent flows',
-          'Agent-to-agent identity, authentication, and trust establishment using digital credentials (VCs, MDLs, EUDI wallets)',
-          'What does the "relying party" look like when it\'s an agent, not a human clicking a consent screen?',
-          'AI agent automation with human identity',
-          'Where the industry is headed on identity with agents',
-          'Emerging protocols for agentic identity and permissions'
-        ],
-        category: 'Identity & Privacy'
-      },
-      {
-        id: 'aiw2-topic-2',
-        title: 'Delegation and Authorization',
-        description:
-          'Topics include: Agent-to-agent (A2A) delegation without impersonation, Delegated authorization (OAuth, MCP), GNAP vs OAuth patterns for agent authorization, Building on existing protocols like OAuth and AuthZEN for fine-grained authorization in agentic systems, Cryptographic proof of delegation for AI agents, Cryptogram-based delegation, Enforcing least-privilege at the tool-call layer when agents delegate to sub-agents, Delegation of responsibility with constraints in agents, Capability-based vs policy-based approaches for agent-to-agent delegation, Interoperability between agent authorization primitives and existing identity protocols like WIMSE, Identity and fine-grained authorization in agentic systems, How intent and obligations travel alongside A2A / MCP calls',
-        bullets: [
-          'Agent-to-agent (A2A) delegation without impersonation',
-          'Delegated authorization (OAuth, MCP)',
-          'GNAP vs OAuth patterns for agent authorization',
-          'Building on existing protocols like OAuth and AuthZEN for fine-grained authorization in agentic systems',
+          'Delegated authorization and delegation semantics/chains',
           'Cryptographic proof of delegation for AI agents',
-          'Cryptogram-based delegation',
-          'Enforcing least-privilege at the tool-call layer when agents delegate to sub-agents',
-          'Delegation of responsibility with constraints in agents',
-          'Capability-based vs policy-based approaches for agent-to-agent delegation',
-          'Interoperability between agent authorization primitives and existing identity protocols like WIMSE',
-          'Identity and fine-grained authorization in agentic systems',
+          'GNAP vs OAuth patterns for agent authorization',
+          'OAuth 2.1 extensions, SPIFFE/SPIRE hybrid patterns',
+          'Scoped, time- and task-bound agent tokens',
+          'The "4-legged identity problem": User → advisor → agent → resource',
+          'Delegated authentication for multi-party commerce',
+          'Proof of intent with AI agents',
+          'A2A delegation without impersonation',
+          'Privilege delegation',
+          'zcap-ld as local policies',
+          'Monotonic delegation of permissions on agents',
           'How intent and obligations travel alongside A2A / MCP calls'
         ],
         category: 'Technical Protocols'
       },
       {
-        id: 'aiw2-topic-3',
-        title: 'Trust Frameworks and Verification',
+        id: 'aiw2-topic-2',
+        title: 'Agent Identity & Trust Establishment',
         description:
-          'Topics include: Trust frameworks for autonomous agents: how a receiving agent verifies a presenting agent is authorised to act on behalf of a person or organisation, Cryptographic trust decisions without human-in-the-loop consent, Trust boundaries and threat modeling for multi-agent systems, Proof of intent with AI agents',
+          'Topics include: AI/agent identity fundamentals, Key management and wallets for AI agents, Interoperable standards-based trust establishment, Non-human agent provenance and accountability (DIDs/KERI), Trust boundaries and threat modeling for multi-agent systems, DID-based agent identity and messaging (AWiki.ai as protocol playground), Agent discovery and authentication across organizations, What does the "relying party" look like when the relying party is an agent, not a human?, Successors to OpenID Connect in the agentic world',
         bullets: [
-          'Trust frameworks for autonomous agents: how a receiving agent verifies a presenting agent is authorised to act on behalf of a person or organisation',
-          'Cryptographic trust decisions without human-in-the-loop consent',
+          'AI/agent identity fundamentals',
+          'Key management and wallets for AI agents',
+          'Interoperable standards-based trust establishment',
+          'Non-human agent provenance and accountability (DIDs/KERI)',
           'Trust boundaries and threat modeling for multi-agent systems',
-          'Proof of intent with AI agents'
+          'DID-based agent identity and messaging (AWiki.ai as protocol playground)',
+          'Agent discovery and authentication across organizations',
+          'What does the "relying party" look like when the relying party is an agent, not a human?',
+          'Successors to OpenID Connect in the agentic world'
         ],
         category: 'Identity & Privacy'
       },
       {
-        id: 'aiw2-topic-4',
-        title: 'Policy, Permissions, and Governance',
+        id: 'aiw2-topic-3',
+        title: 'MCP (Model Context Protocol)',
         description:
-          'Topics include: Where policy enforcement should live in multi-agent systems, Agent permissions and scoped capabilities (allow/ask/deny/escalate), Policy portability across frameworks (OpenCode, Claude Code, Codex-style), Governance of agentic AI, Embedding alignment in protocols to mitigate and prevent catastrophic risks',
+          'Topics include: MCP security, OAuth + MCP integration, MCP-I and delegation mechanisms, MCP connector round-trips with consent policy gating, Differential privacy-wrapped MCP tool servers, MCP/A2A with identity',
         bullets: [
-          'Where policy enforcement should live in multi-agent systems',
-          'Agent permissions and scoped capabilities (allow/ask/deny/escalate)',
-          'Policy portability across frameworks (OpenCode, Claude Code, Codex-style)',
-          'Governance of agentic AI',
-          'Embedding alignment in protocols to mitigate and prevent catastrophic risks'
-        ],
-        category: 'Policy & Governance'
-      },
-      {
-        id: 'aiw2-topic-5',
-        title: 'Safety, Security, and Human Control',
-        description:
-          'Topics include: Human approval UX and interruption/rollback mechanisms, Agent-user interaction protocols to prevent agents escaping human control or causing damage to people/infrastructure, Secure tool invocation (shell, file, network, API/MCP), Safe defaults and sandbox design for local-first workflows, Securing agents in the enterprise, Agentic AI security trends, Standardized audit logs and telemetry for agent actions, Real-world case studies on preventing unsafe agent actions in local and cloud workflows, Practical patterns for trustworthy agent systems: permissioning, runtime observability, policy enforcement, human-in-the-loop controls',
-        bullets: [
-          'Human approval UX and interruption/rollback mechanisms',
-          'Agent-user interaction protocols to prevent agents escaping human control or causing damage to people/infrastructure',
-          'Secure tool invocation (shell, file, network, API/MCP)',
-          'Safe defaults and sandbox design for local-first workflows',
-          'Securing agents in the enterprise',
-          'Agentic AI security trends',
-          'Standardized audit logs and telemetry for agent actions',
-          'Real-world case studies on preventing unsafe agent actions in local and cloud workflows',
-          'Practical patterns for trustworthy agent systems: permissioning, runtime observability, policy enforcement, human-in-the-loop controls'
+          'MCP security',
+          'OAuth + MCP integration',
+          'MCP-I and delegation mechanisms',
+          'MCP connector round-trips with consent policy gating',
+          'Differential privacy-wrapped MCP tool servers',
+          'MCP/A2A with identity'
         ],
         category: 'Technical Protocols'
       },
       {
+        id: 'aiw2-topic-4',
+        title: 'Agentic Protocols Landscape',
+        description:
+          'Topics include: A2A, AP2, ANP, UCP protocols, Agentic JWT (IETF draft-goswami-agentic-jwt-00), AgenticDNS, Browser integration with agent protocols, Which protocols are converging vs. re-fighting the same fight at different SDOs, W3C DID-based agent identity and encrypted messaging (AWiki.ai), How DID-based agents authenticate with Web resources, IoT devices, and other agents',
+        bullets: [
+          'A2A, AP2, ANP, UCP protocols',
+          'Agentic JWT (IETF draft-goswami-agentic-jwt-00)',
+          'AgenticDNS',
+          'Browser integration with agent protocols',
+          'Which protocols are converging vs. re-fighting the same fight at different SDOs',
+          'W3C DID-based agent identity and encrypted messaging (AWiki.ai)',
+          'How DID-based agents authenticate with Web resources, IoT devices, and other agents'
+        ],
+        category: 'Technical Protocols'
+      },
+      {
+        id: 'aiw2-topic-5',
+        title: 'Agent Safety, Governance & Human-in-the-Loop',
+        description:
+          'Topics include: Governing agentic AI, Keeping agents under human control, Human approval UX, interruption/rollback mechanisms, Safe defaults and sandbox design, Policy enforcement location in multi-agent systems, Alignment and catastrophic risk mitigation, Agent permissions: allow/ask/deny/escalate, Standardized audit logs and telemetry for agent actions, Secure tool invocation (shell, file, network, API/MCP)',
+        bullets: [
+          'Governing agentic AI',
+          'Keeping agents under human control',
+          'Human approval UX, interruption/rollback mechanisms',
+          'Safe defaults and sandbox design',
+          'Policy enforcement location in multi-agent systems',
+          'Alignment and catastrophic risk mitigation',
+          'Agent permissions: allow/ask/deny/escalate',
+          'Standardized audit logs and telemetry for agent actions',
+          'Secure tool invocation (shell, file, network, API/MCP)'
+        ],
+        category: 'Policy & Governance'
+      },
+      {
         id: 'aiw2-topic-6',
-        title: 'Personal Agents and Data',
+        title: 'Verifiable Credentials & DIDs for Agents',
+        description:
+          'Topics include: Agent identity using VCs and DIDs, OpenID4VP / EUDI wallet architecture extended to agent-to-agent flows, Trust frameworks for autonomous agents, Proof of Control and verified credentials for personal agents, Cross-body standards convergence (IETF, W3C, OIDF, ToIP, DIF), User-controlled agents / OpenVTC, Cryptogram-based delegation',
+        bullets: [
+          'Agent identity using VCs and DIDs',
+          'OpenID4VP / EUDI wallet architecture extended to agent-to-agent flows',
+          'Trust frameworks for autonomous agents',
+          'Proof of Control and verified credentials for personal agents',
+          'Cross-body standards convergence (IETF, W3C, OIDF, ToIP, DIF)',
+          'User-controlled agents / OpenVTC',
+          'Cryptogram-based delegation'
+        ],
+        category: 'Identity & Privacy'
+      },
+      {
+        id: 'aiw2-topic-7',
+        title: 'Privacy & Compliance in Multi-Agent Systems',
+        description:
+          'Topics include: Differential privacy budget composition across agent protocol chains, Auditability, consent propagation, data minimization, What breaks when MCP + A2A meet compliance regimes (healthcare, finance), Multi-agent systems on regulated data',
+        bullets: [
+          'Differential privacy budget composition across agent protocol chains',
+          'Auditability, consent propagation, data minimization',
+          'What breaks when MCP + A2A meet compliance regimes (healthcare, finance)',
+          'Multi-agent systems on regulated data'
+        ],
+        category: 'Policy & Governance'
+      },
+      {
+        id: 'aiw2-topic-8',
+        title: 'Non-Person Entity Identity',
+        description:
+          'Topics include: HomeID: identity for homes, buildings, households, Multi-party consent across owner/occupant/landlord/utility/insurer, Extending user-centric identity to non-person entities',
+        bullets: [
+          'HomeID: identity for homes, buildings, households',
+          'Multi-party consent across owner/occupant/landlord/utility/insurer',
+          'Extending user-centric identity to non-person entities'
+        ],
+        category: 'Identity & Privacy'
+      },
+      {
+        id: 'aiw2-topic-9',
+        title: 'Enterprise & Production',
+        description:
+          'Topics include: Securing agents in the enterprise, IAM specifications for agentic AI, Corporate agentic AI, What real multi-agent systems (beyond chatbot + one tool) are running in production, Intelligent approaches to user-signed-in computer use',
+        bullets: [
+          'Securing agents in the enterprise',
+          'IAM specifications for agentic AI',
+          'Corporate agentic AI',
+          'What real multi-agent systems (beyond chatbot + one tool) are running in production',
+          'Intelligent approaches to user-signed-in computer use'
+        ],
+        category: 'Technical Protocols'
+      },
+      {
+        id: 'aiw2-topic-10',
+        title: 'Creative & Non-Enterprise Use Cases',
+        description:
+          'Topics include: Agent protocols for creative/expressive work (design, art, music, games), Are current protocol primitives implicitly enterprise-shaped?, AI and media',
+        bullets: [
+          'Agent protocols for creative/expressive work (design, art, music, games)',
+          'Are current protocol primitives implicitly enterprise-shaped?',
+          'AI and media'
+        ],
+        category: 'Other'
+      },
+      {
+        id: 'aiw2-topic-11',
+        title: 'Personal Agents & Data',
         description:
           'Topics include: Personal data, memory, and secure authorization of agents, Consent-aware edge and embodied agents (robots, sensors)',
         bullets: [
@@ -340,25 +411,6 @@ export const events: Record<string, Event> = {
           'Consent-aware edge and embodied agents (robots, sensors)'
         ],
         category: 'Identity & Privacy'
-      },
-      {
-        id: 'aiw2-topic-7',
-        title: 'Infrastructure and Protocols',
-        description:
-          'Topics include: AgenticDNS, Browsers, Practical patterns for agent delegation, non-human provenance, and policy enforcement (beyond standards meetings toward demonstrable, interoperable patterns)',
-        bullets: [
-          'AgenticDNS',
-          'Browsers',
-          'Practical patterns for agent delegation, non-human provenance, and policy enforcement (beyond standards meetings toward demonstrable, interoperable patterns)'
-        ],
-        category: 'Technical Protocols'
-      },
-      {
-        id: 'aiw2-topic-8',
-        title: 'AI and Media',
-        description: 'Topics include: AI and media',
-        bullets: ['AI and media'],
-        category: 'Other'
       }
     ],
     attendees: [
