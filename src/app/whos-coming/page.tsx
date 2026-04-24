@@ -61,8 +61,7 @@ export default function WhosComingPage() {
             <div className="section-header">
               <h1>Who&apos;s Coming — AIW #{event.eventNumber}</h1>
               <p className="description">
-                Registered participants for AIW #{event.eventNumber} ({event.date}). Names, roles, and affiliations are
-                shown as submitted during registration.
+                Organizations and companies registered for AIW #{event.eventNumber} ({event.date}).
               </p>
             </div>
 
@@ -78,15 +77,19 @@ export default function WhosComingPage() {
                     on agentic AI protocols, identity infrastructure, and related technologies.
                   </div>
 
-                  <div className="attendees-block">
-                    <h3>Registered participants</h3>
-                    <ul className="attendee-list">
-                      {event.attendees.map((attendee) => (
-                        <li key={attendee.id} className="attendee-line">
-                          <AttendeeMarkdownLine attendee={attendee} />
-                        </li>
-                      ))}
-                    </ul>
+                  <div className="companies-list">
+                    <h3>Participating Organizations</h3>
+                    <div className="company-items">
+                      {Array.from(new Set(event.attendees
+                        .filter((attendee) => attendee.affiliation)
+                        .map((attendee) => attendee.affiliation)))
+                        .sort()
+                        .map((company) => (
+                          <div key={company} className="company-item">
+                            {company}
+                          </div>
+                        ))}
+                    </div>
                   </div>
 
                   <div className="callout">
