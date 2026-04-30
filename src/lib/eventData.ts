@@ -509,12 +509,12 @@ export const events: Record<string, Event> = {
       },
       {
         id: 'sponsor-aiw2-2',
-        name: 'Breakfast Sponsor',
+        name: 'Anonymous',
         tier: 'Breakfast',
         logoUrl: '/sponsors/placeholder.png',
         websiteUrl: '#',
-        description: 'Breakfast Sponsor',
-        isAvailable: true
+        description: 'Anonymous (Breakfast Sponsor)',
+        isAvailable: false
       },
       {
         id: 'sponsor-aiw2-3',
