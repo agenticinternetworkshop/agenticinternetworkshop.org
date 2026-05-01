@@ -529,15 +529,15 @@ export default function Home() {
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
+                    <tr className="done">
                       <td>Breakfast</td>
-                      <td>1</td>
+                      <td>Done</td>
                       <td>$1,750</td>
                       <td>1</td>
                     </tr>
-                    <tr>
+                    <tr className="done">
                       <td>Lunch</td>
-                      <td>1</td>
+                      <td>Done</td>
                       <td>$3,750</td>
                       <td>2</td>
                     </tr>
@@ -611,15 +611,15 @@ export default function Home() {
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
+                    <tr className="done">
                       <td>Breakfast</td>
-                      <td>1</td>
+                      <td>Done</td>
                       <td>$1,750</td>
                       <td>1</td>
                     </tr>
-                    <tr>
+                    <tr className="done">
                       <td>Lunch</td>
-                      <td>1</td>
+                      <td>Done</td>
                       <td>$3,750</td>
                       <td>2</td>
                     </tr>
