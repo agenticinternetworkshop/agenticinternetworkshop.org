@@ -500,21 +500,21 @@ export const events: Record<string, Event> = {
     sponsors: [
       {
         id: 'sponsor-aiw2-1',
-        name: 'Lunch Sponsor',
+        name: 'Amazon Web Services',
         tier: 'Lunch',
-        logoUrl: '/sponsors/placeholder.png',
-        websiteUrl: '#',
+        logoUrl: '/sponsors/aws_logo_2.png',
+        websiteUrl: 'https://aws.amazon.com',
         description: 'Lunch Sponsor',
-        isAvailable: true
+        isAvailable: false
       },
       {
         id: 'sponsor-aiw2-2',
-        name: 'Breakfast Sponsor',
+        name: 'Anonymous',
         tier: 'Breakfast',
         logoUrl: '/sponsors/placeholder.png',
         websiteUrl: '#',
-        description: 'Breakfast Sponsor',
-        isAvailable: true
+        description: 'Anonymous (Breakfast Sponsor)',
+        isAvailable: false
       },
       {
         id: 'sponsor-aiw2-3',
