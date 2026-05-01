@@ -502,7 +502,7 @@ export const events: Record<string, Event> = {
         id: 'sponsor-aiw2-1',
         name: 'Amazon Web Services',
         tier: 'Lunch',
-        logoUrl: '/sponsors/aws_logo_2.png',
+        logoUrl: '/sponsors/AWS_logo_RGB_1c_Gray850.png',
         websiteUrl: 'https://aws.amazon.com',
         description: 'Lunch Sponsor',
         isAvailable: false
