@@ -573,8 +573,8 @@ export const events: Record<string, Event> = {
   '3': {
     eventId: '3',
     eventNumber: 3,
-    date: 'TBD',
-    dateISO: '',
+    date: 'November 6, 2026',
+    dateISO: '2026-11-06',
     location: {
       name: 'Computer History Museum',
       address: '1401 N Shoreline Blvd',
@@ -652,9 +652,10 @@ export const events: Record<string, Event> = {
     ],
     schedule: [],
     details: {
+      registrationUrl: 'https://www.eventbrite.com/e/agentic-internet-workshop-3-aiw3-tickets-1988785710597?aff=oddtdtcreator',
       contactEmail: 'phil@windley.org',
       capacity: 200,
-      isRegistrationOpen: false
+      isRegistrationOpen: true
     }
   }
 }
