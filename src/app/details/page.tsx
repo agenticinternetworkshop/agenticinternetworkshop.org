@@ -41,14 +41,16 @@ export default function DetailsPage() {
             </Link>
           </div>
           <div className="header-cta">
-            <a 
-              href="https://www.eventbrite.com/e/agentic-internet-workshop-2-tickets-1976356257769?aff=oddtdtcreator" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="btn btn-primary"
-            >
-              Get Tickets
-            </a>
+            {event.details.registrationUrl && (
+              <a
+                href={event.details.registrationUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary"
+              >
+                Get Tickets
+              </a>
+            )}
           </div>
         </nav>
       </header>
@@ -240,9 +242,13 @@ export default function DetailsPage() {
               <div className="cta-section">
                 <h2>Ready to Join?</h2>
                 <p>Register now for this groundbreaking workshop on agentic protocols</p>
-                <a href="https://www.eventbrite.com/e/agentic-internet-workshop-2-tickets-1976356257769?aff=oddtdtcreator" className="btn btn-primary">
-                  Register on Eventbrite
-                </a>
+                {event.details.registrationUrl ? (
+                  <a href={event.details.registrationUrl} className="btn btn-primary">
+                    Register on Eventbrite
+                  </a>
+                ) : (
+                  <p><em>Registration opens soon.</em></p>
+                )}
               </div>
             </div>
           </div>

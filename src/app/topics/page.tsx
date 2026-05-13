@@ -44,7 +44,7 @@ export default function TopicsPage() {
           </div>
           <div className="header-cta">
             <a
-              href="https://www.eventbrite.com/e/agentic-internet-workshop-2-tickets-1976356257769?aff=oddtdtcreator"
+              href={event.details.registrationUrl || '#'}
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary"

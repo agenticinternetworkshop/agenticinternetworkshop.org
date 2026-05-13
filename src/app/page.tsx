@@ -40,7 +40,7 @@ export default function Home() {
     const generateQR = async () => {
       try {
         // Use Eventbrite registration URL from event data
-        const registrationUrl = event.details.registrationUrl || 'https://www.eventbrite.com/e/agentic-internet-workshop-2-tickets-1976356257769?aff=oddtdtcreator'
+        const registrationUrl = event.details.registrationUrl || ''
         const qrDataUrl = await QRCode.toDataURL(registrationUrl, {
           width: 200,
           margin: 2,
@@ -162,14 +162,16 @@ export default function Home() {
             </a>
           </div>
           <div className="header-cta">
-            <a 
-              href="https://www.eventbrite.com/e/agentic-internet-workshop-2-tickets-1976356257769?aff=oddtdtcreator"
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="btn btn-primary"
-            >
-              Get Tickets
-            </a>
+            {event.details.registrationUrl && (
+              <a
+                href={event.details.registrationUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary"
+              >
+                Get Tickets
+              </a>
+            )}
           </div>
         </nav>
       </header>
@@ -186,9 +188,9 @@ export default function Home() {
               IIW-Inspired™ Event • {event.date}
             </div>
             
-            <h1>Agentic Internet Workshop #2</h1>
-            <p className="lede">Friday May 1st 2026</p>
-            <p className="lede">For our 2nd event we continue to build on the 20+ year legacy of Internet Identity Workshop. We are advancing the next generation of protocols for how agents connect, collaborate, and preserve human judgment in an agentic world.</p>
+            <h1>Agentic Internet Workshop #{event.eventNumber}</h1>
+            <p className="lede">{event.date}</p>
+            <p className="lede">Building on the 20+ year legacy of Internet Identity Workshop, we are advancing the next generation of protocols for how agents connect, collaborate, and preserve human judgment in an agentic world.</p>
             
             <div className="hero-highlights">
               <div className="highlight-item">
@@ -225,33 +227,32 @@ export default function Home() {
             <h2>Register for the Workshop</h2>
             <p className="mw-tight">Join protocol innovators, researchers, and builders working on the future of agentic systems. Registration requires submission of your current work in the AI Agent/Protocol space.</p>
 
-            <div className="callout" style={{marginTop: 'var(--space-6)', marginBottom: 'var(--space-4)'}}>
-              <strong>🔗 Internet Identity Workshop #42</strong><br />
-              Internet Identity Workshop #42 is happening April 28-30th in the same venue. We are considering doing an interop day parallel to IIW on April 30th.
-            </div>
+            <p className="mw-tight" style={{marginBottom: 'var(--space-6)'}}>See the <a href="/bop/1.pdf" target="_blank" rel="noopener noreferrer">Book of Proceedings for the First Agentic Internet Workshop</a>. Visit the <a href="/events/1">legacy AIW #1 site</a> and <a href="/events/2">AIW #2 site</a> for more information about our previous events.</p>
 
-            <p className="mw-tight" style={{marginBottom: 'var(--space-6)'}}>See the <a href="/bop/1.pdf" target="_blank" rel="noopener noreferrer">Book of Proceedings for the First Agentic Internet Workshop</a>. Visit the <a href="/events/1">legacy AIW #1 site</a> for more information about our first event.</p>
-            
-            <div className="qr-section">
-              {qrCodeUrl ? (
-                <Image 
-                  src={qrCodeUrl} 
-                  alt="Registration QR Code" 
-                  width={200} 
-                  height={200}
-                  style={{ borderRadius: 'var(--radius-md)' }}
-                />
-              ) : (
-                <div className="qr-placeholder">
-                  <div>
-                    <div>📱 QR Code</div>
-                    <div>Loading...</div>
+            {event.details.registrationUrl ? (
+              <div className="qr-section">
+                {qrCodeUrl ? (
+                  <Image
+                    src={qrCodeUrl}
+                    alt="Registration QR Code"
+                    width={200}
+                    height={200}
+                    style={{ borderRadius: 'var(--radius-md)' }}
+                  />
+                ) : (
+                  <div className="qr-placeholder">
+                    <div>
+                      <div>📱 QR Code</div>
+                      <div>Loading...</div>
+                    </div>
                   </div>
-                </div>
-              )}
-              <a href="https://www.eventbrite.com/e/agentic-internet-workshop-2-tickets-1976356257769?aff=oddtdtcreator" className="btn btn-primary" target="_blank" rel="noopener noreferrer">Register Now</a>
-              <p className="small">Pricing starts at $150 for independents/startups</p>
-            </div>
+                )}
+                <a href={event.details.registrationUrl} className="btn btn-primary" target="_blank" rel="noopener noreferrer">Register Now</a>
+                <p className="small">Pricing starts at $150 for independents/startups</p>
+              </div>
+            ) : (
+              <p className="mw-tight"><em>Registration opens soon. Check back for details.</em></p>
+            )}
           </div>
         </section>
 

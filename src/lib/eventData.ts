@@ -243,7 +243,7 @@ export const events: Record<string, Event> = {
       state: 'CA',
       zipCode: '94043'
     },
-    status: 'current',
+    status: 'archived',
     topics: [
       {
         id: 'aiw2-topic-1',
@@ -565,6 +565,93 @@ export const events: Record<string, Event> = {
     schedule: [],
     details: {
       registrationUrl: 'https://www.eventbrite.com/e/agentic-internet-workshop-2-tickets-1976356257769?aff=oddtdtcreator',
+      contactEmail: 'phil@windley.org',
+      capacity: 200,
+      isRegistrationOpen: false
+    }
+  },
+  '3': {
+    eventId: '3',
+    eventNumber: 3,
+    date: 'TBD',
+    dateISO: '',
+    location: {
+      name: 'Computer History Museum',
+      address: '1401 N Shoreline Blvd',
+      city: 'Mountain View',
+      state: 'CA',
+      zipCode: '94043'
+    },
+    status: 'current',
+    topics: [],
+    attendees: [],
+    sponsors: [
+      {
+        id: 'sponsor-aiw3-1',
+        name: 'Lunch Sponsor',
+        tier: 'Lunch',
+        logoUrl: '/sponsors/placeholder.png',
+        websiteUrl: '#',
+        description: 'Lunch Sponsor',
+        isAvailable: true
+      },
+      {
+        id: 'sponsor-aiw3-2',
+        name: 'Breakfast Sponsor',
+        tier: 'Breakfast',
+        logoUrl: '/sponsors/placeholder.png',
+        websiteUrl: '#',
+        description: 'Breakfast Sponsor',
+        isAvailable: true
+      },
+      {
+        id: 'sponsor-aiw3-3',
+        name: 'Snack Table Sponsor',
+        tier: 'Snack Table',
+        logoUrl: '/sponsors/placeholder.png',
+        websiteUrl: '#',
+        description: 'Snack Table Sponsor',
+        isAvailable: true
+      },
+      {
+        id: 'sponsor-aiw3-4',
+        name: 'Barista Sponsor',
+        tier: 'Barista',
+        logoUrl: '/sponsors/placeholder.png',
+        websiteUrl: '#',
+        description: 'Barista Sponsor',
+        isAvailable: true
+      },
+      {
+        id: 'sponsor-aiw3-5',
+        name: 'WiFi Sponsor',
+        tier: 'WiFi',
+        logoUrl: '/sponsors/placeholder.png',
+        websiteUrl: '#',
+        description: 'WiFi Sponsor',
+        isAvailable: true
+      },
+      {
+        id: 'sponsor-aiw3-6',
+        name: 'Open Gifting Sponsor',
+        tier: 'Open Gifting',
+        logoUrl: '/sponsors/placeholder.png',
+        websiteUrl: '#',
+        description: 'Open Gifting Sponsor',
+        isAvailable: true
+      },
+      {
+        id: 'sponsor-aiw3-7',
+        name: 'Documentation Center Sponsor',
+        tier: 'Documentation Center',
+        logoUrl: '/sponsors/placeholder.png',
+        websiteUrl: '#',
+        description: 'Documentation Center Sponsor',
+        isAvailable: true
+      }
+    ],
+    schedule: [],
+    details: {
       contactEmail: 'phil@windley.org',
       capacity: 200,
       isRegistrationOpen: false
