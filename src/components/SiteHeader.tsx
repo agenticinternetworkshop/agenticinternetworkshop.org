@@ -33,7 +33,7 @@ export function SiteHeader({ event, activeNav = 'about', onNavClick }: SiteHeade
           <EventLink href="/">
             <Image src={logoImage} alt="Agentic Internet Workshop Logo" width={48} height={48} />
             <span className="brand-text">
-              Agentic Internet Workshop{isArchived ? ` #${event.eventNumber}` : ''}
+              Agentic Internet Workshop #{event.eventNumber}
               {isArchived && <span className="brand-archived"> (Archived)</span>}
             </span>
           </EventLink>
