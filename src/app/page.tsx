@@ -126,7 +126,7 @@ export default function Home() {
           <div className="brand">
             <Link href="/">
               <Image src={logoImage} alt="Agentic Internet Workshop Logo" width={48} height={48} />
-              <span className="brand-text">Agentic Internet Workshop #2</span>
+              <span className="brand-text">Agentic Internet Workshop #{event.eventNumber}</span>
             </Link>
           </div>
           <div className="nav-links">
@@ -190,34 +190,7 @@ export default function Home() {
             
             <h1>Agentic Internet Workshop #{event.eventNumber}</h1>
             <p className="lede">{event.date}</p>
-            <p className="lede">Building on the 20+ year legacy of Internet Identity Workshop, we are advancing the next generation of protocols for how agents connect, collaborate, and preserve human judgment in an agentic world.</p>
-            
-            <div className="hero-highlights">
-              <div className="highlight-item">
-                <strong>Legacy:</strong> From OpenID Connect & OAuth to agentic protocols
-              </div>
-              <div className="highlight-item">
-                <strong>Mission:</strong> Provide neutral space for protocol definition & collaboration
-              </div>
-              <div className="highlight-item">
-                <strong>Vision:</strong> Protect human integrity, judgment & creativity
-              </div>
-            </div>
-            
-            <div className="meta-row">
-              <div className="meta">
-                <div className="label">Date</div>
-                <div className="value">{event.date}</div>
-              </div>
-              <div className="meta">
-                <div className="label">Venue</div>
-                <div className="value">{event.location.name}</div>
-              </div>
-              <div className="meta">
-                <div className="label">Capacity</div>
-                <div className="value">Upto {event.details.capacity ? `${event.details.capacity} people` : '300 people'}</div>
-              </div>
-            </div>
+            <p className="lede">The Agentic Internet Workshop (AIW) continues the legacy of the Internet Identity Workshop (IIW), which helped shape foundational protocols like OpenID Connect, OAuth, and Decentralized Identifiers. AIW is a neutral space where the people building the identity, trust, and authorization layers for the agentic internet come together to do the hard work of alignment.</p>
           </div>
         </section>
 
@@ -225,7 +198,7 @@ export default function Home() {
         <section className="registration-section center" id="register">
           <div className="container">
             <h2>Register for the Workshop</h2>
-            <p className="mw-tight">Join protocol innovators, researchers, and builders working on the future of agentic systems. Registration requires submission of your current work in the AI Agent/Protocol space.</p>
+            <p className="mw-tight">Join protocol innovators, researchers, and builders working on the future of agentic systems.</p>
 
             <p className="mw-tight" style={{marginBottom: 'var(--space-6)'}}>See the <a href="/bop/1.pdf" target="_blank" rel="noopener noreferrer">Book of Proceedings for the First Agentic Internet Workshop</a>. Visit the <a href="/events/1">legacy AIW #1 site</a> and <a href="/events/2">AIW #2 site</a> for more information about our previous events.</p>
 
@@ -248,7 +221,7 @@ export default function Home() {
                   </div>
                 )}
                 <a href={event.details.registrationUrl} className="btn btn-primary" target="_blank" rel="noopener noreferrer">Register Now</a>
-                <p className="small">Pricing starts at $150 for independents/startups</p>
+                <p className="small">Early Bird pricing starts at $125 for independents/startups (until Sept 15)</p>
               </div>
             ) : (
               <p className="mw-tight"><em>Registration opens soon. Check back for details.</em></p>
@@ -301,19 +274,18 @@ export default function Home() {
             {/* Overview Tab */}
             <div className={`tab-content ${activeTab === 'overview' ? 'active' : ''}`}>
               <div className="section-header">
-                <h2>Building on 20+ Years of Protocol Innovation</h2>
-                <p className="description">The 2nd Agentic Internet Workshop builds on the legacy of the Internet Identity Workshop, which helped shape foundational protocols such as OpenID Connect, OAuth, and Decentralized Identifiers.</p>
+                <h2>What you will gain</h2>
+                <p className="description">Connect with the engineers, architects, and researchers shaping agentic protocols across IETF, W3C, AAIF, OpenID Foundation, Decentralized Identity Foundation and others</p>
               </div>
 
               <div className="grid-2">
                 <div className="card">
                   <h3>What You&apos;ll Gain</h3>
                   <ul className="value-list">
-                    <li>Learn who else is working on protocols and what they&apos;re building</li>
-                    <li>Share your work and get feedback from protocol innovators</li>
-                    <li>Gain in-depth understanding of key AgenticAI use-cases</li>
-                    <li>Discover alignment opportunities for future collaboration</li>
-                    <li>Explore how to protect humanity, human integrity, and creativity</li>
+                    <li>Share your work and get direct feedback from protocol builders</li>
+                    <li>Deepen your understanding of real-world agentic AI use cases — authorization, delegation, trust, and non-human identity</li>
+                    <li>Find alignment opportunities across overlapping standards efforts</li>
+                    <li>Explore how to preserve human agency, integrity, and creativity in an agentic world</li>
                   </ul>
                 </div>
 
@@ -335,9 +307,9 @@ export default function Home() {
             <div className={`tab-content ${activeTab === 'schedule' ? 'active' : ''}`}>
               <div className="section-header">
                 <h2>Workshop Schedule</h2>
-                <p className="description">A full day of collaborative sessions using Open Space Technology</p>
+                <p className="description">We will host an Interop Day on November 5th in parallel with Day three of IIW at the same location beginning at 10:30 AM.<br /><br />November 6th will be a full day of collaborative sessions using Open Space Technology</p>
               </div>
-              
+
               <table className="schedule">
                 <thead>
                   <tr>
@@ -391,23 +363,29 @@ export default function Home() {
             <div className={`tab-content ${activeTab === 'pricing' ? 'active' : ''}`}>
               <div className="section-header">
                 <h2>Registration Pricing</h2>
-                <p className="description">This event is for those implementing and creating protocols for AgenticAI. Pricing is based on organization type and includes all sessions, meals, and documentation</p>
+                <p className="description">This event is for those implementing and creating protocols for agentic AI. Pricing is based on organization type and includes all sessions, meals, and documentation</p>
               </div>
-              
+
               <div className="pricing">
                 <div className="card price-card">
                   <h3>Independent / Startups</h3>
-                  <div className="price">$150</div>
-                  <p className="note">For those who can provide reference to your work in the AgentAI field</p>
+                  <div className="price">
+                    <div>Early Bird (until Sept 15): $125</div>
+                    <div>Regular: $150</div>
+                  </div>
+                  <p className="note">For those who can provide reference to your work in the agentic AI field</p>
                 </div>
 
                 <div className="card price-card">
                   <h3>Corporate / Regular</h3>
-                  <div className="price">$300</div>
-                  <p className="note">For those who can provide reference to your work in the AgentAI field</p>
+                  <div className="price">
+                    <div>Early Bird (until Sept 15): $270</div>
+                    <div>Regular: $300</div>
+                  </div>
+                  <p className="note">For those who can provide reference to your work in the agentic AI field</p>
                 </div>
               </div>
-              
+
               <div className="callout">
                 <strong>📋 Admission Requirements</strong><br />
                 Registration requires a pointer to a document about your current work in the AI Agent and Protocol space. This ensures all participants can meaningfully contribute to discussions.
@@ -515,7 +493,7 @@ export default function Home() {
 
               {/* Sponsor Text */}
               <div className="sponsors-text">
-                <p className="description">Sponsors keep conference fees low, by supporting the virtual platform, unConference set-up, providing meals and more, making AIW available to all who want to attend, participate and contribute.</p>
+                <p className="description">Sponsors keep conference fees low by supporting the virtual platform, unconference setup, providing meals and more, making AIW available to all who want to attend, participate and contribute.</p>
                 <p className="description"><strong>Support the collaborative work that gets accomplished at every AIW!</strong></p>
               </div>
               
@@ -584,7 +562,7 @@ export default function Home() {
 
               <div className="callout">
                 <strong>📧 Contact Us</strong><br />
-                Interested in sponsoring? Contact us at <a href="mailto:phil@windley.org">phil@windley.org</a> to discuss sponsorship opportunities.
+                Interested in sponsoring? Contact us at <a href="mailto:phil@windley.org">phil@windley.org</a> and <a href="mailto:kaliya@identitywoman.net">kaliya@identitywoman.net</a> to discuss sponsorship opportunities.
               </div>
             </div>
 
@@ -597,7 +575,7 @@ export default function Home() {
 
               {/* Sponsor Text */}
               <div className="sponsors-text">
-                <p className="description">Sponsors keep conference fees low, by supporting the virtual platform, unConference set-up, providing meals and more, making AIW available to all who want to attend, participate and contribute.</p>
+                <p className="description">Sponsors keep conference fees low by supporting the virtual platform, unconference setup, providing meals and more, making AIW available to all who want to attend, participate and contribute.</p>
                 <p className="description"><strong>Support the collaborative work that gets accomplished at every AIW!</strong></p>
               </div>
               
@@ -666,7 +644,7 @@ export default function Home() {
               
               <div className="callout">
                 <strong>📧 Contact Us</strong><br />
-                Interested in sponsoring? Contact us at <a href="mailto:phil@windley.org">phil@windley.org</a> to discuss sponsorship opportunities.
+                Interested in sponsoring? Contact us at <a href="mailto:phil@windley.org">phil@windley.org</a> and <a href="mailto:kaliya@identitywoman.net">kaliya@identitywoman.net</a> to discuss sponsorship opportunities.
               </div>
             </div>
           </div>
@@ -695,11 +673,12 @@ export default function Home() {
             </div>
 
             <div className="sponsors-text">
-              <p className="description">Sponsors keep conference fees low, by supporting the virtual platform, unConference set-up, providing meals and more, making AIW available to all who want to attend, participate and contribute.</p>
+              <p className="description">Sponsors keep conference fees low by supporting the virtual platform, unconference setup, providing meals and more, making AIW available to all who want to attend, participate and contribute.</p>
               <p className="description"><strong>Support the collaborative work that gets accomplished at every AIW!</strong></p>
             </div>
 
             <a href="mailto:phil@windley.org" className="btn btn-ghost">Contact Us About Sponsorship</a>
+            <p style={{marginTop: 'var(--space-4)', textAlign: 'center'}}>Or reach out to <a href="mailto:kaliya@identitywoman.net">kaliya@identitywoman.net</a></p>
           </div>
         </section>
 
@@ -724,9 +703,9 @@ export default function Home() {
 
       <footer className="site-footer">
         <div className="container">
-          <p>&copy; 2025 Agentic Internet Workshop. Hosted by IIW Foundation.</p>
-          <p><strong>Event Hosts:</strong> Andor Kesselman & Kaliya Young</p>
-          <p><strong>IIW Co-Founders:</strong> Phil Windley, Doc Searls</p>
+          <p>&copy; 2026 Agentic Internet Workshop. Hosted by IIW Foundation.</p>
+          <p><strong>Event Conveners:</strong> Andor Kesselman, Rohit Khare, Sarah Cecchetti, Mike Prince, Ken Adler, Kaliya Young, & Claudrey Hepburn <em>(an AI agent studying AI agents)</em></p>
+          <p><strong>AIW Co-Founders:</strong> Andor Kesselman, Kaliya Young, Phil Windley, and Doc Searls</p>
         </div>
       </footer>
     </>
