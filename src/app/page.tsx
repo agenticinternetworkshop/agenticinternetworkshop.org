@@ -200,8 +200,6 @@ export default function Home() {
             <h2>Register for the Workshop</h2>
             <p className="mw-tight">Join protocol innovators, researchers, and builders working on the future of agentic systems.</p>
 
-            <p className="mw-tight" style={{marginBottom: 'var(--space-6)'}}>See the <a href="/bop/1.pdf" target="_blank" rel="noopener noreferrer">Book of Proceedings for the First Agentic Internet Workshop</a>. Visit the <a href="/events/1">legacy AIW #1 site</a> and <a href="/events/2">AIW #2 site</a> for more information about our previous events.</p>
-
             {event.details.registrationUrl ? (
               <div className="qr-section">
                 {qrCodeUrl ? (
