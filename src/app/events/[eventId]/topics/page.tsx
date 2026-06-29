@@ -4,6 +4,7 @@ import { ArchivedTopicsPageClient } from './ArchivedTopicsPageClient'
 export function generateStaticParams() {
   return [
     { eventId: '1' }, // AIW #1
+    { eventId: '2' }, // AIW #2
   ]
 }
 
