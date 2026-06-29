@@ -393,46 +393,135 @@ export default function Home() {
             {/* Protocols Tab */}
             <div className={`tab-content ${activeTab === 'protocols' ? 'active' : ''}`}>
               <div className="section-header">
-                <h2>AI & AI Agent Protocols in Development</h2>
+                <h2>Where Agentic AI Protocols Are Being Developed</h2>
                 <p className="description">Active work across multiple standards bodies and organizations</p>
               </div>
-              
+
+              <div className="card">
+                <h3>IETF</h3>
+                <ul className="reading-list">
+                  <li><a href="https://datatracker.ietf.org/meeting/125/materials/minutes-125-catalist-202603180100-00" target="_blank" rel="noopener noreferrer">CATALIST BOF</a> — Coordinating Agent To Agent List of Efforts; formal WG chartering expected at IETF #126 (July 2026)</li>
+                  <li><a href="https://datatracker.ietf.org/doc/draft-ni-wimse-ai-agent-identity/" target="_blank" rel="noopener noreferrer">WIMSE WG</a> — workload identity applicability for AI agents</li>
+                  <li><a href="https://datatracker.ietf.org/doc/draft-klrc-aiagent-auth/" target="_blank" rel="noopener noreferrer">AI Agent Authentication & Authorization</a> (draft-klrc-aiagent-auth)</li>
+                  <li><a href="https://datatracker.ietf.org/wg/aipref/about/" target="_blank" rel="noopener noreferrer">AI Preferences (AIPREF)</a></li>
+                </ul>
+              </div>
+
+              <div className="card">
+                <h3>W3C</h3>
+                <ul className="reading-list">
+                  <li><a href="https://www.w3.org/groups/cg/agentprotocol/" target="_blank" rel="noopener noreferrer">AI Agent Protocol Community Group</a></li>
+                  <li><a href="https://www.w3.org/community/agent-identity/" target="_blank" rel="noopener noreferrer">Agent Identity Registry Protocol Community Group</a> (new, April 2026)</li>
+                  <li><a href="https://www.w3.org/community/ai-agent-memory-interop/" target="_blank" rel="noopener noreferrer">AI Agent Memory Interoperability Community Group</a> (new, May 2026)</li>
+                  <li><a href="https://www.w3.org/community/aikr/" target="_blank" rel="noopener noreferrer">AI KR Community Group</a></li>
+                </ul>
+              </div>
+
+              <div className="card">
+                <h3>OpenID Foundation</h3>
+                <ul className="reading-list">
+                  <li><a href="https://openid.net/cg/artificial-intelligence-identity-management-community-group/" target="_blank" rel="noopener noreferrer">AI Identity Management (AIIM) Community Group</a></li>
+                </ul>
+              </div>
+
+              <div className="card">
+                <h3>FIDO Alliance</h3>
+                <ul className="reading-list">
+                  <li><a href="https://fidoalliance.org/fido-alliance-to-develop-standards-for-trusted-ai-agent-interactions/" target="_blank" rel="noopener noreferrer">Agentic Authentication Technical Working Group</a> — secure delegation of actions to AI agents with phishing-resistant authentication</li>
+                  <li>Payments Technical Working Group — agent-initiated commerce standards (<a href="https://ap2-protocol.org/" target="_blank" rel="noopener noreferrer">Google AP2</a>, <a href="https://fidoalliance.org/fido-alliance-to-develop-standards-for-trusted-ai-agent-interactions/" target="_blank" rel="noopener noreferrer">Mastercard Verifiable Intent</a>)</li>
+                </ul>
+              </div>
+
               <div className="grid-2">
                 <div className="card">
-                  <h3>Standards Bodies</h3>
-                  <div className="stack">
-                    <p><strong>IETF:</strong> AI Preferences (AIPREF), Web Bot Authentication</p>
-                    <p><strong>W3C:</strong> AI Agent Protocol Community Group, AI KR</p>
-                    <p><strong>OpenID Foundation:</strong> AI Identity Management CG</p>
-                    <p><strong>Trust over IP:</strong> AI and Trust WG</p>
-                    <p><strong>Decentralized Identity Foundation:</strong> Trusted AI Agents</p>
-                  </div>
+                  <h3>Decentralized Identity Foundation (DIF)</h3>
+                  <ul className="reading-list">
+                    <li><a href="https://hackmd.io/I2BRY1EOSH-BzZ8a2SQvHw" target="_blank" rel="noopener noreferrer">Trusted AI Agents Working Group</a></li>
+                  </ul>
                 </div>
-                
+
                 <div className="card">
-                  <h3>Key Protocols</h3>
-                  <div className="protocol-list">
-                    <span className="badge accent">A2A</span>
-                    <span className="badge accent">MCP</span>
-                    <span className="badge accent">NLWeb</span>
-                    <span className="badge accent">NANDA</span>
-                    <span className="badge">Agentic Profiles</span>
-                    <span className="badge">Trust Spanning Protocol</span>
-                    <span className="badge">GNAP</span>
-                    <span className="badge">OAuth</span>
-                    <span className="badge">DIDs</span>
-                  </div>
+                  <h3>Trust Over IP Foundation</h3>
+                  <ul className="reading-list">
+                    <li><a href="https://trustoverip.org/" target="_blank" rel="noopener noreferrer">AI and Trust Working Group</a></li>
+                  </ul>
                 </div>
               </div>
-              
+
               <div className="card">
-                <h3>Collaborating Organizations</h3>
-                <p>We&apos;re actively working with these organizations to encourage participation:</p>
+                <h3>Linux Foundation</h3>
+                <ul className="reading-list">
+                  <li><a href="https://aaif.io/" target="_blank" rel="noopener noreferrer">Agentic AI Foundation (AAIF)</a> — stewards MCP, Goose, AGENTS.md</li>
+                  <li><a href="https://www.lfdecentralizedtrust.org/" target="_blank" rel="noopener noreferrer">LF Decentralized Trust</a></li>
+                </ul>
+              </div>
+
+              <div className="card">
+                <h3>Cloud Security Alliance (CSA)</h3>
+                <ul className="reading-list">
+                  <li><a href="https://cloudsecurityalliance.org/press-releases/2026/03/23/csa-securing-the-agentic-control-plane" target="_blank" rel="noopener noreferrer">CSAI Foundation</a> — securing the agentic control plane</li>
+                  <li>AARM (Autonomous Action Runtime Management) specification</li>
+                  <li>Agentic Trust Framework (ATF)</li>
+                </ul>
+              </div>
+
+              <div className="card">
+                <h3>Coalition for Secure AI (CoSAI) — OASIS</h3>
+                <ul className="reading-list">
+                  <li><a href="https://www.coalitionforsecureai.org/wp-content/uploads/2026/04/agentic-identity-and-access-control.pdf" target="_blank" rel="noopener noreferrer">Agentic Identity and Access Management</a></li>
+                  <li><a href="https://www.coalitionforsecureai.org/announcing-the-cosai-principles-for-secure-by-design-agentic-systems/" target="_blank" rel="noopener noreferrer">Principles for Secure-by-Design Agentic Systems</a></li>
+                </ul>
+              </div>
+
+              <div className="grid-2">
+                <div className="card">
+                  <h3>IEEE</h3>
+                  <ul className="reading-list">
+                    <li><a href="https://standards.ieee.org/ieee/3394/11377/" target="_blank" rel="noopener noreferrer">P3394</a> — Standard for Large Language Model Agent Interface</li>
+                    <li><a href="https://standards.ieee.org/ieee/3428/11489/" target="_blank" rel="noopener noreferrer">P3428</a> — Standard for LLM Agents in AI-Enabled Education</li>
+                  </ul>
+                </div>
+
+                <div className="card">
+                  <h3>NIST</h3>
+                  <ul className="reading-list">
+                    <li><a href="https://www.nist.gov/news-events/news/2026/02/announcing-ai-agent-standards-initiative-interoperable-and-secure" target="_blank" rel="noopener noreferrer">AI Agent Standards Initiative (CAISI)</a> — three pillars: industry standards, open-source protocols, fundamental research</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="grid-2">
+                <div className="card">
+                  <h3>ITU-T</h3>
+                  <ul className="reading-list">
+                    <li><a href="https://www.itu.int/en/ITU-T/studygroups/2025-2028/17/Pages/default.aspx" target="_blank" rel="noopener noreferrer">Study Group 17</a> — agentic AI security, digital identity for agentic AI</li>
+                  </ul>
+                </div>
+
+                <div className="card">
+                  <h3>Other</h3>
+                  <ul className="reading-list">
+                    <li><a href="https://projectnanda.org/" target="_blank" rel="noopener noreferrer">MIT Project NANDA</a></li>
+                    <li><a href="https://jtc1info.org/technology/subcommittees/ai/" target="_blank" rel="noopener noreferrer">ISO/IEC JTC 1 SC 42</a> — AI agent interoperability and governance</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="card">
+                <h3>Key Protocols</h3>
                 <div className="protocol-list">
-                  <span className="badge">Project NANDA</span>
-                  <span className="badge">AI Alliance</span>
-                  <span className="badge">Decentralized AI Agent Alliance</span>
-                  <span className="badge">First Person Project / H2H</span>
+                  <span className="badge accent"><a href="https://a2a-protocol.org/latest/" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'none'}}>A2A</a></span>
+                  <span className="badge accent"><a href="https://modelcontextprotocol.io/" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'none'}}>MCP</a></span>
+                  <span className="badge accent"><a href="https://github.com/microsoft/NLWeb" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'none'}}>NLWeb</a></span>
+                  <span className="badge"><a href="https://datatracker.ietf.org/doc/html/rfc9635" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'none'}}>GNAP</a></span>
+                  <span className="badge"><a href="https://oauth.net/" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'none'}}>OAuth</a></span>
+                  <span className="badge"><a href="https://trustoverip.github.io/tswg-tsp-specification/" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'none'}}>Trust Spanning Protocol</a></span>
+                  <span className="badge"><a href="https://www.w3.org/TR/did-core/" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'none'}}>DIDs</a></span>
+                  <span className="badge"><a href="https://github.com/agentic-profile/agentic-profile-a2a" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'none'}}>Agentic Profiles</a></span>
+                  <span className="badge"><a href="https://kyapay.org/" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'none'}}>KYAPay Protocol</a></span>
+                  <span className="badge"><a href="https://www.aauth.dev/" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'none'}}>AAuth</a></span>
+                  <span className="badge"><a href="https://datatracker.ietf.org/doc/draft-eckert-catalist-acip-framework/" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'none'}}>ACIP</a></span>
+                  <span className="badge"><a href="https://ap2-protocol.org/" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'none'}}>AP2</a></span>
                 </div>
               </div>
             </div>
@@ -441,44 +530,44 @@ export default function Home() {
             <div className={`tab-content ${activeTab === 'reading' ? 'active' : ''}`}>
               <div className="section-header">
                 <h2>Suggested Reading</h2>
-                <p className="description">When people registered we asked folks for suggested reading for attendees before the event. Here is the list.</p>
+                <p className="description">Essential reading for understanding the current state of agentic AI protocols and identity infrastructure</p>
               </div>
-              
-              <div className="reading-grid">
-                <div className="card">
-                  <h3>Foundational</h3>
-                  <ul className="reading-list">
-                    <li><a href="https://arxiv.org/pdf/2504.16736" target="_blank" rel="noopener noreferrer">A Survey of AI Agent Protocols</a></li>
-                    <li><a href="https://projectvrm.org/2025/08/28/on-being-agentic/" target="_blank" rel="noopener noreferrer">On Being Agentic</a></li>
-                    <li><a href="https://arxiv.org/abs/2506.12003" target="_blank" rel="noopener noreferrer">Upgrade or Switch: Do We Need a Next-Gen Trusted Architecture for the Internet of AI Agents?</a></li>
-                  </ul>
-                </div>
-                
-                <div className="card">
-                  <h3>Identity & Trust Infrastructure</h3>
-                  <ul className="reading-list">
-                    <li><a href="https://sphericalcowconsulting.com/2025/08/26/bot-incentives/" target="_blank" rel="noopener noreferrer">Bot or Not? Why Incentives Matter More Than Identity</a></li>
-                    <li><a href="https://sphericalcowconsulting.com/2025/09/02/roads-robots-and-responsibility/" target="_blank" rel="noopener noreferrer">Roads, Robots, and Responsibility: Why Agentic AI Needs Identity Infrastructure</a></li>
-                    <li><a href="https://sphericalcowconsulting.com/2025/09/09/ai-permissions-vs-human-permissions/" target="_blank" rel="noopener noreferrer">AI Permissions vs. Human Permissions: What Really Changes?</a></li>
-                    <li><a href="https://datatracker.ietf.org/doc/draft-oauth-ai-agents-on-behalf-of-user/" target="_blank" rel="noopener noreferrer">Draft OAuth AI Agents on Behalf of User</a></li>
-                  </ul>
-                </div>
-              </div>
-              
-              <div className="card reading-full-width">
-                <h3>Further Reading</h3>
+
+              <div className="card">
+                <h3>Identity & Protocols for Agentic AI</h3>
                 <ul className="reading-list">
-                  <li><a href="https://code.sgo.to/2014/09/05/ws-rest-2014-keynote.html" target="_blank" rel="noopener noreferrer">WS-REST 2014 Keynote</a> - <em>Historical perspective on HTTP, APIs and identity</em></li>
-                  <li><a href="http://collab101.org/" target="_blank" rel="noopener noreferrer">Collab101.org</a> - <em>Personal vlog and insights</em></li>
-                  <li><a href="https://firstperson.network/" target="_blank" rel="noopener noreferrer">The First Person Project White Paper</a></li>
-                  <li><a href="https://gluufederation.medium.com/" target="_blank" rel="noopener noreferrer">Gluu Federation Articles</a></li>
-                  <li><a href="https://github.com/dickhardt/email-verification-protocol" target="_blank" rel="noopener noreferrer">Email Verifications Protocol</a></li>
+                  <li><a href="https://arxiv.org/abs/2604.23280" target="_blank" rel="noopener noreferrer">AI Identity: Standards, Gaps, and Research Directions for AI Agents</a> — comprehensive survey of where identity standards stand for agentic AI (April 2026)</li>
+                  <li><a href="https://arxiv.org/abs/2504.16736" target="_blank" rel="noopener noreferrer">A Survey of AI Agent Protocols</a> — systematic classification of existing agent protocols</li>
+                  <li><a href="https://arxiv.org/abs/2603.24775" target="_blank" rel="noopener noreferrer">AIP: Agent Identity Protocol for Verifiable Delegation Across MCP and A2A</a> — bridging identity across the two dominant agent protocols</li>
+                  <li><a href="https://arxiv.org/abs/2506.12003" target="_blank" rel="noopener noreferrer">Upgrade or Switch: Do We Need a Next-Gen Trusted Architecture for the Internet of AI Agents?</a> — analysis of whether existing DNS/PKI infrastructure can scale to autonomous agents</li>
+                  <li><a href="https://openid.net/oidf-responds-to-nist-on-ai-agent-security/" target="_blank" rel="noopener noreferrer">OIDF Response to NIST on AI Agent Security</a> — OpenID Foundation&apos;s recommendations on securing agent systems</li>
+                  <li><a href="https://datatracker.ietf.org/doc/draft-oauth-ai-agents-on-behalf-of-user/" target="_blank" rel="noopener noreferrer">Draft: OAuth AI Agents on Behalf of User</a> — IETF draft on OAuth delegation for agents</li>
                 </ul>
               </div>
-              
+
+              <div className="card">
+                <h3>Agency, Identity Infrastructure & Perspectives</h3>
+                <ul className="reading-list">
+                  <li><a href="https://projectvrm.org/2025/08/28/on-being-agentic/" target="_blank" rel="noopener noreferrer">On Being Agentic</a> — Doc Searls&apos; framework for agency</li>
+                  <li><a href="https://doc.searls.com/2026/05/10/personal-agentry/" target="_blank" rel="noopener noreferrer">Personal Agentry</a> — Doc Searls on why agency must be individual, not just corporate</li>
+                  <li><a href="https://doc.searls.com/2026/04/02/toward-a-human-future-for-ai/" target="_blank" rel="noopener noreferrer">Toward a Human Future for AI</a> — Doc Searls on preserving human agency in the agentic era</li>
+                  <li><a href="https://sphericalcowconsulting.com/2025/09/02/roads-robots-and-responsibility/" target="_blank" rel="noopener noreferrer">Roads, Robots, and Responsibility: Why Agentic AI Needs Identity Infrastructure</a> — the case for identity systems in AI</li>
+                  <li><a href="https://sphericalcowconsulting.com/2025/09/09/ai-permissions-vs-human-permissions/" target="_blank" rel="noopener noreferrer">AI Permissions vs. Human Permissions: What Really Changes?</a> — comparing permission models across contexts</li>
+                </ul>
+              </div>
+
+              <div className="card">
+                <h3>Projects & Specifications</h3>
+                <ul className="reading-list">
+                  <li><a href="https://firstperson.network/" target="_blank" rel="noopener noreferrer">The First Person Project</a> — personal identity systems</li>
+                  <li><a href="https://github.com/dickhardt/email-verification-protocol" target="_blank" rel="noopener noreferrer">Email Verification Protocol</a> — Dick Hardt&apos;s protocol specification</li>
+                  <li><a href="https://gluufederation.medium.com/" target="_blank" rel="noopener noreferrer">Gluu Federation Articles</a> — federation-related articles</li>
+                </ul>
+              </div>
+
               <div className="callout">
                 <strong>📚 Additional Resources</strong><br />
-                These readings provide essential context for understanding the current state of agentic AI protocols and the challenges we'll be addressing at the workshop.
+                Please share additional reading you recommend
               </div>
             </div>
 
