@@ -296,7 +296,7 @@ export default function Home() {
                     Notes from all sessions will be collected and made publicly available to advance the field.
                   </div>
 
-                  <p style={{marginTop: 'var(--space-4)'}}>You can see the <a href="/bop/1.pdf" target="_blank" rel="noopener noreferrer">Book of Proceedings of AIW #1 Here</a>. Visit the <a href="/events/1">legacy AIW #1 site</a> for more information.</p>
+                  <p style={{marginTop: 'var(--space-4)'}}>You can see the <a href="/bop/1.pdf" target="_blank" rel="noopener noreferrer">Book of Proceedings of AIW #1</a> and <a href="/bop/2.pdf" target="_blank" rel="noopener noreferrer">Book of Proceedings of AIW #2</a>. Visit the <a href="/events/1">AIW #1 archive</a> and <a href="/events/2">AIW #2 archive</a> for more information.</p>
                 </div>
               </div>
             </div>
