@@ -92,7 +92,7 @@ export function SiteHeader({ event, activeNav = 'about', onNavClick }: SiteHeade
             </a>
           ) : (
             <a
-              href="/bop/1.pdf"
+              href={`/bop/${event.eventId}.pdf`}
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary"
