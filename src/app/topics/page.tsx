@@ -94,79 +94,23 @@ export default function TopicsPage() {
               </div>
 
               <div className="callout">
-                <strong>📚 Recommended Reading</strong>
-                <br />
-                We ask attendees when they register for suggestions. Here are some recommended resources:
+                <strong>📋 Proposed Topics</strong>
                 <ul style={{ marginTop: 'var(--space-3)', paddingLeft: 'var(--space-6)' }}>
-                  <li>
-                    <a href="#" target="_blank" rel="noopener noreferrer">
-                      A Survey of AI Agent Protocols
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" target="_blank" rel="noopener noreferrer">
-                      On Being Agentic
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" target="_blank" rel="noopener noreferrer">
-                      Upgrade or Switch: Do We Need a Next-Gen Trusted Architecture for the Internet of AI Agents?
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://code.sgo.to" target="_blank" rel="noopener noreferrer">
-                      HTTP, APIs and identity articles at code.sgo.to
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://code.sgo.to/2014/09/05/ws-rest-2014-keynote.html"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      WS-REST 2014 Keynote
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://collab101.org" target="_blank" rel="noopener noreferrer">
-                      Collaboration vlog at collab101.org
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" target="_blank" rel="noopener noreferrer">
-                      Bot or Not? Why Incentives Matter More Than Identity
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" target="_blank" rel="noopener noreferrer">
-                      Roads, Robots, and Responsibility: Why Agentic AI Needs Identity Infrastructure
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" target="_blank" rel="noopener noreferrer">
-                      AI Permissions vs. Human Permissions: What Really Changes?
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://gluufederation.medium.com/" target="_blank" rel="noopener noreferrer">
-                      Articles at gluufederation.medium.com
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" target="_blank" rel="noopener noreferrer">
-                      Draft OAuth AI Agents on Behalf of User
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://firstperson.network" target="_blank" rel="noopener noreferrer">
-                      The First Person Project White Paper at firstperson.network
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" target="_blank" rel="noopener noreferrer">
-                      Email Verifications Protocol
-                    </a>
-                  </li>
+                  <li>Newest state of AI agents</li>
+                  <li>Secure mandates for agent chains: carrying revocable, auditable authority across MCP and A2A hops</li>
+                  <li>Agent identity is not enough: the authority, memory, and intent layer above it</li>
+                  <li>Behavioral coherence as a runtime trust signal (trust asymmetry and the completion drive)</li>
+                  <li>Human authority at machine speed: execution-time consent and revocation</li>
+                  <li>Sovereign identity for organizations: what agent authority looks like when AI joins the org chart</li>
+                  <li>Keeping mandates sovereignty-preserving, not surveillance</li>
+                  <li>Progress on A2A, AAuth, OAuth support for agentic-driven flows</li>
+                  <li>OAuth-related metadata standards evolution</li>
+                  <li>Implications to JWTs and claims for supporting agentic workflows</li>
+                  <li>Workload-based access grants and flows</li>
+                  <li>Where agent-to-agent and agent-to-tool authorization is actually heading: GNAP and OAuth extensions for agents, AuthZEN for fine-grained authorization, capability narrowing and revocation across delegation hops, KERI/ACDC and SEDI for cryptographic authority</li>
+                  <li>How MCP and A2A are converging on identity and mandate</li>
+                  <li>How the community keeps a human, a company, or a nation the source of authority at execution time as agents chain calls across tools and organizations</li>
+                  <li>How trust and behavioral signals can travel with an agent without becoming surveillance</li>
                 </ul>
               </div>
 
@@ -184,13 +128,7 @@ export default function TopicsPage() {
 
       <footer className="site-footer">
         <div className="container">
-          <p>&copy; 2025 Agentic Internet Workshop. Hosted by IIW Foundation.</p>
-          <p>
-            <strong>Event Hosts:</strong> Andor Kesselman & Kaliya Young
-          </p>
-          <p>
-            <strong>IIW Co-Founders:</strong> Phil Windley, Doc Searls
-          </p>
+          <p>&copy; 2026 Agentic Internet Workshop. Hosted by IIW Foundation.</p>
         </div>
       </footer>
     </>
