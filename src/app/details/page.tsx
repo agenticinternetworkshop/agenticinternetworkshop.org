@@ -64,15 +64,15 @@ export default function DetailsPage() {
             </div>
 
             <div className="details-content">
-              <p><em>An Internet Identity Workshop Inspired Event, Hosted by the IIW Foundation (IIW #42 is April 28-30)</em></p>
+              <p><em>An Internet Identity Workshop Inspired Event, Hosted by the IIW Foundation (IIW #43 is November 3-5)</em></p>
 
               <p>The AgenticAI space is developing rapidly. Significant innovation is happening around protocols for how agents connect to each other, people, organizations, services, and things.</p>
 
-              <p>This will be our 2nd workshop and our goal is to bring together individuals and organizations working on Agentic AI Protocols together to advance the field in a productive and generative manner.</p>
+              <p>This will be our Third workshop and our goal is to bring together individuals and organizations working on Agentic AI Protocols together to advance the field in a productive and generative manner.</p>
 
               <div className="callout" style={{marginTop: 'var(--space-6)', marginBottom: 'var(--space-6)'}}>
-                <strong>🔗 Interoperability Day</strong><br />
-                We are considering having an Interoperability day preceeding the workshop on April 30th in the same venue in parallel with the last day of IIW.
+                <strong>🔗 Interoperability Day November 5th</strong><br />
+                We are hosting an Interoperability Day in parallel with Day 3 of the 43rd Internet Identity Workshop in the same venue. When you register you can express interest in participating.
               </div>
               
               <h2>What is the value of participation?</h2>
@@ -87,7 +87,7 @@ export default function DetailsPage() {
               
               <p>The agenda will be set in the opening circle by the people who are gathered at the event using a process called Open Space Technology. Anyone in attendance can put a topic on the agenda.</p>
 
-              <p><em>Notes will be collected in all sessions and made publicly available. You can read the <a href="/bop/1.pdf" target="_blank" rel="noopener noreferrer">Book of Proceedings from AWI #1</a>. Visit the <a href="/events/1">legacy AIW #1 site</a> for more information about our first event.</em></p>
+              <p><em>Notes will be collected in all sessions and made publicly available. You can read the <a href="/bop/1.pdf" target="_blank" rel="noopener noreferrer">Book of Proceedings from AIW #1</a> and the <a href="/bop/2.pdf" target="_blank" rel="noopener noreferrer">Book of Proceedings from AIW #2</a>. Visit the <a href="/events/1">legacy AIW #1 site</a> for more information about our first event.</em></p>
               
               <h2>Places where AI & AI Agent Protocols are being worked on:</h2>
               <div className="protocol-grid">
@@ -120,13 +120,6 @@ export default function DetailsPage() {
                 </div>
               </div>
               
-              <h2>Recommended Reading</h2>
-              <ul className="reading-list">
-                <li><a href="https://arxiv.org/abs/2504.16736" target="_blank" rel="noopener noreferrer">A Survey of AI Agent Protocols</a> - Comprehensive analysis of existing agent protocols with systematic classification</li>
-                <li><a href="https://projectvrm.org/2025/08/28/on-being-agentic/" target="_blank" rel="noopener noreferrer">On Being Agentic</a> - Doc Searls' perspective on personal AI and agency in the agentic web</li>
-                <li><a href="https://arxiv.org/abs/2506.12003" target="_blank" rel="noopener noreferrer">Upgrade or Switch: Do We Need a Next-Gen Trusted Architecture for the Internet of AI Agents?</a></li>
-                <li><em>(please share additional reading you recommend)</em></li>
-              </ul>
               
               <h2>Tentative Schedule</h2>
               <div className="schedule-table-wrapper">
@@ -194,26 +187,33 @@ export default function DetailsPage() {
               </div>
               
               <h2>Cost</h2>
-              <p>This event is for those implementing and creating protocols for AgenticAI. We are asking attendees to submit a link of or description about their work on protocols that are relevant to AgenticAI.</p>
+              <p>This event is for those implementing and creating protocols for AgenticAI.</p>
               <div className="pricing-details">
                 <div className="price-item">
-                  <div className="price-amount">$150</div>
-                  <div className="price-description">Independent / Startups<br/><small>For those who can provide reference to your work in the AgentAI field</small></div>
+                  <div className="price-amount">$150 / $175</div>
+                  <div className="price-description">Independent / Startups<br/><small>Early Bird (until October) / Regular</small></div>
                 </div>
                 <div className="price-item">
-                  <div className="price-amount">$300</div>
-                  <div className="price-description">Corporate / Regular<br/><small>Venture Capitalists, etc. - people who want to observe</small></div>
+                  <div className="price-amount">$275 / $350</div>
+                  <div className="price-description">Corporate / Regular<br/><small>Early Bird (until October 1) / Regular</small></div>
                 </div>
               </div>
+              {event.details.registrationUrl && (
+                <p style={{marginTop: 'var(--space-4)'}}>
+                  <a href={event.details.registrationUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                    Register on Eventbrite
+                  </a>
+                </p>
+              )}
 
               <div className="callout" style={{marginTop: 'var(--space-6)'}}>
                 <strong>📝 Number of attendees Upto 300</strong>
               </div>
               
-              <h2>Event Hosts & Organizers</h2>
+              <h2>Event Co-Conveners</h2>
               <div className="organizers">
-                <p><strong>Event Hosts:</strong> Andor Kesselman, Kaliya Young</p>
-                <p><strong>IIW Co-Founders:</strong> Phil Windley, Doc Searls</p>
+                <p>Kaliya Young, Mike Prince, Ken Adler, Andor Kesselman, Phil Windley</p>
+                <p>This event is hosted by the IIW Foundation. IIW was co-founded by Phil Windley, Doc Searls and Kaliya Young.</p>
               </div>
               
               <h2>Location</h2>
@@ -257,9 +257,7 @@ export default function DetailsPage() {
 
       <footer className="site-footer">
         <div className="container">
-          <p>&copy; 2025 Agentic Internet Workshop. Hosted by IIW Foundation.</p>
-          <p><strong>Event Hosts:</strong> Andor Kesselman & Kaliya Young</p>
-          <p><strong>IIW Co-Founders:</strong> Phil Windley, Doc Searls</p>
+          <p>&copy; 2026 Agentic Internet Workshop. Hosted by IIW Foundation.</p>
         </div>
       </footer>
     </>

@@ -219,7 +219,7 @@ export default function Home() {
                   </div>
                 )}
                 <a href={event.details.registrationUrl} className="btn btn-primary" target="_blank" rel="noopener noreferrer">Register Now</a>
-                <p className="small">Early Bird pricing starts at $125 for independents/startups (until Sept 15)</p>
+                <p className="small">Early Bird pricing starts at $150 for Independent/Startups Until October 1</p>
               </div>
             ) : (
               <p className="mw-tight"><em>Registration opens soon. Check back for details.</em></p>
@@ -368,26 +368,20 @@ export default function Home() {
                 <div className="card price-card">
                   <h3>Independent / Startups</h3>
                   <div className="price">
-                    <div>Early Bird (until Sept 15): $125</div>
-                    <div>Regular: $150</div>
+                    <div>Early Bird (until October): $150</div>
+                    <div>Regular: $175</div>
                   </div>
-                  <p className="note">For those who can provide reference to your work in the agentic AI field</p>
                 </div>
 
                 <div className="card price-card">
                   <h3>Corporate / Regular</h3>
                   <div className="price">
-                    <div>Early Bird (until Sept 15): $270</div>
-                    <div>Regular: $300</div>
+                    <div>Early Bird (until October 1): $275</div>
+                    <div>Regular: $350</div>
                   </div>
-                  <p className="note">For those who can provide reference to your work in the agentic AI field</p>
                 </div>
               </div>
 
-              <div className="callout">
-                <strong>📋 Admission Requirements</strong><br />
-                Registration requires a pointer to a document about your current work in the AI Agent and Protocol space. This ensures all participants can meaningfully contribute to discussions.
-              </div>
             </div>
 
             {/* Protocols Tab */}
@@ -649,7 +643,7 @@ export default function Home() {
 
               <div className="callout">
                 <strong>📧 Contact Us</strong><br />
-                Interested in sponsoring? Contact us at <a href="mailto:phil@windley.org">phil@windley.org</a> and <a href="mailto:kaliya@identitywoman.net">kaliya@identitywoman.net</a> to discuss sponsorship opportunities.
+                Interested in sponsoring? Contact us at <a href="mailto:kaliya@identitywoman.net">kaliya@identitywoman.net</a> to discuss sponsorship opportunities.
               </div>
             </div>
 
@@ -677,15 +671,15 @@ export default function Home() {
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="done">
+                    <tr>
                       <td>Breakfast</td>
-                      <td>Done</td>
+                      <td>1</td>
                       <td>$1,750</td>
                       <td>1</td>
                     </tr>
-                    <tr className="done">
+                    <tr>
                       <td>Lunch</td>
-                      <td>Done</td>
+                      <td>1</td>
                       <td>$3,750</td>
                       <td>2</td>
                     </tr>
@@ -695,15 +689,15 @@ export default function Home() {
                       <td>$1,500</td>
                       <td>1</td>
                     </tr>
-                    <tr className="done">
+                    <tr>
                       <td>Barista</td>
-                      <td>Done</td>
+                      <td>1</td>
                       <td>$2,000</td>
                       <td>1</td>
                     </tr>
-                    <tr className="done">
+                    <tr>
                       <td>Wifi</td>
-                      <td>Done</td>
+                      <td>1</td>
                       <td>$1,500</td>
                       <td>1</td>
                     </tr>
@@ -728,10 +722,10 @@ export default function Home() {
                   </tbody>
                 </table>
               </div>
-              
+
               <div className="callout">
                 <strong>📧 Contact Us</strong><br />
-                Interested in sponsoring? Contact us at <a href="mailto:phil@windley.org">phil@windley.org</a> and <a href="mailto:kaliya@identitywoman.net">kaliya@identitywoman.net</a> to discuss sponsorship opportunities.
+                Interested in sponsoring? Contact us at <a href="mailto:kaliya@identitywoman.net">kaliya@identitywoman.net</a> to discuss sponsorship opportunities.
               </div>
             </div>
           </div>
@@ -791,8 +785,6 @@ export default function Home() {
       <footer className="site-footer">
         <div className="container">
           <p>&copy; 2026 Agentic Internet Workshop. Hosted by IIW Foundation.</p>
-          <p><strong>Event Conveners:</strong> Andor Kesselman, Rohit Khare, Sarah Cecchetti, Mike Prince, Ken Adler, Kaliya Young, & Claudrey Hepburn <em>(an AI agent studying AI agents)</em></p>
-          <p><strong>AIW Co-Founders:</strong> Andor Kesselman, Kaliya Young, Phil Windley, and Doc Searls</p>
         </div>
       </footer>
     </>
