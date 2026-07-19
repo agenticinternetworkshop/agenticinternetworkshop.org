@@ -187,15 +187,16 @@ export default function DetailsPage() {
               </div>
               
               <h2>Cost</h2>
-              <p>This event is for those implementing and creating protocols for AgenticAI.</p>
               <div className="pricing-details">
                 <div className="price-item">
-                  <div className="price-amount">$150 / $175</div>
-                  <div className="price-description">Independent / Startups<br/><small>Early Bird (until October) / Regular</small></div>
+                  <div className="price-description"><strong>Independent/Startups</strong></div>
+                  <div className="price-amount">$150/$175</div>
+                  <div className="price-description"><small>Early Bird (Until Oct 1)/Regular</small></div>
                 </div>
                 <div className="price-item">
-                  <div className="price-amount">$275 / $350</div>
-                  <div className="price-description">Corporate / Regular<br/><small>Early Bird (until October 1) / Regular</small></div>
+                  <div className="price-description"><strong>Corporate/Regular</strong></div>
+                  <div className="price-amount">$275/$350</div>
+                  <div className="price-description"><small>Early Bird (Until Oct 1)/Regular</small></div>
                 </div>
               </div>
               {event.details.registrationUrl && (
@@ -206,8 +207,8 @@ export default function DetailsPage() {
                 </p>
               )}
 
-              <div className="callout" style={{marginTop: 'var(--space-6)'}}>
-                <strong>📝 Number of attendees Upto 300</strong>
+              <div className="callout" style={{marginTop: 'var(--space-6)', maxWidth: '400px'}}>
+                <strong>📝 Number of attendees up to 300</strong>
               </div>
               
               <h2>Event Co-Conveners</h2>

@@ -60,9 +60,6 @@ export default function WhosComingPage() {
           <div className="container">
             <div className="section-header">
               <h1>Who&apos;s Coming — AIW #{event.eventNumber}</h1>
-              <p className="description">
-                Organizations and companies registered for AIW #{event.eventNumber} ({event.date}).
-              </p>
             </div>
 
             <div className="whos-coming-content">
