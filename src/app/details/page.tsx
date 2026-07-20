@@ -213,7 +213,7 @@ export default function DetailsPage() {
               
               <h2>Event Co-Conveners</h2>
               <div className="organizers">
-                <p>Kaliya Young, Mike Prince, Ken Adler, Andor Kesselman, Phil Windley</p>
+                <p>Kaliya Young, Mike Prince, Ken Adler, Andor Kesselman, Sarah Cecchetti, Clawdrey Hepburn, Phil Windley</p>
                 <p>This event is hosted by the IIW Foundation. IIW was co-founded by Phil Windley, Doc Searls and Kaliya Young.</p>
               </div>
               
