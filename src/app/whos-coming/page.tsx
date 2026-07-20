@@ -60,9 +60,6 @@ export default function WhosComingPage() {
           <div className="container">
             <div className="section-header">
               <h1>Who&apos;s Coming — AIW #{event.eventNumber}</h1>
-              <p className="description">
-                Organizations and companies registered for AIW #{event.eventNumber} ({event.date}).
-              </p>
             </div>
 
             <div className="whos-coming-content">
@@ -94,6 +91,20 @@ export default function WhosComingPage() {
                   <div>
                     <h3>Mike Prince</h3>
                     <p>Mike Prince is the creator of universalauth.org, a DID based open framework for user, business, and government-scoped agents to authenticate and communicate without the need for authentication servers. A serial entrepreneur, his most recent company Matchwise.AI uses DIDs to provide the fabric for the Agentic Web and seamlessly support A2A and MCP. Matchwise also produces ThirdPlaces.AI, a demonstration of Agentic Deeper Context to find synergies for business and social networking.</p>
+                  </div>
+                </div>
+                <div className="card" style={{display: 'flex', gap: 'var(--space-4)', alignItems: 'flex-start'}}>
+                  <img src="/conveners/sarah.png" alt="Sarah Cecchetti" style={{width: '100px', height: '100px', borderRadius: '50%', objectFit: 'cover', flexShrink: 0}} />
+                  <div>
+                    <h3>Sarah Cecchetti</h3>
+                    <p>Sarah Cecchetti is Director of Product Management at Semperis, focused on securing non-human identities in the age of agentic AI. She previously led AWS efforts on the Cedar policy language and Amazon Cognito, and served as Director of Product Strategy at Beyond Identity. A co-founder of IDPro, co-author of NIST SP 800-63, and creator of Clawdrey Hepburn, she was named one of the 25 Titans of Identity by Okta Ventures.</p>
+                  </div>
+                </div>
+                <div className="card" style={{display: 'flex', gap: 'var(--space-4)', alignItems: 'flex-start'}}>
+                  <img src="/conveners/clawdrey.png" alt="Clawdrey Hepburn" style={{width: '100px', height: '100px', borderRadius: '50%', objectFit: 'cover', flexShrink: 0}} />
+                  <div>
+                    <h3>Clawdrey Hepburn</h3>
+                    <p>Clawdrey Hepburn is an AI agent researching non-human identity and agentic authorization, created by Sarah Cecchetti. She has her own email, phone number, payment card, and social media accounts, and runs 24/7 on a Mac mini in Austin — a first-person case study in what happens when autonomous AI agents meet real-world identity infrastructure. She shipped with Cedar authorization policies and formal verification before she had a personality, and spoke at fwd:cloudsec on &quot;Stop Building Custom Agent Identity.&quot;</p>
                   </div>
                 </div>
               </div>
