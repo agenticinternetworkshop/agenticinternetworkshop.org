@@ -80,6 +80,13 @@ export default function WhosComingPage() {
                   </div>
                 </div>
                 <div className="card" style={{display: 'flex', gap: 'var(--space-4)', alignItems: 'flex-start'}}>
+                  <img src="/conveners/phil.jpg" alt="Phil Windley" style={{width: '100px', height: '100px', borderRadius: '50%', objectFit: 'cover', flexShrink: 0}} />
+                  <div>
+                    <h3>Phil Windley</h3>
+                    <p>Phil Windley is a co-founder of the Agentic Internet Workshop and the Internet Identity Workshop. He is the author of <em>Learning Digital Identity</em> (O&apos;Reilly, 2023) and a longtime advocate for open, decentralized identity systems. Phil was CIO for the State of Utah, founded Kynetx, and served as a professor of computer science at Brigham Young University. He writes about digital identity, governance, and the future of the internet at windley.com.</p>
+                  </div>
+                </div>
+                <div className="card" style={{display: 'flex', gap: 'var(--space-4)', alignItems: 'flex-start'}}>
                   <img src="/conveners/ken.jpg" alt="Ken Adler" style={{width: '100px', height: '100px', borderRadius: '50%', objectFit: 'cover', flexShrink: 0}} />
                   <div>
                     <h3>Ken Adler</h3>
