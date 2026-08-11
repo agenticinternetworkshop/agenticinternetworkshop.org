@@ -618,7 +618,7 @@ export const events: Record<string, Event> = {
         name: 'Beltic',
         tier: 'Barista',
         logoUrl: '/sponsors/beltic.svg',
-        websiteUrl: '#',
+        websiteUrl: 'https://beltic.com',
         description: 'Barista Sponsor',
         isAvailable: false
       },
