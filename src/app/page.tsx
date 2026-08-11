@@ -689,10 +689,10 @@ export default function Home() {
                       <td>$1,500</td>
                       <td>1</td>
                     </tr>
-                    <tr>
+                    <tr className="done">
                       <td>Barista</td>
-                      <td>1</td>
-                      <td>$2,000</td>
+                      <td>SOLD</td>
+                      <td>—</td>
                       <td>1</td>
                     </tr>
                     <tr>
