@@ -615,12 +615,12 @@ export const events: Record<string, Event> = {
       },
       {
         id: 'sponsor-aiw3-4',
-        name: 'Barista Sponsor',
+        name: 'Beltic',
         tier: 'Barista',
-        logoUrl: '/sponsors/placeholder.png',
-        websiteUrl: '#',
+        logoUrl: '/sponsors/beltic.svg',
+        websiteUrl: 'https://beltic.com',
         description: 'Barista Sponsor',
-        isAvailable: true
+        isAvailable: false
       },
       {
         id: 'sponsor-aiw3-5',
