@@ -583,7 +583,150 @@ export const events: Record<string, Event> = {
       zipCode: '94043'
     },
     status: 'current',
-    topics: [],
+    topics: [
+      {
+        id: 'aiw3-topic-1',
+        title: 'Agent Identity & Credentials',
+        description:
+          'Topics include: Agent identity using verifiable credentials and DIDs, Non-human agent provenance and accountability, What does the "relying party" look like when it’s an agent, not a human?, Extending OpenID4VP and wallet architectures to agent-to-agent flows, Proof of control and verified credentials for personal agents, What should an agent disclose about the model behind it?, If a service could ask one thing about the model powering an agent, what should it be?, Should agent credentials be ephemeral or persistent?, Who signs the ID — the provider, the deployer, or both?, Agent identity is not enough: the authority, memory, and intent layer above it, Sovereign identity for organizations: what agent authority looks like when AI joins the org chart',
+        bullets: [
+          'Agent identity using verifiable credentials and DIDs',
+          'Non-human agent provenance and accountability',
+          'What does the "relying party" look like when it’s an agent, not a human?',
+          'Extending OpenID4VP and wallet architectures to agent-to-agent flows',
+          'Proof of control and verified credentials for personal agents',
+          'What should an agent disclose about the model behind it?',
+          'If a service could ask one thing about the model powering an agent, what should it be?',
+          'Should agent credentials be ephemeral or persistent?',
+          'Who signs the ID — the provider, the deployer, or both?',
+          'Agent identity is not enough: the authority, memory, and intent layer above it',
+          'Sovereign identity for organizations: what agent authority looks like when AI joins the org chart'
+        ],
+        category: 'Identity & Privacy'
+      },
+      {
+        id: 'aiw3-topic-2',
+        title: 'Delegation & Authorization',
+        description:
+          'Topics include: Agent-to-agent delegation without impersonation, GNAP vs. OAuth patterns for agent authorization, Cryptographic proof of delegation for AI agents, Enforcing least-privilege at the tool-call layer, How intent and obligations travel alongside A2A / MCP calls, Capability-based vs. policy-based approaches for delegation, Does the ID carry authorization, or point at it?, Can identity and authorization stay distinct and still interoperate?, Secure mandates for agent chains: carrying revocable, auditable authority across MCP and A2A hops, Human authority at machine speed: execution-time consent and revocation, Keeping mandates sovereignty-preserving, not surveillance, Progress on A2A, AAuth, OAuth support for agentic-driven flows, OAuth-related metadata standards evolution, Implications to JWTs and claims for supporting agentic workflows, Workload-based access grants and flows, Where agent-to-agent and agent-to-tool authorization is actually heading: GNAP and OAuth extensions for agents, AuthZEN for fine-grained authorization, capability narrowing and revocation across delegation hops, KERI/ACDC and SEDI for cryptographic authority, How the community keeps a human, a company, or a nation the source of authority at execution time as agents chain calls across tools and organizations',
+        bullets: [
+          'Agent-to-agent delegation without impersonation',
+          'GNAP vs. OAuth patterns for agent authorization',
+          'Cryptographic proof of delegation for AI agents',
+          'Enforcing least-privilege at the tool-call layer',
+          'How intent and obligations travel alongside A2A / MCP calls',
+          'Capability-based vs. policy-based approaches for delegation',
+          'Does the ID carry authorization, or point at it?',
+          'Can identity and authorization stay distinct and still interoperate?',
+          'Secure mandates for agent chains: carrying revocable, auditable authority across MCP and A2A hops',
+          'Human authority at machine speed: execution-time consent and revocation',
+          'Keeping mandates sovereignty-preserving, not surveillance',
+          'Progress on A2A, AAuth, OAuth support for agentic-driven flows',
+          'OAuth-related metadata standards evolution',
+          'Implications to JWTs and claims for supporting agentic workflows',
+          'Workload-based access grants and flows',
+          'Where agent-to-agent and agent-to-tool authorization is actually heading: GNAP and OAuth extensions for agents, AuthZEN for fine-grained authorization, capability narrowing and revocation across delegation hops, KERI/ACDC and SEDI for cryptographic authority',
+          'How the community keeps a human, a company, or a nation the source of authority at execution time as agents chain calls across tools and organizations'
+        ],
+        category: 'Technical Protocols'
+      },
+      {
+        id: 'aiw3-topic-3',
+        title: 'Trust Frameworks & Verification',
+        description:
+          'Topics include: How a receiving agent verifies a presenting agent is authorized to act on behalf of a person or organization, Cryptographic trust decisions without human-in-the-loop consent, Trust boundaries and threat modeling for multi-agent systems, Trust registries and registries of registries, Thin ID with a registry lookup, or fat ID that carries everything?, How do you stop an agent ID from being replayed by a malicious service?, How do two different agent ID schemes recognize each other?, Behavioral coherence as a runtime trust signal (trust asymmetry and the completion drive), How trust and behavioral signals can travel with an agent without becoming surveillance',
+        bullets: [
+          'How a receiving agent verifies a presenting agent is authorized to act on behalf of a person or organization',
+          'Cryptographic trust decisions without human-in-the-loop consent',
+          'Trust boundaries and threat modeling for multi-agent systems',
+          'Trust registries and registries of registries',
+          'Thin ID with a registry lookup, or fat ID that carries everything?',
+          'How do you stop an agent ID from being replayed by a malicious service?',
+          'How do two different agent ID schemes recognize each other?',
+          'Behavioral coherence as a runtime trust signal (trust asymmetry and the completion drive)',
+          'How trust and behavioral signals can travel with an agent without becoming surveillance'
+        ],
+        category: 'Identity & Privacy'
+      },
+      {
+        id: 'aiw3-topic-4',
+        title: 'Structural & Governance Questions',
+        description:
+          'Topics include: Which entities belong in an agent ID — agent, instance, provider, deployer, model?, Should a low-risk agent carry less ID than a high-risk one?, Whose privacy wins — the deployer’s, or the service’s need to know who it is dealing with?, Who should have access to the information inside an agent ID?, Should agent trust scores and traffic statistics be public?, Voluntary adoption or mandated compliance — which one actually gets agent IDs deployed?, Where will the market fail to build agent IDs, and who fills that gap?, What can governments coordinate that industry cannot?, When an agent causes harm, who is responsible?',
+        bullets: [
+          'Which entities belong in an agent ID — agent, instance, provider, deployer, model?',
+          'Should a low-risk agent carry less ID than a high-risk one?',
+          'Whose privacy wins — the deployer’s, or the service’s need to know who it is dealing with?',
+          'Who should have access to the information inside an agent ID?',
+          'Should agent trust scores and traffic statistics be public?',
+          'Voluntary adoption or mandated compliance — which one actually gets agent IDs deployed?',
+          'Where will the market fail to build agent IDs, and who fills that gap?',
+          'What can governments coordinate that industry cannot?',
+          'When an agent causes harm, who is responsible?'
+        ],
+        category: 'Policy & Governance'
+      },
+      {
+        id: 'aiw3-topic-5',
+        title: 'Policy, Permissions & Governance',
+        description:
+          'Topics include: Where policy enforcement should live in multi-agent systems, Agent permissions and scoped capabilities (allow/ask/deny/escalate), Policy portability across frameworks, Governance of agentic AI — embedding alignment in protocols',
+        bullets: [
+          'Where policy enforcement should live in multi-agent systems',
+          'Agent permissions and scoped capabilities (allow/ask/deny/escalate)',
+          'Policy portability across frameworks',
+          'Governance of agentic AI — embedding alignment in protocols'
+        ],
+        category: 'Policy & Governance'
+      },
+      {
+        id: 'aiw3-topic-6',
+        title: 'Safety, Security & Human Control',
+        description:
+          'Topics include: Human approval UX and interruption/rollback mechanisms, Securing MCP servers and A2A protocols, Standardized audit logs and telemetry for agent actions, Safe defaults and sandbox design for local-first workflows, Practical patterns for trustworthy agent systems, When an agent goes wrong at 2am, who do you call?, What does an ID have to carry for anyone to stop a running agent?, What should a service log when an agent calls it?',
+        bullets: [
+          'Human approval UX and interruption/rollback mechanisms',
+          'Securing MCP servers and A2A protocols',
+          'Standardized audit logs and telemetry for agent actions',
+          'Safe defaults and sandbox design for local-first workflows',
+          'Practical patterns for trustworthy agent systems',
+          'When an agent goes wrong at 2am, who do you call?',
+          'What does an ID have to carry for anyone to stop a running agent?',
+          'What should a service log when an agent calls it?'
+        ],
+        category: 'Human-AI Interaction'
+      },
+      {
+        id: 'aiw3-topic-7',
+        title: 'Personal Agents & Data',
+        description:
+          'Topics include: User-controlled agents and personal data sovereignty, Personal data, memory, and secure authorization, Consent-aware edge and embodied agents',
+        bullets: [
+          'User-controlled agents and personal data sovereignty',
+          'Personal data, memory, and secure authorization',
+          'Consent-aware edge and embodied agents'
+        ],
+        category: 'Identity & Privacy'
+      },
+      {
+        id: 'aiw3-topic-8',
+        title: 'Infrastructure & Discovery',
+        description:
+          'Topics include: AgenticDNS and agent registries, Agent discovery and interoperability across protocol stacks, Browser roles in the agentic ecosystem, Payment layers for agent-to-agent transactions, Can MCP carry identity, or does it need extension?, Does DNS hold as the anchor for agent identity?, Which agent ID efforts actually exist, and what does each one cover?, How MCP and A2A are converging on identity and mandate, Newest state of AI agents',
+        bullets: [
+          'AgenticDNS and agent registries',
+          'Agent discovery and interoperability across protocol stacks',
+          'Browser roles in the agentic ecosystem',
+          'Payment layers for agent-to-agent transactions',
+          'Can MCP carry identity, or does it need extension?',
+          'Does DNS hold as the anchor for agent identity?',
+          'Which agent ID efforts actually exist, and what does each one cover?',
+          'How MCP and A2A are converging on identity and mandate',
+          'Newest state of AI agents'
+        ],
+        category: 'Technical Protocols'
+      }
+    ],
     attendees: [],
     sponsors: [
       {
