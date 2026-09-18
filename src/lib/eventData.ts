@@ -583,7 +583,84 @@ export const events: Record<string, Event> = {
       zipCode: '94043'
     },
     status: 'current',
-    topics: [],
+    topics: [
+      {
+        id: 'aiw3-topic-1',
+        title: 'Agent Identity & Discovery',
+        description: 'Topics include: Agent Identity - what should an agent disclose?, Are identifiers even the right way to think about agentic identification?, Agentic Profiles (A2A + DIDs), AGNTCY and its 3 layers: Agent Discovery / Agent Identity / SLIM, A2A Agent Cards, Which protocol is best suited to carry an "obfuscated broadcast / local-only computation" pattern: A2A Artifact model / AGNTCY SLIM messaging / ANP DID-based discovery?',
+        bullets: [
+          'Agent Identity - what should an agent disclose?',
+          'Are identifiers even the right way to think about agentic identification?',
+          'Agentic Profiles (A2A + DIDs)',
+          'AGNTCY and its 3 layers: Agent Discovery, Agent Identity, and SLIM',
+          'A2A Agent Cards',
+          'Which protocol is best suited to carry an "obfuscated broadcast, local-only computation" pattern: A2A Artifact model, AGNTCY SLIM messaging, or ANP DID-based discovery?'
+        ],
+        category: 'Identity & Privacy'
+      },
+      {
+        id: 'aiw3-topic-2',
+        title: 'Agent Payments & Commerce',
+        description: 'Topics include: Agent Payments, Agentic Commerce, KYAPay, Privacy-preserving agent-to-agent matching for regulated personal data: feasibility of minimal-disclosure marketplaces on A2A/AGNTCY',
+        bullets: [
+          'Agent Payments',
+          'Agentic Commerce',
+          'KYAPay',
+          'Privacy-preserving agent-to-agent matching for regulated personal data: feasibility of minimal-disclosure marketplaces on A2A/AGNTCY'
+        ],
+        category: 'Use Cases'
+      },
+      {
+        id: 'aiw3-topic-3',
+        title: 'Authorization, Delegation & Governance',
+        description: 'Topics include: Mission-based authorization and governance for agents, Mission-based agent-team governance, Separating human intent / governance decisions / delegated authority / execution evidence in agentic systems, Human authority at machine speed: execution-time consent and revocation, Secure mandates for agent chains: carrying revocable / auditable authority across MCP and A2A hops, Keeping mandates sovereignty-preserving / not surveillance',
+        bullets: [
+          'Mission-based authorization and governance for agents',
+          'Mission-based agent-team governance',
+          'Separating human intent, governance decisions, delegated authority, and execution evidence in agentic systems',
+          'Human authority at machine speed: execution-time consent and revocation',
+          'Secure mandates for agent chains: carrying revocable, auditable authority across MCP and A2A hops',
+          'Keeping mandates sovereignty-preserving, not surveillance'
+        ],
+        category: 'Policy & Governance'
+      },
+      {
+        id: 'aiw3-topic-4',
+        title: 'Protocols & Interoperability',
+        description: 'Topics include: MCP, Agent Network Protocol (ANP), A2A and OAuth support for agentic workflows, How MCP and A2A are converging on identity and mandate, OAuth-related metadata standards evolution, Implications to JWTs and claims for supporting agentic workflows',
+        bullets: [
+          'MCP',
+          'Agent Network Protocol (ANP)',
+          'A2A and OAuth support for agentic workflows',
+          'How MCP and A2A are converging on identity and mandate',
+          'OAuth-related metadata standards evolution',
+          'Implications to JWTs and claims for supporting agentic workflows'
+        ],
+        category: 'Technical Protocols'
+      },
+      {
+        id: 'aiw3-topic-5',
+        title: 'Standards Landscape',
+        description: 'Topics include: Are standards relevant in the age of AI?, Where are standards being developed today for Agentic AI? What is good/bad/ugly about these different orgs?, How should agent identity/discovery protocols defend against a coordinator that sends inconsistent versions to isolate one participant\'s data?',
+        bullets: [
+          'Are standards relevant in the age of AI?',
+          'Where are standards being developed today for Agentic AI? What is good/bad/ugly about these different orgs?',
+          'How should agent identity/discovery protocols defend against a coordinator that sends inconsistent versions to isolate one participant\'s data?'
+        ],
+        category: 'Policy & Governance'
+      },
+      {
+        id: 'aiw3-topic-6',
+        title: 'Trust & Security',
+        description: 'Topics include: Behavioral coherence as a runtime trust signal, How trust and behavioral signals can travel with an agent without becoming surveillance, Workload-based access grants and flows',
+        bullets: [
+          'Behavioral coherence as a runtime trust signal',
+          'How trust and behavioral signals can travel with an agent without becoming surveillance',
+          'Workload-based access grants and flows'
+        ],
+        category: 'Identity & Privacy'
+      }
+    ],
     attendees: [],
     sponsors: [
       {
@@ -624,12 +701,12 @@ export const events: Record<string, Event> = {
       },
       {
         id: 'sponsor-aiw3-5',
-        name: 'WiFi Sponsor',
+        name: 'Skyfire',
         tier: 'WiFi',
-        logoUrl: '/sponsors/placeholder.png',
-        websiteUrl: '#',
+        logoUrl: '/sponsors/skyfire.svg',
+        websiteUrl: 'https://skyfire.xyz',
         description: 'WiFi Sponsor',
-        isAvailable: true
+        isAvailable: false
       },
       {
         id: 'sponsor-aiw3-6',
