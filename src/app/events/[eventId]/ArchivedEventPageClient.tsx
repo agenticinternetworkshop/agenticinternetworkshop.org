@@ -198,6 +198,7 @@ export function ArchivedEventPageClient({ event }: ArchivedEventPageClientProps)
                   logo={sponsor.logoUrl}
                   alt={sponsor.name}
                   title={sponsor.description || `${sponsor.tier} Sponsor`}
+                  websiteUrl={sponsor.websiteUrl}
                   isSold={sponsor.isSold}
                   isAvailable={sponsor.isAvailable}
                 />
