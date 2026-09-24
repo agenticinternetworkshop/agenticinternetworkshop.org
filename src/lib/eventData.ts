@@ -802,12 +802,12 @@ export const events: Record<string, Event> = {
       },
       {
         id: 'sponsor-aiw3-5',
-        name: 'WiFi Sponsor',
+        name: 'Skyfire',
         tier: 'WiFi',
-        logoUrl: '/sponsors/placeholder.png',
-        websiteUrl: '#',
+        logoUrl: '/sponsors/skyfire.svg',
+        websiteUrl: 'https://skyfire.xyz',
         description: 'WiFi Sponsor',
-        isAvailable: true
+        isAvailable: false
       },
       {
         id: 'sponsor-aiw3-6',
