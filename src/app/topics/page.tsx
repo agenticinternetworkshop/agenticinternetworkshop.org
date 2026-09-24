@@ -61,9 +61,10 @@ export default function TopicsPage() {
             <div className="section-header">
               <h1>Potential Topics — AIW #{event.eventNumber}</h1>
               <p className="description">
-                The agenda will be co-created the day of the event by attendees using Open Space Technology. These are
-                ideas folks have submitted as they register, shared to give perspective on what participants are
-                thinking about discussing.
+                The agenda will be co-created the day of the event by attendees using Open Space Technology. The
+                topics below come from two places: ideas folks have submitted as they register, and open questions
+                drawn from industry research moving the field forward. Both are shared to give perspective on what
+                participants are thinking about discussing.
               </p>
             </div>
 
@@ -75,9 +76,25 @@ export default function TopicsPage() {
                 <br />
                 We use Open Space Technology to co-create the agenda live the morning of the event. Below is the list of
                 what attendees shared with us as they registered about topics they hope to learn about, want to present
-                about and topics to discuss with others at the event. It is important to note this list is not used to
-                &quot;create the agenda&quot; that is done by everyone gathered in person {event.date} beginning at
-                9am.
+                about and topics to discuss with others at the event, alongside open questions drawn from current
+                research in the field. It is important to note this list is not used to &quot;create the agenda&quot;
+                that is done by everyone gathered in person {event.date} beginning at 9am.
+              </div>
+
+              <div className="callout">
+                <strong>📄 Research Shaping These Questions</strong>
+                <br />
+                Several of the structural and governance questions below are drawn from{' '}
+                <a
+                  href="https://agent-id.org/memo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Designing Agent IDs
+                </a>
+                , a policy memo published in March 2026 by the Singapore AI Safety Hub with the Singapore and Korea AI
+                Safety Institutes. Rather than proposing a protocol, it poses ten questions about what an agent ID is
+                actually for. Worth reading before the workshop.
               </div>
 
               <div className="topics-grid">
@@ -91,27 +108,6 @@ export default function TopicsPage() {
                     </ul>
                   </div>
                 ))}
-              </div>
-
-              <div className="callout">
-                <strong>📋 Proposed Topics</strong>
-                <ul style={{ marginTop: 'var(--space-3)', paddingLeft: 'var(--space-6)' }}>
-                  <li>Newest state of AI agents</li>
-                  <li>Secure mandates for agent chains: carrying revocable, auditable authority across MCP and A2A hops</li>
-                  <li>Agent identity is not enough: the authority, memory, and intent layer above it</li>
-                  <li>Behavioral coherence as a runtime trust signal (trust asymmetry and the completion drive)</li>
-                  <li>Human authority at machine speed: execution-time consent and revocation</li>
-                  <li>Sovereign identity for organizations: what agent authority looks like when AI joins the org chart</li>
-                  <li>Keeping mandates sovereignty-preserving, not surveillance</li>
-                  <li>Progress on A2A, AAuth, OAuth support for agentic-driven flows</li>
-                  <li>OAuth-related metadata standards evolution</li>
-                  <li>Implications to JWTs and claims for supporting agentic workflows</li>
-                  <li>Workload-based access grants and flows</li>
-                  <li>Where agent-to-agent and agent-to-tool authorization is actually heading: GNAP and OAuth extensions for agents, AuthZEN for fine-grained authorization, capability narrowing and revocation across delegation hops, KERI/ACDC and SEDI for cryptographic authority</li>
-                  <li>How MCP and A2A are converging on identity and mandate</li>
-                  <li>How the community keeps a human, a company, or a nation the source of authority at execution time as agents chain calls across tools and organizations</li>
-                  <li>How trust and behavioral signals can travel with an agent without becoming surveillance</li>
-                </ul>
               </div>
 
               <div className="callout">
