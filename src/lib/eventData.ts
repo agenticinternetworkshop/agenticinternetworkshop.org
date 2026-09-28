@@ -793,7 +793,36 @@ export const events: Record<string, Event> = {
         category: 'Technical Protocols'
       }
     ],
-    attendees: [],
+    attendees: [
+      { id: 'aiw3-att-1', name: 'Jefferson Braswell', role: 'Founding Partner and CEO', affiliation: 'Tahoe Blue Ltd' },
+      { id: 'aiw3-att-2', name: 'Marina Piller', role: 'Founder, CEO', affiliation: 'otislabs.ai', socialLinks: { website: 'https://otislabs.ai/' } },
+      { id: 'aiw3-att-3', name: 'Michel Sahli', role: 'Fintech & Digital Trust Expert', affiliation: 'Swisscom', socialLinks: { website: 'https://swisscom.com' } },
+      { id: 'aiw3-att-4', name: 'Colin Jaccino', role: 'Consultant', affiliation: 'EPAM Systems', socialLinks: { website: 'https://www.epam.com' } },
+      { id: 'aiw3-att-5', name: 'Alan Karp', role: 'Principled Architect', affiliation: 'SitePassword', socialLinks: { website: 'https://alanhkarp.com' } },
+      { id: 'aiw3-att-6', name: 'Yulia Stepanova' },
+      { id: 'aiw3-att-7', name: 'Mahesh Balan', role: 'Doctoral Candidate', affiliation: 'Claremont Graduate University', socialLinks: { website: 'https://maheshbalan.github.io' } },
+      { id: 'aiw3-att-8', name: 'Mark Scott', role: 'Information Security Consultant', affiliation: 'Authentic Data Enterprises' },
+      { id: 'aiw3-att-9', name: 'Richard Esplin', role: 'Head of Product', affiliation: 'Dock Labs' },
+      { id: 'aiw3-att-10', name: 'Debbie Bucci', affiliation: 'Independent' },
+      { id: 'aiw3-att-11', name: 'Matthew MacAdam', role: 'Senior CIAM Engineer', affiliation: 'BECU', socialLinks: { website: 'https://www.becu.org' } },
+      { id: 'aiw3-att-12', name: 'Michael Jones', role: 'Principal', affiliation: 'Self-Issued Consulting', socialLinks: { website: 'https://self-issued.info/' } },
+      { id: 'aiw3-att-13', name: 'Ankit Agarwal', role: 'CTO', affiliation: 'Skyfire Systems Inc.', socialLinks: { website: 'https://skyfire.xyz' } },
+      { id: 'aiw3-att-14', name: 'Dan Finlay' },
+      { id: 'aiw3-att-15', name: 'Grace Rachmany', role: 'Executive Director', affiliation: 'Decentralized Identity Foundation (DIF)', socialLinks: { website: 'https://www.identity.foundation' } },
+      { id: 'aiw3-att-16', name: 'Andrew Maffei', affiliation: 'The Visual Connection' },
+      { id: 'aiw3-att-17', name: 'Takayuki SADAHIRO', role: 'Senior Specialist', affiliation: 'ITOCHU Techno-Solutions Co.' },
+      { id: 'aiw3-att-18', name: 'Dave Sanford', role: 'Author', affiliation: 'Greater Good Trust' },
+      { id: 'aiw3-att-19', name: 'Sean MacGuire', role: 'Human in the Loop', affiliation: 'Maclawran LLC', socialLinks: { website: 'https://maclawran.ca' } },
+      { id: 'aiw3-att-20', name: 'Tor Hagemann', role: 'CEO', affiliation: 'Lovarys', socialLinks: { website: 'https://lovarys.onetooneandon.to' } },
+      { id: 'aiw3-att-21', name: 'Dick Hardt', role: 'Founder/CEO', affiliation: 'Hellō', socialLinks: { website: 'https://hello.coop' } },
+      { id: 'aiw3-att-22', name: 'Lisa Dusseault', role: 'CTO', affiliation: 'DTI', socialLinks: { website: 'https://dtinit.org' } },
+      { id: 'aiw3-att-23', name: 'Vic Cooper' },
+      { id: 'aiw3-att-24', name: 'Wenjing Chu', role: 'Senior Director of AI and Human Trust', affiliation: 'Futurewei Technologies Inc.' },
+      { id: 'aiw3-att-25', name: 'Jon Udell', role: 'Consultant', socialLinks: { website: 'https://jonudell.info' } },
+      { id: 'aiw3-att-26', name: 'Beth Porter' },
+      { id: 'aiw3-att-27', name: 'Dan Yamamoto', affiliation: 'Internet Initiative Japan Inc.' },
+      { id: 'aiw3-att-28', name: 'Sharath Rajasekar', role: 'CEO, Founder', affiliation: 'Highflame', socialLinks: { website: 'https://www.highflame.com' } }
+    ],
     sponsors: [
       {
         id: 'sponsor-aiw3-1',
