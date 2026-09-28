@@ -137,8 +137,8 @@ export default function WhosComingPage() {
                   </div>
 
                   <div className="attendees-block">
-                    <h3>Registered Participants</h3>
-                    <p>Participants who agreed to be listed publicly. Names, roles, and affiliations are shown as submitted during registration.</p>
+                    <h3>A Selection of Registered Participants</h3>
+                    <p>Here is a selection of the people coming to AIW #{event.eventNumber}, drawn from registrants who agreed to be listed publicly. Many more are registered. Names, roles, and affiliations are shown as submitted during registration.</p>
                     <ul className="attendee-list">
                       {event.attendees.map((attendee) => (
                         <li key={attendee.id} className="attendee-line">
