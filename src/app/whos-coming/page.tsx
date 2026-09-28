@@ -136,6 +136,18 @@ export default function WhosComingPage() {
                     </div>
                   </div>
 
+                  <div className="attendees-block">
+                    <h3>Registered Participants</h3>
+                    <p>Participants who agreed to be listed publicly. Names, roles, and affiliations are shown as submitted during registration.</p>
+                    <ul className="attendee-list">
+                      {event.attendees.map((attendee) => (
+                        <li key={attendee.id} className="attendee-line">
+                          <AttendeeMarkdownLine attendee={attendee} />
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
                   <div className="callout">
                     <strong>💡 Want to Join?</strong>
                     <br />
