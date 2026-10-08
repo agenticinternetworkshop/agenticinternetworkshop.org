@@ -613,7 +613,7 @@ export const events: Record<string, Event> = {
         id: 'aiw3-topic-2',
         title: 'Delegation & Authorization',
         description:
-          'Topics include: Agent-to-agent delegation without impersonation, GNAP vs. OAuth patterns for agent authorization, Cryptographic proof of delegation for AI agents, Enforcing least-privilege at the tool-call layer, How intent and obligations travel alongside A2A / MCP calls, Capability-based vs. policy-based approaches for delegation, Does the ID carry authorization, or point at it?, Can identity and authorization stay distinct and still interoperate?, Secure mandates for agent chains: carrying revocable, auditable authority across MCP and A2A hops, Human authority at machine speed: execution-time consent and revocation, Keeping mandates sovereignty-preserving, not surveillance, Progress on A2A, AAuth, OAuth support for agentic-driven flows, OAuth-related metadata standards evolution, Implications to JWTs and claims for supporting agentic workflows, Workload-based access grants and flows, Where agent-to-agent and agent-to-tool authorization is actually heading: GNAP and OAuth extensions for agents, AuthZEN for fine-grained authorization, capability narrowing and revocation across delegation hops, KERI/ACDC and SEDI for cryptographic authority, How the community keeps a human, a company, or a nation the source of authority at execution time as agents chain calls across tools and organizations, Mission-based authorization and governance for agents, Mission-based agent-team governance, Separating human intent, governance decisions, delegated authority, and execution evidence in agentic systems, Human ownership provenance and authorized delegation, MCP auth, The latest OAuth-based and credential-based agent identity protocols',
+          'Topics include: Agent-to-agent delegation without impersonation, GNAP vs. OAuth patterns for agent authorization, Cryptographic proof of delegation for AI agents, Enforcing least-privilege at the tool-call layer, How intent and obligations travel alongside A2A / MCP calls, Capability-based vs. policy-based approaches for delegation, Does the ID carry authorization, or point at it?, Can identity and authorization stay distinct and still interoperate?, Secure mandates for agent chains: carrying revocable, auditable authority across MCP and A2A hops, Human authority at machine speed: execution-time consent and revocation, Keeping mandates sovereignty-preserving, not surveillance, Progress on A2A, AAuth, OAuth support for agentic-driven flows, OAuth-related metadata standards evolution, Implications to JWTs and claims for supporting agentic workflows, Workload-based access grants and flows, Where agent-to-agent and agent-to-tool authorization is actually heading: GNAP and OAuth extensions for agents, AuthZEN for fine-grained authorization, capability narrowing and revocation across delegation hops, KERI/ACDC and SEDI for cryptographic authority, How the community keeps a human, a company, or a nation the source of authority at execution time as agents chain calls across tools and organizations, Mission-based authorization and governance for agents, Mission-based agent-team governance, Separating human intent, governance decisions, delegated authority, and execution evidence in agentic systems, Human ownership provenance and authorized delegation, MCP auth, The latest OAuth-based and credential-based agent identity protocols, Best-of-class capability-based authorization protocols for AI, Authorization for agents: why existing RFCs will not help, Agentic JWT protocol (IETF draft)',
         bullets: [
           'Agent-to-agent delegation without impersonation',
           'GNAP vs. OAuth patterns for agent authorization',
@@ -637,7 +637,10 @@ export const events: Record<string, Event> = {
           'Separating human intent, governance decisions, delegated authority, and execution evidence in agentic systems',
           'Human ownership provenance and authorized delegation',
           'MCP auth',
-          'The latest OAuth-based and credential-based agent identity protocols'
+          'The latest OAuth-based and credential-based agent identity protocols',
+          'Best-of-class capability-based authorization protocols for AI',
+          'Authorization for agents: why existing RFCs will not help',
+          'Agentic JWT protocol (IETF draft)'
         ],
         category: 'Technical Protocols'
       },
@@ -665,7 +668,7 @@ export const events: Record<string, Event> = {
         id: 'aiw3-topic-4',
         title: 'Structural & Governance Questions',
         description:
-          'Topics include: Which entities belong in an agent ID — agent, instance, provider, deployer, model?, Should a low-risk agent carry less ID than a high-risk one?, Whose privacy wins — the deployer’s, or the service’s need to know who it is dealing with?, Who should have access to the information inside an agent ID?, Should agent trust scores and traffic statistics be public?, Voluntary adoption or mandated compliance — which one actually gets agent IDs deployed?, Where will the market fail to build agent IDs, and who fills that gap?, What can governments coordinate that industry cannot?, When an agent causes harm, who is responsible?',
+          'Topics include: Which entities belong in an agent ID — agent, instance, provider, deployer, model?, Should a low-risk agent carry less ID than a high-risk one?, Whose privacy wins — the deployer’s, or the service’s need to know who it is dealing with?, Who should have access to the information inside an agent ID?, Should agent trust scores and traffic statistics be public?, Voluntary adoption or mandated compliance — which one actually gets agent IDs deployed?, Where will the market fail to build agent IDs, and who fills that gap?, What can governments coordinate that industry cannot?, When an agent causes harm, who is responsible?, Is there such a thing as "apparent authority" in AI? Respondeat superior and agentic liability, AI agent fiduciaries',
         bullets: [
           'Which entities belong in an agent ID — agent, instance, provider, deployer, model?',
           'Should a low-risk agent carry less ID than a high-risk one?',
@@ -675,7 +678,9 @@ export const events: Record<string, Event> = {
           'Voluntary adoption or mandated compliance — which one actually gets agent IDs deployed?',
           'Where will the market fail to build agent IDs, and who fills that gap?',
           'What can governments coordinate that industry cannot?',
-          'When an agent causes harm, who is responsible?'
+          'When an agent causes harm, who is responsible?',
+          'Is there such a thing as "apparent authority" in AI? Respondeat superior and agentic liability',
+          'AI agent fiduciaries'
         ],
         category: 'Policy & Governance'
       },
@@ -696,7 +701,7 @@ export const events: Record<string, Event> = {
         id: 'aiw3-topic-6',
         title: 'Safety, Security & Human Control',
         description:
-          'Topics include: Human approval UX and interruption/rollback mechanisms, Securing MCP servers and A2A protocols, Standardized audit logs and telemetry for agent actions, Safe defaults and sandbox design for local-first workflows, Practical patterns for trustworthy agent systems, When an agent goes wrong at 2am, who do you call?, What does an ID have to carry for anyone to stop a running agent?, What should a service log when an agent calls it?, Systems that block anything not authenticated, Flipping the narrative from human-in-the-loop to agent-in-the-loop, Authentication and compliance for agents',
+          'Topics include: Human approval UX and interruption/rollback mechanisms, Securing MCP servers and A2A protocols, Standardized audit logs and telemetry for agent actions, Safe defaults and sandbox design for local-first workflows, Practical patterns for trustworthy agent systems, When an agent goes wrong at 2am, who do you call?, What does an ID have to carry for anyone to stop a running agent?, What should a service log when an agent calls it?, Systems that block anything not authenticated, Flipping the narrative from human-in-the-loop to agent-in-the-loop, Authentication and compliance for agents, AI control planes, A shared, vendor-neutral threat taxonomy for agents: the Agent Threat Matrix (9 tactics, 57 techniques), What attributable evidence for an agent action needs to contain, Intent drift in AI agents, Agents in critical business processes',
         bullets: [
           'Human approval UX and interruption/rollback mechanisms',
           'Securing MCP servers and A2A protocols',
@@ -708,7 +713,12 @@ export const events: Record<string, Event> = {
           'What should a service log when an agent calls it?',
           'Systems that block anything not authenticated',
           'Flipping the narrative from human-in-the-loop to agent-in-the-loop',
-          'Authentication and compliance for agents'
+          'Authentication and compliance for agents',
+          'AI control planes',
+          'A shared, vendor-neutral threat taxonomy for agents: the Agent Threat Matrix (9 tactics, 57 techniques)',
+          'What attributable evidence for an agent action needs to contain',
+          'Intent drift in AI agents',
+          'Agents in critical business processes'
         ],
         category: 'Human-AI Interaction'
       },
@@ -769,12 +779,16 @@ export const events: Record<string, Event> = {
         id: 'aiw3-topic-10',
         title: 'Standards Landscape',
         description:
-          'Topics include: Are standards relevant in the age of AI?, Where are standards being developed today for Agentic AI? What is good/bad/ugly about these different orgs?, How should agent identity/discovery protocols defend against a coordinator that sends inconsistent versions to isolate one participant\'s data?, Progress on agentic AI standards over the last six months',
+          'Topics include: Are standards relevant in the age of AI?, Where are standards being developed today for Agentic AI? What is good/bad/ugly about these different orgs?, How should agent identity/discovery protocols defend against a coordinator that sends inconsistent versions to isolate one participant\'s data?, Progress on agentic AI standards over the last six months, How the IETF audit and delegation drafts converge on a common record model for agent actions, Where IETF, W3C and DIF efforts on agent identity overlap and where they diverge, Implementation experience mapping an agent identity platform to the IETF audit architecture record types, The PEDIGREE draft and SURADAR SDK architecture',
         bullets: [
           'Are standards relevant in the age of AI?',
           'Where are standards being developed today for Agentic AI? What is good/bad/ugly about these different orgs?',
           'How should agent identity/discovery protocols defend against a coordinator that sends inconsistent versions to isolate one participant\'s data?',
-          'Progress on agentic AI standards over the last six months'
+          'Progress on agentic AI standards over the last six months',
+          'How the IETF audit and delegation drafts converge on a common record model for agent actions',
+          'Where IETF, W3C and DIF efforts on agent identity overlap and where they diverge',
+          'Implementation experience mapping an agent identity platform to the IETF audit architecture record types',
+          'The PEDIGREE draft and SURADAR SDK architecture'
         ],
         category: 'Policy & Governance'
       },
@@ -782,13 +796,18 @@ export const events: Record<string, Event> = {
         id: 'aiw3-topic-11',
         title: 'Interop Day (November 5): What People Want to Test',
         description:
-          'Topics include: Trust Spanning Protocol (TSP) implementations, MCP auth, Agent identity with SPIFFE, WIMSE, OAuth, CIMD and EMA, Agent identity, delegated authorization, credential exchange, trust discovery and revocation in MCP-based agent interactions, Business wallets and Digital Product Passports (DPP)',
+          'Topics include: Trust Spanning Protocol (TSP) implementations, MCP auth, Agent identity with SPIFFE, WIMSE, OAuth, CIMD and EMA, Agent identity, delegated authorization, credential exchange, trust discovery and revocation in MCP-based agent interactions, Business wallets and Digital Product Passports (DPP), A dual-signed (Ed25519 and ML-DSA-65) agent credential verified against published conformance fixtures, and alignment testing with SPIFFE/WIMSE verifiers and the RATS EAT model, OpenPreference.org, Interop parallels and challenges between OpenVTC, Truststackers and the ProHuman AI stack, Testing agent behavior in benchmarks, Finding partners to work with',
         bullets: [
           'Trust Spanning Protocol (TSP) implementations',
           'MCP auth',
           'Agent identity with SPIFFE, WIMSE, OAuth, CIMD and EMA',
           'Agent identity, delegated authorization, credential exchange, trust discovery and revocation in MCP-based agent interactions',
-          'Business wallets and Digital Product Passports (DPP)'
+          'Business wallets and Digital Product Passports (DPP)',
+          'A dual-signed (Ed25519 and ML-DSA-65) agent credential verified against published conformance fixtures, and alignment testing with SPIFFE/WIMSE verifiers and the RATS EAT model',
+          'OpenPreference.org',
+          'Interop parallels and challenges between OpenVTC, Truststackers and the ProHuman AI stack',
+          'Testing agent behavior in benchmarks',
+          'Finding partners to work with'
         ],
         category: 'Technical Protocols'
       }
