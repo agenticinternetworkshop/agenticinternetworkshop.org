@@ -974,7 +974,8 @@ export const events: Record<string, Event> = {
         logoUrl: '/sponsors/placeholder.png',
         websiteUrl: '#',
         description: 'Documentation Center Sponsor',
-        isAvailable: true
+        isSold: true,
+        isAvailable: false
       }
     ],
     schedule: [],

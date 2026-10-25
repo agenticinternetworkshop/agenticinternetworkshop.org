@@ -625,9 +625,9 @@ export default function Home() {
                       <td>$600</td>
                       <td>0</td>
                     </tr>
-                    <tr>
+                    <tr className="done">
                       <td>Documentation Center</td>
-                      <td>1</td>
+                      <td>Done</td>
                       <td>$1,000</td>
                       <td>0</td>
                     </tr>
