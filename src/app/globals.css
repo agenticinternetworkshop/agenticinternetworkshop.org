@@ -1606,12 +1606,6 @@ p  { margin: 0 0 var(--space-4); color: var(--text-muted); font-size: var(--fs-1
   color: var(--accent-600);
 }
 
-.topics-overview-count {
-  font-variant-numeric: tabular-nums;
-  font-weight: 600;
-  color: var(--accent-600);
-}
-
 .topic-card {
   scroll-margin-top: 96px;
 }

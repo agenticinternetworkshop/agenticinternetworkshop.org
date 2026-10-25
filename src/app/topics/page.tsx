@@ -75,14 +75,14 @@ export default function TopicsPage() {
                 <div className="topics-overview">
                   <h2>Overview</h2>
                   <p>
-                    Registrants have sent in {event.topics.reduce((n, t) => n + getTopicBullets(t).length, 0)} topics
-                    so far, grouped into {event.topics.length} areas. {event.topicsOverview}
+                    Registrants have sent in a diverse array of topics, and we have grouped them into{' '}
+                    {event.topics.length} areas. {event.topicsOverview}
                   </p>
                   <ul className="topics-overview-list">
                     {event.topics.map((topic) => (
                       <li key={topic.id}>
                         <a href={`#${topic.id}`}>
-                          {topic.title} <span className="topics-overview-count">{getTopicBullets(topic).length}</span>
+                          {topic.title}
                         </a>
                       </li>
                     ))}
