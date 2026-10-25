@@ -1568,3 +1568,50 @@ p  { margin: 0 0 var(--space-4); color: var(--text-muted); font-size: var(--fs-1
     grid-template-columns: 1fr;
   }
 }
+
+/* Topics page overview */
+.topics-overview {
+  margin-bottom: var(--space-8);
+}
+
+.topics-overview p {
+  max-width: 72ch;
+  color: var(--text);
+}
+
+.topics-overview-list {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-4) 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.topics-overview-list a {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-1) var(--space-3);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg-alt);
+  color: var(--text);
+  font-size: var(--fs-14);
+  text-decoration: none;
+}
+
+.topics-overview-list a:hover {
+  border-color: var(--accent-300);
+  color: var(--accent-600);
+}
+
+.topics-overview-count {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  color: var(--accent-600);
+}
+
+.topic-card {
+  scroll-margin-top: 96px;
+}

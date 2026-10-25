@@ -583,6 +583,8 @@ export const events: Record<string, Event> = {
       zipCode: '94043'
     },
     status: 'current',
+    topicsOverview:
+      'The largest cluster is delegation and authorization: how authority passes from a person or organization to an agent, and stays bounded and revocable as agents call tools and other agents across MCP, A2A, OAuth and GNAP. Next come agent identity and credentials (what an agent ID should contain, who signs it, and how it maps to a human) and safety and human control (audit logs, intent drift, and how to stop a running agent). Newer threads include agent payments and the agreement layer that should come before them, consumer protection, and how the IETF, W3C and DIF efforts fit together. The last group lists what people want to test hands-on at Interop Day on November 5.',
     topics: [
       {
         id: 'aiw3-topic-1',

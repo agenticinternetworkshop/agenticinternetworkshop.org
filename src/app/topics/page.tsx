@@ -71,6 +71,25 @@ export default function TopicsPage() {
             <div className="topics-content">
               <TopicSourceNotice event={event} />
 
+              {event.topicsOverview && (
+                <div className="topics-overview">
+                  <h2>Overview</h2>
+                  <p>
+                    Registrants have sent in {event.topics.reduce((n, t) => n + getTopicBullets(t).length, 0)} topics
+                    so far, grouped into {event.topics.length} areas. {event.topicsOverview}
+                  </p>
+                  <ul className="topics-overview-list">
+                    {event.topics.map((topic) => (
+                      <li key={topic.id}>
+                        <a href={`#${topic.id}`}>
+                          {topic.title} <span className="topics-overview-count">{getTopicBullets(topic).length}</span>
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
               <div className="callout">
                 <strong>🌐 Open Space Technology</strong>
                 <br />
@@ -99,7 +118,7 @@ export default function TopicsPage() {
 
               <div className="topics-grid">
                 {event.topics.map((topic) => (
-                  <div key={topic.id} className="card">
+                  <div key={topic.id} id={topic.id} className="card topic-card">
                     <h3>{topic.title}</h3>
                     <ul className="topic-list">
                       {getTopicBullets(topic).map((item, index) => (
