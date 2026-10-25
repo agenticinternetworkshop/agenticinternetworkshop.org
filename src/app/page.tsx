@@ -10,7 +10,7 @@ import SponsorCard from '@/components/SponsorCard'
 import { EventCard } from '@/components/EventCard'
 import { getCurrentEvent, getArchivedEvents } from '@/lib/eventData'
 
-type TabType = 'overview' | 'schedule' | 'pricing' | 'protocols' | 'reading' | 'sponsors' | 'become-sponsor'
+type TabType = 'overview' | 'schedule' | 'pricing' | 'protocols' | 'reading' | 'become-sponsor'
 
 export default function Home() {
   const event = getCurrentEvent()
@@ -19,8 +19,9 @@ export default function Home() {
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search)
-    const tab = params.get('tab') as TabType
-    const validTabs: TabType[] = ['overview', 'schedule', 'pricing', 'protocols', 'reading', 'sponsors', 'become-sponsor']
+    // Old links to the removed Sponsors tab land on Become a Sponsor
+    const tab = (params.get('tab') === 'sponsors' ? 'become-sponsor' : params.get('tab')) as TabType
+    const validTabs: TabType[] = ['overview', 'schedule', 'pricing', 'protocols', 'reading', 'become-sponsor']
     if (tab && validTabs.includes(tab)) {
       setActiveTab(tab)
     }
@@ -560,88 +561,6 @@ export default function Home() {
               <div className="callout">
                 <strong>📚 Additional Resources</strong><br />
                 Please share additional reading you recommend
-              </div>
-            </div>
-
-            {/* Sponsors Tab */}
-            <div className={`tab-content ${activeTab === 'sponsors' ? 'active' : ''}`}>
-              <div className="section-header">
-                <h2>Sponsorship Opportunities</h2>
-                <p className="description">Support this important gathering of protocol innovators and gain visibility in the agentic AI community</p>
-              </div>
-
-              {/* Sponsor Text */}
-              <div className="sponsors-text">
-                <p className="description">Sponsors keep conference fees low by supporting the virtual platform, unconference setup, providing meals and more, making AIW available to all who want to attend, participate and contribute.</p>
-                <p className="description"><strong>Support the collaborative work that gets accomplished at every AIW!</strong></p>
-              </div>
-              
-              <div className="sponsorship-table-wrapper">
-                <table className="sponsorship-table">
-                  <thead>
-                    <tr>
-                      <th>Sponsorship</th>
-                      <th>Available</th>
-                      <th>Cost</th>
-                      <th>Passes</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Breakfast</td>
-                      <td>1</td>
-                      <td>$1,750</td>
-                      <td>1</td>
-                    </tr>
-                    <tr className="done">
-                      <td>Lunch</td>
-                      <td>Done</td>
-                      <td>$3,750</td>
-                      <td>2</td>
-                    </tr>
-                    <tr>
-                      <td>Snack Table</td>
-                      <td>1</td>
-                      <td>$1,500</td>
-                      <td>1</td>
-                    </tr>
-                    <tr className="done">
-                      <td>Barista</td>
-                      <td>Done</td>
-                      <td>$2,000</td>
-                      <td>1</td>
-                    </tr>
-                    <tr className="done">
-                      <td>Wifi</td>
-                      <td>Done</td>
-                      <td>$1,500</td>
-                      <td>1</td>
-                    </tr>
-                    <tr>
-                      <td>Open Gifting</td>
-                      <td>1</td>
-                      <td>$600</td>
-                      <td>0</td>
-                    </tr>
-                    <tr className="done">
-                      <td>Documentation Center</td>
-                      <td>Done</td>
-                      <td>$1,000</td>
-                      <td>0</td>
-                    </tr>
-                    <tr>
-                      <td>Qiqochat Workshop Hub</td>
-                      <td>1</td>
-                      <td>$1,000</td>
-                      <td>0</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-
-              <div className="callout">
-                <strong>📧 Contact Us</strong><br />
-                Interested in sponsoring? Contact us at <a href="mailto:kaliya@identitywoman.net">kaliya@identitywoman.net</a> to discuss sponsorship opportunities.
               </div>
             </div>
 
