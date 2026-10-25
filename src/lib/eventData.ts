@@ -971,10 +971,10 @@ export const events: Record<string, Event> = {
       },
       {
         id: 'sponsor-aiw3-7',
-        name: 'Documentation Center Sponsor',
+        name: 'OpenA2A',
         tier: 'Documentation Center',
-        logoUrl: '/sponsors/placeholder.png',
-        websiteUrl: '#',
+        logoUrl: '/sponsors/opena2a.png',
+        websiteUrl: 'https://opena2a.org',
         description: 'Documentation Center Sponsor',
         isSold: true,
         isAvailable: false
