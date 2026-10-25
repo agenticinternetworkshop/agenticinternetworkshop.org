@@ -915,12 +915,12 @@ export const events: Record<string, Event> = {
     sponsors: [
       {
         id: 'sponsor-aiw3-1',
-        name: 'Lunch Sponsor',
+        name: 'Baselayer',
         tier: 'Lunch',
-        logoUrl: '/sponsors/placeholder.png',
-        websiteUrl: '#',
+        logoUrl: '/sponsors/baselayer.svg',
+        websiteUrl: 'https://baselayer.com',
         description: 'Lunch Sponsor',
-        isAvailable: true
+        isAvailable: false
       },
       {
         id: 'sponsor-aiw3-2',
