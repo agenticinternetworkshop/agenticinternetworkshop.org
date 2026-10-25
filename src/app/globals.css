@@ -889,12 +889,14 @@ p  { margin: 0 0 var(--space-4); color: var(--text-muted); font-size: var(--fs-1
 .sponsorship-table tr.done td {
   color: var(--text-muted);
   font-style: italic;
+  text-decoration: line-through;
 }
 
 .sponsorship-table tr.done td:nth-child(2) {
   color: var(--accent-600);
   font-weight: 600;
   font-style: normal;
+  text-decoration: none;
 }
 
 /* Sponsor Logos */
