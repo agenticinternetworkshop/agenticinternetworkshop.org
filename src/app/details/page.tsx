@@ -64,6 +64,7 @@ export default function DetailsPage() {
             </div>
 
             <div className="details-content">
+              <p><strong>{event.date} • {event.location.name}, {event.location.city}, {event.location.state}</strong></p>
               <p><em>An Internet Identity Workshop Inspired Event, Hosted by the IIW Foundation (IIW #43 is November 3-5)</em></p>
 
               <p>The AgenticAI space is developing rapidly. Significant innovation is happening around protocols for how agents connect to each other, people, organizations, services, and things.</p>
@@ -102,7 +103,7 @@ export default function DetailsPage() {
                     <li><a href="https://www.w3.org/community/aikr/" target="_blank" rel="noopener noreferrer">AI KR</a> W3C</li>
                     <li><a href="https://openid.net/cg/artificial-intelligence-identity-management-community-group/" target="_blank" rel="noopener noreferrer">AI Identity Management CG</a> OpenID Foundation</li>
                     <li><a href="https://lf-toip.atlassian.net/wiki/spaces/HOME/pages/22982892/AI+Human+Trust+Working+Group" target="_blank" rel="noopener noreferrer">AI and Trust WG</a> Trust over IP</li>
-                    <li><a href="hhttps://projnanda.github.io/projnanda/#" target="_blank" rel="noopener noreferrer">Project NANDA</a></li>
+                    <li><a href="https://projectnanda.org/" target="_blank" rel="noopener noreferrer">Project NANDA</a></li>
                   </ul>
                 </div>
                 <div className="protocol-column">
