@@ -189,7 +189,7 @@ export default function Home() {
             </div>
             
             <h1>Agentic Internet Workshop #{event.eventNumber}</h1>
-            <p className="lede">{event.date}</p>
+            <p className="lede">{event.date} • {event.location.name}, {event.location.city}, {event.location.state}</p>
             <p className="lede">The Agentic Internet Workshop (AIW) continues the legacy of the Internet Identity Workshop (IIW), which helped shape foundational protocols like OpenID Connect, OAuth, and Decentralized Identifiers. AIW is a neutral space where the people building the identity, trust, and authorization layers for the agentic internet come together to do the hard work of alignment.</p>
           </div>
         </section>
