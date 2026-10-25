@@ -926,12 +926,13 @@ export const events: Record<string, Event> = {
       },
       {
         id: 'sponsor-aiw3-2',
-        name: 'Breakfast Sponsor',
+        name: 'Amazon Web Services',
         tier: 'Breakfast',
-        logoUrl: '/sponsors/placeholder.png',
-        websiteUrl: '#',
+        logoUrl: '/sponsors/AWS_logo_RGB_1c_Gray850.png',
+        websiteUrl: 'https://aws.amazon.com',
         description: 'Breakfast Sponsor',
-        isAvailable: true
+        isSold: true,
+        isAvailable: false
       },
       {
         id: 'sponsor-aiw3-3',
