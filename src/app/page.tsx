@@ -587,9 +587,9 @@ export default function Home() {
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="done">
+                    <tr>
                       <td>Breakfast</td>
-                      <td>Done</td>
+                      <td>1</td>
                       <td>$1,750</td>
                       <td>1</td>
                     </tr>
