@@ -219,7 +219,7 @@ export default function Home() {
                   </div>
                 )}
                 <a href={event.details.registrationUrl} className="btn btn-primary" target="_blank" rel="noopener noreferrer">Register Now</a>
-                <p className="small">Early Bird pricing starts at $150 for Independent/Startups Until October 1</p>
+                <p className="small">$175 for Independent/Startups, $325 for Corporate</p>
               </div>
             ) : (
               <p className="mw-tight"><em>Registration opens soon. Check back for details.</em></p>
@@ -368,16 +368,14 @@ export default function Home() {
                 <div className="card price-card">
                   <h3>Independent / Startups</h3>
                   <div className="price">
-                    <div>Early Bird (until October): $150</div>
-                    <div>Regular: $175</div>
+                    <div>$175</div>
                   </div>
                 </div>
 
                 <div className="card price-card">
                   <h3>Corporate / Regular</h3>
                   <div className="price">
-                    <div>Early Bird (until October 1): $275</div>
-                    <div>Regular: $350</div>
+                    <div>$325</div>
                   </div>
                 </div>
               </div>

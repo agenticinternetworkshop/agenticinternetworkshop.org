@@ -190,13 +190,11 @@ export default function DetailsPage() {
               <div className="pricing-details">
                 <div className="price-item">
                   <div className="price-description"><strong>Independent/Startups</strong></div>
-                  <div className="price-amount">$150/$175</div>
-                  <div className="price-description"><small>Early Bird (Until Oct 1)/Regular</small></div>
+                  <div className="price-amount">$175</div>
                 </div>
                 <div className="price-item">
                   <div className="price-description"><strong>Corporate/Regular</strong></div>
-                  <div className="price-amount">$275/$350</div>
-                  <div className="price-description"><small>Early Bird (Until Oct 1)/Regular</small></div>
+                  <div className="price-amount">$325</div>
                 </div>
               </div>
               {event.details.registrationUrl && (
