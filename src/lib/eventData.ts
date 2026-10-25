@@ -979,6 +979,15 @@ export const events: Record<string, Event> = {
         description: 'Documentation Center Sponsor',
         isSold: true,
         isAvailable: false
+      },
+      {
+        id: 'sponsor-aiw3-8',
+        name: 'Qiqochat Workshop Hub Sponsor',
+        tier: 'Qiqochat Workshop Hub',
+        logoUrl: '/sponsors/placeholder.png',
+        websiteUrl: '#',
+        description: 'Qiqochat Workshop Hub Sponsor',
+        isAvailable: true
       }
     ],
     schedule: [],
