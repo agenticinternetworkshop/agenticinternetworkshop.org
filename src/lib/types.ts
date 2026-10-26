@@ -114,4 +114,6 @@ export interface Event {
   schedule: ScheduleItem[]
   details: EventDetails
   isSourcedFrom?: string
+  /** Short overview shown above the topic list on the Topics page */
+  topicsOverview?: string
 }
