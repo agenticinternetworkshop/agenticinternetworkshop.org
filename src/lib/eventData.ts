@@ -967,7 +967,7 @@ export const events: Record<string, Event> = {
         tier: 'Open Gifting',
         logoUrl: '/sponsors/mission.svg',
         websiteUrl: 'https://agentlab.choosemission.com/',
-        description: 'Open Gifting Sponsor',
+        description: 'Mission (Open Gifting Sponsor)',
         isSold: true,
         isAvailable: false
       },
