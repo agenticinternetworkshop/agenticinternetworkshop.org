@@ -965,9 +965,9 @@ export const events: Record<string, Event> = {
         id: 'sponsor-aiw3-6',
         name: 'Mission',
         tier: 'Open Gifting',
-        logoUrl: '/sponsors/placeholder.png',
-        websiteUrl: 'https://www.choosemission.com',
-        description: 'Mission (Open Gifting Sponsor)',
+        logoUrl: '/sponsors/mission.svg',
+        websiteUrl: 'https://agentlab.choosemission.com/',
+        description: 'Open Gifting Sponsor',
         isSold: true,
         isAvailable: false
       },
