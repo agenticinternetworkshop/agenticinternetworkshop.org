@@ -963,12 +963,13 @@ export const events: Record<string, Event> = {
       },
       {
         id: 'sponsor-aiw3-6',
-        name: 'Open Gifting Sponsor',
+        name: 'Mission',
         tier: 'Open Gifting',
         logoUrl: '/sponsors/placeholder.png',
-        websiteUrl: '#',
-        description: 'Open Gifting Sponsor',
-        isAvailable: true
+        websiteUrl: 'https://www.choosemission.com',
+        description: 'Mission (Open Gifting Sponsor)',
+        isSold: true,
+        isAvailable: false
       },
       {
         id: 'sponsor-aiw3-7',
