@@ -963,12 +963,13 @@ export const events: Record<string, Event> = {
       },
       {
         id: 'sponsor-aiw3-6',
-        name: 'Open Gifting Sponsor',
+        name: 'Mace AI',
         tier: 'Open Gifting',
-        logoUrl: '/sponsors/placeholder.png',
-        websiteUrl: '#',
-        description: 'Open Gifting Sponsor',
-        isAvailable: true
+        logoUrl: '/sponsors/mace-ai.svg',
+        websiteUrl: 'https://mace.ai',
+        description: 'Mace AI (Closing Circle and Open Gifting Sponsor)',
+        isSold: true,
+        isAvailable: false
       },
       {
         id: 'sponsor-aiw3-7',
@@ -982,12 +983,13 @@ export const events: Record<string, Event> = {
       },
       {
         id: 'sponsor-aiw3-8',
-        name: 'Qiqochat Workshop Hub Sponsor',
+        name: 'Mission',
         tier: 'Qiqochat Workshop Hub',
-        logoUrl: '/sponsors/placeholder.png',
-        websiteUrl: '#',
-        description: 'Qiqochat Workshop Hub Sponsor',
-        isAvailable: true
+        logoUrl: '/sponsors/mission.svg',
+        websiteUrl: 'https://agentlab.choosemission.com/',
+        description: 'Mission (Qiqochat Workshop Hub Sponsor)',
+        isSold: true,
+        isAvailable: false
       }
     ],
     schedule: [],

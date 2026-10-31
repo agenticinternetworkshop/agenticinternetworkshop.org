@@ -618,9 +618,9 @@ export default function Home() {
                       <td>$1,500</td>
                       <td>1</td>
                     </tr>
-                    <tr>
-                      <td>Open Gifting</td>
-                      <td>1</td>
+                    <tr className="done">
+                      <td>Open Gifting (Closing Circle)</td>
+                      <td>SOLD</td>
                       <td>$600</td>
                       <td>0</td>
                     </tr>
@@ -630,9 +630,9 @@ export default function Home() {
                       <td>$1,000</td>
                       <td>0</td>
                     </tr>
-                    <tr>
+                    <tr className="done">
                       <td>Qiqochat Workshop Hub</td>
-                      <td>1</td>
+                      <td>SOLD</td>
                       <td>$1,000</td>
                       <td>0</td>
                     </tr>
