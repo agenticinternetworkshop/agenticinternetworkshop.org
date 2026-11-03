@@ -32,6 +32,9 @@ export default function TopicsPage() {
             <Link href="/topics" className={`nav-link ${activeNav === 'topics' ? 'active' : ''}`}>
               Topics
             </Link>
+            <Link href="/interop" className={`nav-link ${activeNav === 'interop' ? 'active' : ''}`}>
+              Interop Day
+            </Link>
             <Link href="/whos-coming" className={`nav-link ${activeNav === 'whos-coming' ? 'active' : ''}`}>
               Who's Coming
             </Link>
