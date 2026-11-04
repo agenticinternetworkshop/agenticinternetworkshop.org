@@ -601,7 +601,20 @@ export const events: Record<string, Event> = {
           'Who signs the ID — the provider, the deployer, or both?',
           'Agent identity is not enough: the authority, memory, and intent layer above it',
           'Sovereign identity for organizations: what agent authority looks like when AI joins the org chart',
-          'Are identifiers even the right way to think about agentic identification?'
+          'Are identifiers even the right way to think about agentic identification?',
+          'WIMSE and SPIFFE for agent instance identity and attestation',
+          'Defining a fundamental AI Agent Identity primitive and persistent identity states',
+          'Autonomous Agent Identity',
+          'Agentic JWT protocol (IETF draft)',
+          'PEDIGREE draft and SURADAR SDK architecture',
+          'vLEI + SEDI for AI agent identity',
+          'Attestations and methods to agentic identity',
+          'Sovereign computing for agents',
+          'Accountable Entity as the root of Agentic Trust',
+          'Agentic Profiles (A2A + DIDs)',
+          'Know Your Agent (KYA), ERC-8004, Visa TAP, OpenVTC agent-passport efforts',
+          'Attribution for citation open source standard',
+          'agents++ open source library for agent identity'
         ],
         category: 'Identity & Privacy'
       },
@@ -630,7 +643,17 @@ export const events: Record<string, Event> = {
           'How the community keeps a human, a company, or a nation the source of authority at execution time as agents chain calls across tools and organizations',
           'Mission-based authorization and governance for agents',
           'Mission-based agent-team governance',
-          'Separating human intent, governance decisions, delegated authority, and execution evidence in agentic systems'
+          'Separating human intent, governance decisions, delegated authority, and execution evidence in agentic systems',
+          'Authorization for agents: why existing RFCs will not help',
+          'Mandate vs. token: should delegated authority travel as a signed user mandate or an OAuth grant?',
+          'AI Agent Action delegation mandate using EUD Wallet and MachineMandate',
+          'Token exchange and transaction tokens for delegation across agent chains',
+          'Proof of possession surviving token exchange: chaining cnf across agent hops with DPoP, WIMSE proof tokens, and transaction tokens',
+          'Delegation chains where each hop stays in bounds but the whole chain doesn\'t',
+          'Proving authority without revealing the principal behind it',
+          'Scoped, time-limited authority and what happens when an agent\'s key or runtime is compromised',
+          'SD-JWT, ID-JAG, DPoP for agents',
+          'MCP authorization: DPoP, SEP-1932, shared DPoP signal across MCP and Poppy'
         ],
         category: 'Technical Protocols'
       },
@@ -648,7 +671,15 @@ export const events: Record<string, Event> = {
           'How do you stop an agent ID from being replayed by a malicious service?',
           'How do two different agent ID schemes recognize each other?',
           'Behavioral coherence as a runtime trust signal (trust asymmetry and the completion drive)',
-          'How trust and behavioral signals can travel with an agent without becoming surveillance'
+          'How trust and behavioral signals can travel with an agent without becoming surveillance',
+          'TSP (Trust Spanning Protocol) and Trust Enabled AI Agents',
+          'Fiduciary AI and AI agent fiduciaries',
+          'Verifiable trust infrastructure for AI agents',
+          'Shared vendor-neutral threat taxonomy for agents: the Agent Threat Matrix (9 tactics, 57 techniques, submitted to MITRE)',
+          'How IETF, W3C, and DIF efforts on agent identity overlap vs. diverge',
+          'Conformance and certification for fast-moving agent protocols',
+          'Intent evaluation both before and after a transaction with AI agents',
+          'SAFE AI metrics and measurements and uncertainty certificates'
         ],
         category: 'Identity & Privacy'
       },
@@ -679,7 +710,16 @@ export const events: Record<string, Event> = {
           'Where policy enforcement should live in multi-agent systems',
           'Agent permissions and scoped capabilities (allow/ask/deny/escalate)',
           'Policy portability across frameworks',
-          'Governance of agentic AI — embedding alignment in protocols'
+          'Governance of agentic AI — embedding alignment in protocols',
+          'Agentic AI and consumer protection',
+          'Agentic AI and advertising',
+          'How consumers can be part of the design of policy and product for agentic AI governance',
+          'AI Control Planes',
+          'Consent semantics across open banking and agent protocols',
+          'Personal Agent Protocol: what a high-assurance tier needs',
+          'Liability and presence for agent-initiated payments',
+          'Who owns agent identity: the user, the agent platform, or the relying party?',
+          'Licensing AI Agents like cars: we solved this problem 100 years ago'
         ],
         category: 'Policy & Governance'
       },
@@ -696,7 +736,20 @@ export const events: Record<string, Event> = {
           'Practical patterns for trustworthy agent systems',
           'When an agent goes wrong at 2am, who do you call?',
           'What does an ID have to carry for anyone to stop a running agent?',
-          'What should a service log when an agent calls it?'
+          'What should a service log when an agent calls it?',
+          'Flipping the narrative from human-in-the-loop to agent-in-the-loop',
+          'Intent drift in AI Agents',
+          'How to prevent LLM creativity from exceeding its prescribed functions over time',
+          'Goal and action alignment of LLM agents',
+          'Agent guardrails',
+          'Agents in critical business processes',
+          'Decentralized agentic security',
+          'Secure identity primitives and key management for agents',
+          'TEEs vs. cryptography for agent security: where to draw the line',
+          'Deterministic ZK gates as an agent harness',
+          'Shared Signal Framework Mandate Lifecycle Event Profile for Agentic AI',
+          'Revocation at agent speed: Shared Signals and CAEP',
+          'Agentic Git Signing'
         ],
         category: 'Human-AI Interaction'
       },
@@ -708,7 +761,12 @@ export const events: Record<string, Event> = {
         bullets: [
           'User-controlled agents and personal data sovereignty',
           'Personal data, memory, and secure authorization',
-          'Consent-aware edge and embodied agents'
+          'Consent-aware edge and embodied agents',
+          'Personal portable memory for agents',
+          'Personal AI lock-boxes',
+          'Agentic Permissioned Storage',
+          'Privacy-preserving agent-to-agent matching for regulated personal data',
+          'Agents that carry credentials on behalf of humans: age, photo ID, and payments over MCP'
         ],
         category: 'Identity & Privacy'
       },
@@ -731,7 +789,10 @@ export const events: Record<string, Event> = {
           'AGNTCY and its 3 layers: Agent Discovery, Agent Identity, and SLIM',
           'A2A Agent Cards',
           'Which protocol is best suited to carry an "obfuscated broadcast, local-only computation" pattern: A2A Artifact model, AGNTCY SLIM messaging, or ANP DID-based discovery?',
-          'Newest state of AI agents'
+          'Newest state of AI agents',
+          'Agentic AI communication via X-Road',
+          'Common record model for agent actions: convergence of audit and delegation drafts',
+          'What attributable evidence for an agent action needs to contain'
         ],
         category: 'Technical Protocols'
       },
@@ -745,7 +806,17 @@ export const events: Record<string, Event> = {
           'Agentic Commerce',
           'KYAPay',
           'Payment layers for agent-to-agent transactions',
-          'Privacy-preserving agent-to-agent matching for regulated personal data: feasibility of minimal-disclosure marketplaces on A2A/AGNTCY'
+          'Privacy-preserving agent-to-agent matching for regulated personal data: feasibility of minimal-disclosure marketplaces on A2A/AGNTCY',
+          'Agent payments in production: AP2, ACP, x402, EMVCo agentic payments framework, MPP',
+          'Confidential agent payments with zero-knowledge proofs (x402-style pay-per-call)',
+          'Agent wallets with enforceable spend policies',
+          'Spend policies enforced by cryptographic gates, not by agent good behavior',
+          'Selective privacy disclosure: proving a fact without revealing data',
+          'Terms before transactions: the missing agreement layer (Legal Context Protocol, Consenti, UETA/ESIGN)',
+          'Agent commerce under Proof-of-Control: what evidence does a purchase need?',
+          'Binding user intent to agent actions: transaction authorization, passkeys, Secure Payment Confirmation, signed mandates',
+          'Interoperability across agentic payment and protocol stacks (AP2, UCP, A2A, A2UI, MCP, x402, PAP)',
+          'Accountability after the fact: audit trails and dispute resolution for agent actions'
         ],
         category: 'Use Cases'
       },
@@ -757,7 +828,9 @@ export const events: Record<string, Event> = {
         bullets: [
           'Are standards relevant in the age of AI?',
           'Where are standards being developed today for Agentic AI? What is good/bad/ugly about these different orgs?',
-          'How should agent identity/discovery protocols defend against a coordinator that sends inconsistent versions to isolate one participant\'s data?'
+          'How should agent identity/discovery protocols defend against a coordinator that sends inconsistent versions to isolate one participant\'s data?',
+          'Conformance and certification for fast-moving agent protocols',
+          'Interoperability across the protocol landscape (AP2, UCP, A2A, A2UI, MCP, x402, PAP)'
         ],
         category: 'Policy & Governance'
       }
