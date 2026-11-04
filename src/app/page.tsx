@@ -144,6 +144,9 @@ export default function Home() {
             <Link href="/topics" className="nav-link">
               Topics
             </Link>
+            <Link href="/interop" className="nav-link">
+              Interop Day
+            </Link>
             <Link href="/whos-coming" className="nav-link">
               Who's Coming
             </Link>
@@ -306,7 +309,7 @@ export default function Home() {
             <div className={`tab-content ${activeTab === 'schedule' ? 'active' : ''}`}>
               <div className="section-header">
                 <h2>Workshop Schedule</h2>
-                <p className="description">We will host an Interop Day on November 5th in parallel with Day three of IIW at the same location beginning at 10:30 AM.<br /><br />November 6th will be a full day of collaborative sessions using Open Space Technology</p>
+                <p className="description">We will host an <Link href="/interop">Interop Day on November 5th</Link> in parallel with Day three of IIW at the same location beginning at 10:30 AM.<br /><br />November 6th will be a full day of collaborative sessions using Open Space Technology</p>
               </div>
 
               <table className="schedule">
