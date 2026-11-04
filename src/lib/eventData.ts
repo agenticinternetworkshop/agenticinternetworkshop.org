@@ -953,7 +953,8 @@ export const events: Record<string, Event> = {
       { id: 'aiw3-att-59', name: 'Eric Forst', role: 'CEO', affiliation: 'Blocksee', socialLinks: { website: 'https://www.blocksee.co/' } },
       { id: 'aiw3-att-60', name: 'Peter Kaminski', role: 'Principal', affiliation: 'peterkaminski.ai', socialLinks: { website: 'https://peterkaminski.ai/' } },
       { id: 'aiw3-att-61', name: 'Dmitri Zagidulin', affiliation: 'Interop Alliance', socialLinks: { website: 'https://interopalliance.org' } },
-      { id: 'aiw3-att-62', name: 'Carey Janecka', role: 'Staff Software Engineer', affiliation: 'Turnkey', socialLinks: { website: 'https://turnkey.com' } }
+      { id: 'aiw3-att-62', name: 'Carey Janecka', role: 'Staff Software Engineer', affiliation: 'Turnkey', socialLinks: { website: 'https://turnkey.com' } },
+      { id: 'aiw3-att-63', name: 'Tricia Wang', affiliation: 'Advanced AI Society', socialLinks: { website: 'https://advancedaisociety.org' } }
     ],
     sponsors: [
       {
