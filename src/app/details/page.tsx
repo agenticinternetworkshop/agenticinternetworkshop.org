@@ -30,6 +30,9 @@ export default function DetailsPage() {
             <Link href="/topics" className={`nav-link ${activeNav === 'topics' ? 'active' : ''}`}>
               Topics
             </Link>
+            <Link href="/interop" className={`nav-link ${activeNav === 'interop' ? 'active' : ''}`}>
+              Interop Day
+            </Link>
             <Link href="/whos-coming" className={`nav-link ${activeNav === 'whos-coming' ? 'active' : ''}`}>
               Who's Coming
             </Link>
@@ -72,8 +75,8 @@ export default function DetailsPage() {
               <p>This will be our Third workshop and our goal is to bring together individuals and organizations working on Agentic AI Protocols together to advance the field in a productive and generative manner.</p>
 
               <div className="callout" style={{marginTop: 'var(--space-6)', marginBottom: 'var(--space-6)'}}>
-                <strong>🔗 Interoperability Day November 5th</strong><br />
-                We are hosting an Interoperability Day in parallel with Day 3 of the 43rd Internet Identity Workshop in the same venue. When you register you can express interest in participating.
+                <strong>🔗 <Link href="/interop">Interoperability Day November 5th</Link></strong><br />
+                We are hosting an <Link href="/interop">Interoperability Day</Link> in parallel with Day 3 of the 43rd Internet Identity Workshop in the same venue. When you register you can express interest in participating.
               </div>
               
               <h2>What is the value of participation?</h2>
@@ -99,6 +102,7 @@ export default function DetailsPage() {
                     <li><a href="https://trello.com/c/3pdVLL9w/39-1430-1630-ai-agent-protocols" target="_blank" rel="noopener noreferrer">AI Agents</a> Side Meeting at last IETF</li>
                     <li><a href="https://trello.com/c/v0XjZxf0/48-1100-1300-ai-agent-applications-in-6g-network" target="_blank" rel="noopener noreferrer">AI agent applications in 6G network</a> Side Meeting at IETF</li>
                     <li><a href="https://trello.com/c/tgZesNpH/53-1800-2000-the-impact-of-ai-agent-on-network-infrastructure" target="_blank" rel="noopener noreferrer">The Impact of AI Agent on Network Infrastructure</a> Side Meeting at IETF</li>
+                    <li><a href="https://advancedaisociety.org/proof-of-control" target="_blank" rel="noopener noreferrer">Proof of Control</a> Advanced AI Society</li>
                     <li><a href="https://www.w3.org/community/agentprotocol/" target="_blank" rel="noopener noreferrer">AI Agent Protocol Community Group (CG)</a> W3C</li>
                     <li><a href="https://www.w3.org/community/aikr/" target="_blank" rel="noopener noreferrer">AI KR</a> W3C</li>
                     <li><a href="https://openid.net/cg/artificial-intelligence-identity-management-community-group/" target="_blank" rel="noopener noreferrer">AI Identity Management CG</a> OpenID Foundation</li>
