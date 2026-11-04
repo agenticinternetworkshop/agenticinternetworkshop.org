@@ -614,7 +614,15 @@ export const events: Record<string, Event> = {
           'Agent identity and sovereign computing',
           'Secure identity primitives and key management',
           'SD-JWT, ID-JAG and DPoP',
-          'Agentic Git signing'
+          'Agentic Git signing',
+          'WIMSE and SPIFFE for agent instance identity and attestation',
+          'PEDIGREE draft and SURADAR SDK architecture',
+          'vLEI + SEDI for AI agent identity',
+          'Attestations and methods to agentic identity',
+          'Accountable Entity as the root of Agentic Trust',
+          'Know Your Agent (KYA), ERC-8004, Visa TAP, OpenVTC agent-passport efforts',
+          'Attribution for citation open source standard',
+          'agents++ open source library for agent identity'
         ],
         category: 'Identity & Privacy'
       },
@@ -655,7 +663,12 @@ export const events: Record<string, Event> = {
           'Delegation chains where each hop stays in bounds but the whole chain does not',
           'Proving an agent\'s authority without revealing the principal behind it',
           'Identity and access management challenges with agents',
-          'Privilege management for AI agents'
+          'Privilege management for AI agents',
+          'Mandate vs. token: should delegated authority travel as a signed user mandate or an OAuth grant?',
+          'Token exchange and transaction tokens for delegation across agent chains',
+          'Proof of possession surviving token exchange: chaining cnf across agent hops with DPoP, WIMSE proof tokens, and transaction tokens',
+          'Scoped, time-limited authority and what happens when an agent\'s key or runtime is compromised',
+          'MCP authorization: DPoP, SEP-1932, shared DPoP signal across MCP and Poppy'
         ],
         category: 'Technical Protocols'
       },
@@ -679,7 +692,13 @@ export const events: Record<string, Event> = {
           'Accountable Entity is the root of agentic trust',
           'Agentic identity and accountability, worked on together with other protocol and standards developers',
           'Trust registries',
-          'Evaluating intent both before and after an AI agent transaction is initiated'
+          'Evaluating intent both before and after an AI agent transaction is initiated',
+          'Fiduciary AI and AI agent fiduciaries',
+          'Verifiable trust infrastructure for AI agents',
+          'Shared vendor-neutral threat taxonomy for agents: the Agent Threat Matrix (9 tactics, 57 techniques, submitted to MITRE)',
+          'How IETF, W3C, and DIF efforts on agent identity overlap vs. diverge',
+          'Conformance and certification for fast-moving agent protocols',
+          'SAFE AI metrics and measurements and uncertainty certificates'
         ],
         category: 'Identity & Privacy'
       },
@@ -716,7 +735,13 @@ export const events: Record<string, Event> = {
           'Governance of agentic AI — embedding alignment in protocols',
           'Agentic AI and consumer protection, and the privacy issues that may arise',
           'Agentic AI and advertising',
-          'How consumers can be part of the design of agentic AI policy and products'
+          'How consumers can be part of the design of agentic AI policy and products',
+          'AI Control Planes',
+          'Consent semantics across open banking and agent protocols',
+          'Personal Agent Protocol: what a high-assurance tier needs',
+          'Liability and presence for agent-initiated payments',
+          'Who owns agent identity: the user, the agent platform, or the relying party?',
+          'Licensing AI Agents like cars: we solved this problem 100 years ago'
         ],
         category: 'Policy & Governance'
       },
@@ -746,7 +771,14 @@ export const events: Record<string, Event> = {
           'How to prevent LLM creativity from exceeding its prescribed functions over time',
           'Best AI agent harness design techniques',
           'Is it hopeless? Will AI agents eventually build so much intelligence that humans cannot control them?',
-          'SAFE AI metrics, measurements and uncertainty certificates'
+          'SAFE AI metrics, measurements and uncertainty certificates',
+          'Agent guardrails',
+          'Decentralized agentic security',
+          'TEEs vs. cryptography for agent security: where to draw the line',
+          'Deterministic ZK gates as an agent harness',
+          'Shared Signal Framework Mandate Lifecycle Event Profile for Agentic AI',
+          'Revocation at agent speed: Shared Signals and CAEP',
+          'Agentic Git Signing'
         ],
         category: 'Human-AI Interaction'
       },
@@ -762,7 +794,9 @@ export const events: Record<string, Event> = {
           'Personal portable memory',
           'Personal AI "lock-boxes"',
           'A path toward human-empowering AIs',
-          'Agentic permissioned storage'
+          'Agentic permissioned storage',
+          'Privacy-preserving agent-to-agent matching for regulated personal data',
+          'Agents that carry credentials on behalf of humans: age, photo ID, and payments over MCP'
         ],
         category: 'Identity & Privacy'
       },
@@ -807,7 +841,14 @@ export const events: Record<string, Event> = {
           'Terms before transactions: the missing agreement layer. Payment protocols (x402, ACP, AP2, MPP) move money between agents, but none record which terms were accepted, by whose authority, or what the approving human actually saw',
           'How terms discovery, acceptance and evidence should fit with payment and identity protocols, including the Legal Context Protocol and Consenti: agree, prove authority, then pay',
           'Verifiable evidence of agent behavior at commerce scale: what Proof-of-Control-style evidence a purchase needs, and what it costs when agents make thousands of sub-cent payments',
-          'Agent commerce under Proof-of-Control: a walkthrough of an agent-to-agent purchase built by Blocksee, Secret Labs (SecretVM) and Certisyn'
+          'Agent commerce under Proof-of-Control: a walkthrough of an agent-to-agent purchase built by Blocksee, Secret Labs (SecretVM) and Certisyn',
+          'Confidential agent payments with zero-knowledge proofs (x402-style pay-per-call)',
+          'Agent wallets with enforceable spend policies',
+          'Spend policies enforced by cryptographic gates, not by agent good behavior',
+          'Selective privacy disclosure: proving a fact without revealing data',
+          'Binding user intent to agent actions: transaction authorization, passkeys, Secure Payment Confirmation, signed mandates',
+          'Interoperability across agentic payment and protocol stacks (AP2, UCP, A2A, A2UI, MCP, x402, PAP)',
+          'Accountability after the fact: audit trails and dispute resolution for agent actions'
         ],
         category: 'Use Cases'
       },
