@@ -889,12 +889,14 @@ p  { margin: 0 0 var(--space-4); color: var(--text-muted); font-size: var(--fs-1
 .sponsorship-table tr.done td {
   color: var(--text-muted);
   font-style: italic;
+  text-decoration: line-through;
 }
 
 .sponsorship-table tr.done td:nth-child(2) {
   color: var(--accent-600);
   font-weight: 600;
   font-style: normal;
+  text-decoration: none;
 }
 
 /* Sponsor Logos */
@@ -1565,4 +1567,45 @@ p  { margin: 0 0 var(--space-4); color: var(--text-muted); font-size: var(--fs-1
   .event-cards {
     grid-template-columns: 1fr;
   }
+}
+
+/* Topics page overview */
+.topics-overview {
+  margin-bottom: var(--space-8);
+}
+
+.topics-overview p {
+  max-width: 72ch;
+  color: var(--text);
+}
+
+.topics-overview-list {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-4) 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.topics-overview-list a {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-1) var(--space-3);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg-alt);
+  color: var(--text);
+  font-size: var(--fs-14);
+  text-decoration: none;
+}
+
+.topics-overview-list a:hover {
+  border-color: var(--accent-300);
+  color: var(--accent-600);
+}
+
+.topic-card {
+  scroll-margin-top: 96px;
 }

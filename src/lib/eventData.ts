@@ -583,12 +583,14 @@ export const events: Record<string, Event> = {
       zipCode: '94043'
     },
     status: 'current',
+    topicsOverview:
+      'The largest cluster is delegation and authorization: how authority passes from a person or organization to an agent, and stays bounded and revocable as agents call tools and other agents across MCP, A2A, OAuth and GNAP. Next come agent identity and credentials (what an agent ID should contain, who signs it, and how it maps to a human) and safety and human control (audit logs, intent drift, and how to stop a running agent). Newer threads include agent payments and the agreement layer that should come before them, consumer protection, and how the IETF, W3C and DIF efforts fit together. The last group lists what people want to test hands-on at Interop Day on November 5.',
     topics: [
       {
         id: 'aiw3-topic-1',
         title: 'Agent Identity & Credentials',
         description:
-          'Topics include: Agent identity using verifiable credentials and DIDs, Non-human agent provenance and accountability, What does the "relying party" look like when it’s an agent, not a human?, Extending OpenID4VP and wallet architectures to agent-to-agent flows, Proof of control and verified credentials for personal agents, What should an agent disclose about the model behind it?, If a service could ask one thing about the model powering an agent, what should it be?, Should agent credentials be ephemeral or persistent?, Who signs the ID — the provider, the deployer, or both?, Agent identity is not enough: the authority, memory, and intent layer above it, Sovereign identity for organizations: what agent authority looks like when AI joins the org chart, Are identifiers even the right way to think about agentic identification?',
+          'Topics include: Agent identity using verifiable credentials and DIDs, Non-human agent provenance and accountability, What does the "relying party" look like when it’s an agent, not a human?, Extending OpenID4VP and wallet architectures to agent-to-agent flows, Proof of control and verified credentials for personal agents, What should an agent disclose about the model behind it?, If a service could ask one thing about the model powering an agent, what should it be?, Should agent credentials be ephemeral or persistent?, Who signs the ID — the provider, the deployer, or both?, Agent identity is not enough: the authority, memory, and intent layer above it, Sovereign identity for organizations: what agent authority looks like when AI joins the org chart, Are identifiers even the right way to think about agentic identification?, How agentic identity maps to a human identity, How teams are handling agentic identity in practice, Autonomous agent identity and agent security, Licensing AI agents like cars - we solved this problem 100 years ago, Agentic identity, authorization, attestation and verification, Is it possible to define a fundamental AI agent identity primitive?, What it means to define persistent identity states, Agent identity and sovereign computing, Secure identity primitives and key management, SD-JWT, ID-JAG and DPoP, Agentic Git signing',
         bullets: [
           'Agent identity using verifiable credentials and DIDs',
           'Non-human agent provenance and accountability',
@@ -602,19 +604,17 @@ export const events: Record<string, Event> = {
           'Agent identity is not enough: the authority, memory, and intent layer above it',
           'Sovereign identity for organizations: what agent authority looks like when AI joins the org chart',
           'Are identifiers even the right way to think about agentic identification?',
-          'WIMSE and SPIFFE for agent instance identity and attestation',
-          'Defining a fundamental AI Agent Identity primitive and persistent identity states',
-          'Autonomous Agent Identity',
-          'Agentic JWT protocol (IETF draft)',
-          'PEDIGREE draft and SURADAR SDK architecture',
-          'vLEI + SEDI for AI agent identity',
-          'Attestations and methods to agentic identity',
-          'Sovereign computing for agents',
-          'Accountable Entity as the root of Agentic Trust',
-          'Agentic Profiles (A2A + DIDs)',
-          'Know Your Agent (KYA), ERC-8004, Visa TAP, OpenVTC agent-passport efforts',
-          'Attribution for citation open source standard',
-          'agents++ open source library for agent identity'
+          'How agentic identity maps to a human identity',
+          'How teams are handling agentic identity in practice',
+          'Autonomous agent identity and agent security',
+          'Licensing AI agents like cars - we solved this problem 100 years ago',
+          'Agentic identity, authorization, attestation and verification',
+          'Is it possible to define a fundamental AI agent identity primitive?',
+          'What it means to define persistent identity states',
+          'Agent identity and sovereign computing',
+          'Secure identity primitives and key management',
+          'SD-JWT, ID-JAG and DPoP',
+          'Agentic Git signing'
         ],
         category: 'Identity & Privacy'
       },
@@ -622,7 +622,7 @@ export const events: Record<string, Event> = {
         id: 'aiw3-topic-2',
         title: 'Delegation & Authorization',
         description:
-          'Topics include: Agent-to-agent delegation without impersonation, GNAP vs. OAuth patterns for agent authorization, Cryptographic proof of delegation for AI agents, Enforcing least-privilege at the tool-call layer, How intent and obligations travel alongside A2A / MCP calls, Capability-based vs. policy-based approaches for delegation, Does the ID carry authorization, or point at it?, Can identity and authorization stay distinct and still interoperate?, Secure mandates for agent chains: carrying revocable, auditable authority across MCP and A2A hops, Human authority at machine speed: execution-time consent and revocation, Keeping mandates sovereignty-preserving, not surveillance, Progress on A2A, AAuth, OAuth support for agentic-driven flows, OAuth-related metadata standards evolution, Implications to JWTs and claims for supporting agentic workflows, Workload-based access grants and flows, Where agent-to-agent and agent-to-tool authorization is actually heading: GNAP and OAuth extensions for agents, AuthZEN for fine-grained authorization, capability narrowing and revocation across delegation hops, KERI/ACDC and SEDI for cryptographic authority, How the community keeps a human, a company, or a nation the source of authority at execution time as agents chain calls across tools and organizations, Mission-based authorization and governance for agents, Mission-based agent-team governance, Separating human intent, governance decisions, delegated authority, and execution evidence in agentic systems',
+          'Topics include: Agent-to-agent delegation without impersonation, GNAP vs. OAuth patterns for agent authorization, Cryptographic proof of delegation for AI agents, Enforcing least-privilege at the tool-call layer, How intent and obligations travel alongside A2A / MCP calls, Capability-based vs. policy-based approaches for delegation, Does the ID carry authorization, or point at it?, Can identity and authorization stay distinct and still interoperate?, Secure mandates for agent chains: carrying revocable, auditable authority across MCP and A2A hops, Human authority at machine speed: execution-time consent and revocation, Keeping mandates sovereignty-preserving, not surveillance, Progress on A2A, AAuth, OAuth support for agentic-driven flows, OAuth-related metadata standards evolution, Implications to JWTs and claims for supporting agentic workflows, Workload-based access grants and flows, Where agent-to-agent and agent-to-tool authorization is actually heading: GNAP and OAuth extensions for agents, AuthZEN for fine-grained authorization, capability narrowing and revocation across delegation hops, KERI/ACDC and SEDI for cryptographic authority, How the community keeps a human, a company, or a nation the source of authority at execution time as agents chain calls across tools and organizations, Mission-based authorization and governance for agents, Mission-based agent-team governance, Separating human intent, governance decisions, delegated authority, and execution evidence in agentic systems, Human ownership provenance and authorized delegation, MCP auth, The latest OAuth-based and credential-based agent identity protocols, Best-of-class capability-based authorization protocols for AI, Authorization for agents: why existing RFCs will not help, Agentic JWT protocol (IETF draft), AI agent action delegation mandates using the EUDI Wallet and MachineMandate, How identity, delegation and agent-passport efforts (KYA, ERC-8004, Visa TAP, OpenVTC) represent a principal\'s authority to commit to terms on their behalf, not just to log in or pay, Delegation chains where each hop stays in bounds but the whole chain does not, Proving an agent\'s authority without revealing the principal behind it, Identity and access management challenges with agents, Privilege management for AI agents',
         bullets: [
           'Agent-to-agent delegation without impersonation',
           'GNAP vs. OAuth patterns for agent authorization',
@@ -644,16 +644,18 @@ export const events: Record<string, Event> = {
           'Mission-based authorization and governance for agents',
           'Mission-based agent-team governance',
           'Separating human intent, governance decisions, delegated authority, and execution evidence in agentic systems',
+          'Human ownership provenance and authorized delegation',
+          'MCP auth',
+          'The latest OAuth-based and credential-based agent identity protocols',
+          'Best-of-class capability-based authorization protocols for AI',
           'Authorization for agents: why existing RFCs will not help',
-          'Mandate vs. token: should delegated authority travel as a signed user mandate or an OAuth grant?',
-          'AI Agent Action delegation mandate using EUD Wallet and MachineMandate',
-          'Token exchange and transaction tokens for delegation across agent chains',
-          'Proof of possession surviving token exchange: chaining cnf across agent hops with DPoP, WIMSE proof tokens, and transaction tokens',
-          'Delegation chains where each hop stays in bounds but the whole chain doesn\'t',
-          'Proving authority without revealing the principal behind it',
-          'Scoped, time-limited authority and what happens when an agent\'s key or runtime is compromised',
-          'SD-JWT, ID-JAG, DPoP for agents',
-          'MCP authorization: DPoP, SEP-1932, shared DPoP signal across MCP and Poppy'
+          'Agentic JWT protocol (IETF draft)',
+          'AI agent action delegation mandates using the EUDI Wallet and MachineMandate',
+          'How identity, delegation and agent-passport efforts (KYA, ERC-8004, Visa TAP, OpenVTC) represent a principal\'s authority to commit to terms on their behalf, not just to log in or pay',
+          'Delegation chains where each hop stays in bounds but the whole chain does not',
+          'Proving an agent\'s authority without revealing the principal behind it',
+          'Identity and access management challenges with agents',
+          'Privilege management for AI agents'
         ],
         category: 'Technical Protocols'
       },
@@ -661,7 +663,7 @@ export const events: Record<string, Event> = {
         id: 'aiw3-topic-3',
         title: 'Trust Frameworks & Verification',
         description:
-          'Topics include: How a receiving agent verifies a presenting agent is authorized to act on behalf of a person or organization, Cryptographic trust decisions without human-in-the-loop consent, Trust boundaries and threat modeling for multi-agent systems, Trust registries and registries of registries, Thin ID with a registry lookup, or fat ID that carries everything?, How do you stop an agent ID from being replayed by a malicious service?, How do two different agent ID schemes recognize each other?, Behavioral coherence as a runtime trust signal (trust asymmetry and the completion drive), How trust and behavioral signals can travel with an agent without becoming surveillance',
+          'Topics include: How a receiving agent verifies a presenting agent is authorized to act on behalf of a person or organization, Cryptographic trust decisions without human-in-the-loop consent, Trust boundaries and threat modeling for multi-agent systems, Trust registries and registries of registries, Thin ID with a registry lookup, or fat ID that carries everything?, How do you stop an agent ID from being replayed by a malicious service?, How do two different agent ID schemes recognize each other?, Behavioral coherence as a runtime trust signal (trust asymmetry and the completion drive), How trust and behavioral signals can travel with an agent without becoming surveillance, AI and human trust, TSP (Trust Spanning Protocol) and trust-enabled AI agents, Accountable Entity is the root of agentic trust, Agentic identity and accountability, worked on together with other protocol and standards developers, Trust registries, Evaluating intent both before and after an AI agent transaction is initiated',
         bullets: [
           'How a receiving agent verifies a presenting agent is authorized to act on behalf of a person or organization',
           'Cryptographic trust decisions without human-in-the-loop consent',
@@ -672,14 +674,12 @@ export const events: Record<string, Event> = {
           'How do two different agent ID schemes recognize each other?',
           'Behavioral coherence as a runtime trust signal (trust asymmetry and the completion drive)',
           'How trust and behavioral signals can travel with an agent without becoming surveillance',
-          'TSP (Trust Spanning Protocol) and Trust Enabled AI Agents',
-          'Fiduciary AI and AI agent fiduciaries',
-          'Verifiable trust infrastructure for AI agents',
-          'Shared vendor-neutral threat taxonomy for agents: the Agent Threat Matrix (9 tactics, 57 techniques, submitted to MITRE)',
-          'How IETF, W3C, and DIF efforts on agent identity overlap vs. diverge',
-          'Conformance and certification for fast-moving agent protocols',
-          'Intent evaluation both before and after a transaction with AI agents',
-          'SAFE AI metrics and measurements and uncertainty certificates'
+          'AI and human trust',
+          'TSP (Trust Spanning Protocol) and trust-enabled AI agents',
+          'Accountable Entity is the root of agentic trust',
+          'Agentic identity and accountability, worked on together with other protocol and standards developers',
+          'Trust registries',
+          'Evaluating intent both before and after an AI agent transaction is initiated'
         ],
         category: 'Identity & Privacy'
       },
@@ -687,7 +687,7 @@ export const events: Record<string, Event> = {
         id: 'aiw3-topic-4',
         title: 'Structural & Governance Questions',
         description:
-          'Topics include: Which entities belong in an agent ID — agent, instance, provider, deployer, model?, Should a low-risk agent carry less ID than a high-risk one?, Whose privacy wins — the deployer’s, or the service’s need to know who it is dealing with?, Who should have access to the information inside an agent ID?, Should agent trust scores and traffic statistics be public?, Voluntary adoption or mandated compliance — which one actually gets agent IDs deployed?, Where will the market fail to build agent IDs, and who fills that gap?, What can governments coordinate that industry cannot?, When an agent causes harm, who is responsible?',
+          'Topics include: Which entities belong in an agent ID — agent, instance, provider, deployer, model?, Should a low-risk agent carry less ID than a high-risk one?, Whose privacy wins — the deployer’s, or the service’s need to know who it is dealing with?, Who should have access to the information inside an agent ID?, Should agent trust scores and traffic statistics be public?, Voluntary adoption or mandated compliance — which one actually gets agent IDs deployed?, Where will the market fail to build agent IDs, and who fills that gap?, What can governments coordinate that industry cannot?, When an agent causes harm, who is responsible?, Is there such a thing as "apparent authority" in AI? Respondeat superior and agentic liability, AI agent fiduciaries, Network effects of AI:AI and AI:Human interactions',
         bullets: [
           'Which entities belong in an agent ID — agent, instance, provider, deployer, model?',
           'Should a low-risk agent carry less ID than a high-risk one?',
@@ -697,7 +697,10 @@ export const events: Record<string, Event> = {
           'Voluntary adoption or mandated compliance — which one actually gets agent IDs deployed?',
           'Where will the market fail to build agent IDs, and who fills that gap?',
           'What can governments coordinate that industry cannot?',
-          'When an agent causes harm, who is responsible?'
+          'When an agent causes harm, who is responsible?',
+          'Is there such a thing as "apparent authority" in AI? Respondeat superior and agentic liability',
+          'AI agent fiduciaries',
+          'Network effects of AI:AI and AI:Human interactions'
         ],
         category: 'Policy & Governance'
       },
@@ -705,21 +708,15 @@ export const events: Record<string, Event> = {
         id: 'aiw3-topic-5',
         title: 'Policy, Permissions & Governance',
         description:
-          'Topics include: Where policy enforcement should live in multi-agent systems, Agent permissions and scoped capabilities (allow/ask/deny/escalate), Policy portability across frameworks, Governance of agentic AI — embedding alignment in protocols',
+          'Topics include: Where policy enforcement should live in multi-agent systems, Agent permissions and scoped capabilities (allow/ask/deny/escalate), Policy portability across frameworks, Governance of agentic AI — embedding alignment in protocols, Agentic AI and consumer protection, and the privacy issues that may arise, Agentic AI and advertising, How consumers can be part of the design of agentic AI policy and products',
         bullets: [
           'Where policy enforcement should live in multi-agent systems',
           'Agent permissions and scoped capabilities (allow/ask/deny/escalate)',
           'Policy portability across frameworks',
           'Governance of agentic AI — embedding alignment in protocols',
-          'Agentic AI and consumer protection',
+          'Agentic AI and consumer protection, and the privacy issues that may arise',
           'Agentic AI and advertising',
-          'How consumers can be part of the design of policy and product for agentic AI governance',
-          'AI Control Planes',
-          'Consent semantics across open banking and agent protocols',
-          'Personal Agent Protocol: what a high-assurance tier needs',
-          'Liability and presence for agent-initiated payments',
-          'Who owns agent identity: the user, the agent platform, or the relying party?',
-          'Licensing AI Agents like cars: we solved this problem 100 years ago'
+          'How consumers can be part of the design of agentic AI policy and products'
         ],
         category: 'Policy & Governance'
       },
@@ -727,7 +724,7 @@ export const events: Record<string, Event> = {
         id: 'aiw3-topic-6',
         title: 'Safety, Security & Human Control',
         description:
-          'Topics include: Human approval UX and interruption/rollback mechanisms, Securing MCP servers and A2A protocols, Standardized audit logs and telemetry for agent actions, Safe defaults and sandbox design for local-first workflows, Practical patterns for trustworthy agent systems, When an agent goes wrong at 2am, who do you call?, What does an ID have to carry for anyone to stop a running agent?, What should a service log when an agent calls it?',
+          'Topics include: Human approval UX and interruption/rollback mechanisms, Securing MCP servers and A2A protocols, Standardized audit logs and telemetry for agent actions, Safe defaults and sandbox design for local-first workflows, Practical patterns for trustworthy agent systems, When an agent goes wrong at 2am, who do you call?, What does an ID have to carry for anyone to stop a running agent?, What should a service log when an agent calls it?, Systems that block anything not authenticated, Flipping the narrative from human-in-the-loop to agent-in-the-loop, Authentication and compliance for agents, AI control planes, A shared, vendor-neutral threat taxonomy for agents: the Agent Threat Matrix (9 tactics, 57 techniques), What attributable evidence for an agent action needs to contain, Intent drift in AI agents, Agents in critical business processes, Goal/action alignment of LLM agents, How to prevent LLM creativity from exceeding its prescribed functions over time, Best AI agent harness design techniques, Is it hopeless? Will AI agents eventually build so much intelligence that humans cannot control them?, SAFE AI metrics, measurements and uncertainty certificates',
         bullets: [
           'Human approval UX and interruption/rollback mechanisms',
           'Securing MCP servers and A2A protocols',
@@ -737,19 +734,19 @@ export const events: Record<string, Event> = {
           'When an agent goes wrong at 2am, who do you call?',
           'What does an ID have to carry for anyone to stop a running agent?',
           'What should a service log when an agent calls it?',
+          'Systems that block anything not authenticated',
           'Flipping the narrative from human-in-the-loop to agent-in-the-loop',
-          'Intent drift in AI Agents',
-          'How to prevent LLM creativity from exceeding its prescribed functions over time',
-          'Goal and action alignment of LLM agents',
-          'Agent guardrails',
+          'Authentication and compliance for agents',
+          'AI control planes',
+          'A shared, vendor-neutral threat taxonomy for agents: the Agent Threat Matrix (9 tactics, 57 techniques)',
+          'What attributable evidence for an agent action needs to contain',
+          'Intent drift in AI agents',
           'Agents in critical business processes',
-          'Decentralized agentic security',
-          'Secure identity primitives and key management for agents',
-          'TEEs vs. cryptography for agent security: where to draw the line',
-          'Deterministic ZK gates as an agent harness',
-          'Shared Signal Framework Mandate Lifecycle Event Profile for Agentic AI',
-          'Revocation at agent speed: Shared Signals and CAEP',
-          'Agentic Git Signing'
+          'Goal/action alignment of LLM agents',
+          'How to prevent LLM creativity from exceeding its prescribed functions over time',
+          'Best AI agent harness design techniques',
+          'Is it hopeless? Will AI agents eventually build so much intelligence that humans cannot control them?',
+          'SAFE AI metrics, measurements and uncertainty certificates'
         ],
         category: 'Human-AI Interaction'
       },
@@ -757,16 +754,15 @@ export const events: Record<string, Event> = {
         id: 'aiw3-topic-7',
         title: 'Personal Agents & Data',
         description:
-          'Topics include: User-controlled agents and personal data sovereignty, Personal data, memory, and secure authorization, Consent-aware edge and embodied agents',
+          'Topics include: User-controlled agents and personal data sovereignty, Personal data, memory, and secure authorization, Consent-aware edge and embodied agents, Personal portable memory, Personal AI "lock-boxes", A path toward human-empowering AIs, Agentic permissioned storage',
         bullets: [
           'User-controlled agents and personal data sovereignty',
           'Personal data, memory, and secure authorization',
           'Consent-aware edge and embodied agents',
-          'Personal portable memory for agents',
-          'Personal AI lock-boxes',
-          'Agentic Permissioned Storage',
-          'Privacy-preserving agent-to-agent matching for regulated personal data',
-          'Agents that carry credentials on behalf of humans: age, photo ID, and payments over MCP'
+          'Personal portable memory',
+          'Personal AI "lock-boxes"',
+          'A path toward human-empowering AIs',
+          'Agentic permissioned storage'
         ],
         category: 'Identity & Privacy'
       },
@@ -774,7 +770,7 @@ export const events: Record<string, Event> = {
         id: 'aiw3-topic-8',
         title: 'Infrastructure & Discovery',
         description:
-          'Topics include: AgenticDNS and agent registries, Agent discovery and interoperability across protocol stacks, Browser roles in the agentic ecosystem, Can MCP carry identity, or does it need extension?, Does DNS hold as the anchor for agent identity?, Which agent ID efforts actually exist, and what does each one cover?, How MCP and A2A are converging on identity and mandate, MCP, Agent Network Protocol (ANP), Agentic Profiles (A2A + DIDs), AGNTCY and its 3 layers: Agent Discovery, Agent Identity, and SLIM, A2A Agent Cards, Which protocol is best suited to carry an "obfuscated broadcast, local-only computation" pattern: A2A Artifact model, AGNTCY SLIM messaging, or ANP DID-based discovery?, Newest state of AI agents',
+          'Topics include: AgenticDNS and agent registries, Agent discovery and interoperability across protocol stacks, Browser roles in the agentic ecosystem, Can MCP carry identity, or does it need extension?, Does DNS hold as the anchor for agent identity?, Which agent ID efforts actually exist, and what does each one cover?, How MCP and A2A are converging on identity and mandate, MCP, Agent Network Protocol (ANP), Agentic Profiles (A2A + DIDs), AGNTCY and its 3 layers: Agent Discovery, Agent Identity, and SLIM, A2A Agent Cards, Which protocol is best suited to carry an "obfuscated broadcast, local-only computation" pattern: A2A Artifact model, AGNTCY SLIM messaging, or ANP DID-based discovery?, Newest state of AI agents, Agents++ open source library, Agentic AI communication via X-Road, Setting up a local network of Apple Silicon devices for local LLM development',
         bullets: [
           'AgenticDNS and agent registries',
           'Agent discovery and interoperability across protocol stacks',
@@ -790,9 +786,9 @@ export const events: Record<string, Event> = {
           'A2A Agent Cards',
           'Which protocol is best suited to carry an "obfuscated broadcast, local-only computation" pattern: A2A Artifact model, AGNTCY SLIM messaging, or ANP DID-based discovery?',
           'Newest state of AI agents',
+          'Agents++ open source library',
           'Agentic AI communication via X-Road',
-          'Common record model for agent actions: convergence of audit and delegation drafts',
-          'What attributable evidence for an agent action needs to contain'
+          'Setting up a local network of Apple Silicon devices for local LLM development'
         ],
         category: 'Technical Protocols'
       },
@@ -800,23 +796,18 @@ export const events: Record<string, Event> = {
         id: 'aiw3-topic-9',
         title: 'Agent Payments & Commerce',
         description:
-          'Topics include: Agent Payments, Agentic Commerce, KYAPay, Payment layers for agent-to-agent transactions, Privacy-preserving agent-to-agent matching for regulated personal data: feasibility of minimal-disclosure marketplaces on A2A/AGNTCY',
+          'Topics include: Agent Payments, Agentic Commerce, KYAPay, Payment layers for agent-to-agent transactions, Privacy-preserving agent-to-agent matching for regulated personal data: feasibility of minimal-disclosure marketplaces on A2A/AGNTCY, Agent identity and commerce, Terms before transactions: the missing agreement layer. Payment protocols (x402, ACP, AP2, MPP) move money between agents, but none record which terms were accepted, by whose authority, or what the approving human actually saw, How terms discovery, acceptance and evidence should fit with payment and identity protocols, including the Legal Context Protocol and Consenti: agree, prove authority, then pay, Verifiable evidence of agent behavior at commerce scale: what Proof-of-Control-style evidence a purchase needs, and what it costs when agents make thousands of sub-cent payments, Agent commerce under Proof-of-Control: a walkthrough of an agent-to-agent purchase built by Blocksee, Secret Labs (SecretVM) and Certisyn',
         bullets: [
           'Agent Payments',
           'Agentic Commerce',
           'KYAPay',
           'Payment layers for agent-to-agent transactions',
           'Privacy-preserving agent-to-agent matching for regulated personal data: feasibility of minimal-disclosure marketplaces on A2A/AGNTCY',
-          'Agent payments in production: AP2, ACP, x402, EMVCo agentic payments framework, MPP',
-          'Confidential agent payments with zero-knowledge proofs (x402-style pay-per-call)',
-          'Agent wallets with enforceable spend policies',
-          'Spend policies enforced by cryptographic gates, not by agent good behavior',
-          'Selective privacy disclosure: proving a fact without revealing data',
-          'Terms before transactions: the missing agreement layer (Legal Context Protocol, Consenti, UETA/ESIGN)',
-          'Agent commerce under Proof-of-Control: what evidence does a purchase need?',
-          'Binding user intent to agent actions: transaction authorization, passkeys, Secure Payment Confirmation, signed mandates',
-          'Interoperability across agentic payment and protocol stacks (AP2, UCP, A2A, A2UI, MCP, x402, PAP)',
-          'Accountability after the fact: audit trails and dispute resolution for agent actions'
+          'Agent identity and commerce',
+          'Terms before transactions: the missing agreement layer. Payment protocols (x402, ACP, AP2, MPP) move money between agents, but none record which terms were accepted, by whose authority, or what the approving human actually saw',
+          'How terms discovery, acceptance and evidence should fit with payment and identity protocols, including the Legal Context Protocol and Consenti: agree, prove authority, then pay',
+          'Verifiable evidence of agent behavior at commerce scale: what Proof-of-Control-style evidence a purchase needs, and what it costs when agents make thousands of sub-cent payments',
+          'Agent commerce under Proof-of-Control: a walkthrough of an agent-to-agent purchase built by Blocksee, Secret Labs (SecretVM) and Certisyn'
         ],
         category: 'Use Cases'
       },
@@ -824,18 +815,105 @@ export const events: Record<string, Event> = {
         id: 'aiw3-topic-10',
         title: 'Standards Landscape',
         description:
-          'Topics include: Are standards relevant in the age of AI?, Where are standards being developed today for Agentic AI? What is good/bad/ugly about these different orgs?, How should agent identity/discovery protocols defend against a coordinator that sends inconsistent versions to isolate one participant\'s data?',
+          'Topics include: Are standards relevant in the age of AI?, Where are standards being developed today for Agentic AI? What is good/bad/ugly about these different orgs?, How should agent identity/discovery protocols defend against a coordinator that sends inconsistent versions to isolate one participant\'s data?, Progress on agentic AI standards over the last six months, How the IETF audit and delegation drafts converge on a common record model for agent actions, Where IETF, W3C and DIF efforts on agent identity overlap and where they diverge, Implementation experience mapping an agent identity platform to the IETF audit architecture record types, The PEDIGREE draft and SURADAR SDK architecture',
         bullets: [
           'Are standards relevant in the age of AI?',
           'Where are standards being developed today for Agentic AI? What is good/bad/ugly about these different orgs?',
           'How should agent identity/discovery protocols defend against a coordinator that sends inconsistent versions to isolate one participant\'s data?',
-          'Conformance and certification for fast-moving agent protocols',
-          'Interoperability across the protocol landscape (AP2, UCP, A2A, A2UI, MCP, x402, PAP)'
+          'Progress on agentic AI standards over the last six months',
+          'How the IETF audit and delegation drafts converge on a common record model for agent actions',
+          'Where IETF, W3C and DIF efforts on agent identity overlap and where they diverge',
+          'Implementation experience mapping an agent identity platform to the IETF audit architecture record types',
+          'The PEDIGREE draft and SURADAR SDK architecture'
         ],
         category: 'Policy & Governance'
+      },
+      {
+        id: 'aiw3-topic-11',
+        title: 'Interop Day (November 5): What People Want to Test',
+        description:
+          'Topics include: Trust Spanning Protocol (TSP) implementations, MCP auth, Agent identity with SPIFFE, WIMSE, OAuth, CIMD and EMA, Agent identity, delegated authorization, credential exchange, trust discovery and revocation in MCP-based agent interactions, Business wallets and Digital Product Passports (DPP), A dual-signed (Ed25519 and ML-DSA-65) agent credential verified against published conformance fixtures, and alignment testing with SPIFFE/WIMSE verifiers and the RATS EAT model, OpenPreference.org, Interop parallels and challenges between OpenVTC, Truststackers and the ProHuman AI stack, Testing agent behavior in benchmarks, Finding partners to work with, Agents++, Enclave-backed execution',
+        bullets: [
+          'Trust Spanning Protocol (TSP) implementations',
+          'MCP auth',
+          'Agent identity with SPIFFE, WIMSE, OAuth, CIMD and EMA',
+          'Agent identity, delegated authorization, credential exchange, trust discovery and revocation in MCP-based agent interactions',
+          'Business wallets and Digital Product Passports (DPP)',
+          'A dual-signed (Ed25519 and ML-DSA-65) agent credential verified against published conformance fixtures, and alignment testing with SPIFFE/WIMSE verifiers and the RATS EAT model',
+          'OpenPreference.org',
+          'Interop parallels and challenges between OpenVTC, Truststackers and the ProHuman AI stack',
+          'Testing agent behavior in benchmarks',
+          'Finding partners to work with',
+          'Agents++',
+          'Enclave-backed execution'
+        ],
+        category: 'Technical Protocols'
       }
     ],
-    attendees: [],
+    attendees: [
+      { id: 'aiw3-att-1', name: 'Jefferson Braswell', role: 'Founding Partner and CEO', affiliation: 'Tahoe Blue Ltd' },
+      { id: 'aiw3-att-2', name: 'Marina Piller', role: 'Founder, CEO', affiliation: 'otislabs.ai', socialLinks: { website: 'https://otislabs.ai/' } },
+      { id: 'aiw3-att-3', name: 'Michel Sahli', role: 'Fintech & Digital Trust Expert', affiliation: 'Swisscom', socialLinks: { website: 'https://swisscom.com' } },
+      { id: 'aiw3-att-4', name: 'Colin Jaccino', role: 'Consultant', affiliation: 'EPAM Systems', socialLinks: { website: 'https://www.epam.com' } },
+      { id: 'aiw3-att-5', name: 'Alan Karp', role: 'Principled Architect', affiliation: 'SitePassword', socialLinks: { website: 'https://alanhkarp.com' } },
+      { id: 'aiw3-att-6', name: 'Yulia Stepanova' },
+      { id: 'aiw3-att-7', name: 'Mahesh Balan', role: 'Doctoral Candidate', affiliation: 'Claremont Graduate University', socialLinks: { website: 'https://maheshbalan.github.io' } },
+      { id: 'aiw3-att-8', name: 'Mark Scott', role: 'Information Security Consultant', affiliation: 'Authentic Data Enterprises' },
+      { id: 'aiw3-att-9', name: 'Richard Esplin', role: 'Head of Product', affiliation: 'Dock Labs' },
+      { id: 'aiw3-att-10', name: 'Debbie Bucci', affiliation: 'Independent' },
+      { id: 'aiw3-att-11', name: 'Matthew MacAdam', role: 'Senior CIAM Engineer', affiliation: 'BECU', socialLinks: { website: 'https://www.becu.org' } },
+      { id: 'aiw3-att-12', name: 'Michael Jones', role: 'Principal', affiliation: 'Self-Issued Consulting', socialLinks: { website: 'https://self-issued.info/' } },
+      { id: 'aiw3-att-13', name: 'Ankit Agarwal', role: 'CTO', affiliation: 'Skyfire Systems Inc.', socialLinks: { website: 'https://skyfire.xyz' } },
+      { id: 'aiw3-att-14', name: 'Dan Finlay' },
+      { id: 'aiw3-att-15', name: 'Grace Rachmany', role: 'Executive Director', affiliation: 'Decentralized Identity Foundation (DIF)', socialLinks: { website: 'https://www.identity.foundation' } },
+      { id: 'aiw3-att-16', name: 'Andrew Maffei', affiliation: 'The Visual Connection' },
+      { id: 'aiw3-att-17', name: 'Takayuki SADAHIRO', role: 'Senior Specialist', affiliation: 'ITOCHU Techno-Solutions Co.' },
+      { id: 'aiw3-att-18', name: 'Dave Sanford', role: 'Author', affiliation: 'Greater Good Trust' },
+      { id: 'aiw3-att-19', name: 'Sean MacGuire', role: 'Human in the Loop', affiliation: 'Maclawran LLC', socialLinks: { website: 'https://maclawran.ca' } },
+      { id: 'aiw3-att-20', name: 'Tor Hagemann', role: 'CEO', affiliation: 'Lovarys', socialLinks: { website: 'https://lovarys.onetooneandon.to' } },
+      { id: 'aiw3-att-21', name: 'Dick Hardt', role: 'Founder/CEO', affiliation: 'Hellō', socialLinks: { website: 'https://hello.coop' } },
+      { id: 'aiw3-att-22', name: 'Lisa Dusseault', role: 'CTO', affiliation: 'DTI', socialLinks: { website: 'https://dtinit.org' } },
+      { id: 'aiw3-att-23', name: 'Vic Cooper' },
+      { id: 'aiw3-att-24', name: 'Wenjing Chu', role: 'Senior Director of AI and Human Trust', affiliation: 'Futurewei Technologies Inc.' },
+      { id: 'aiw3-att-25', name: 'Jon Udell', role: 'Consultant', socialLinks: { website: 'https://jonudell.info' } },
+      { id: 'aiw3-att-26', name: 'Beth Porter' },
+      { id: 'aiw3-att-27', name: 'Dan Yamamoto', affiliation: 'Internet Initiative Japan Inc.' },
+      { id: 'aiw3-att-28', name: 'Sharath Rajasekar', role: 'CEO, Founder', affiliation: 'Highflame', socialLinks: { website: 'https://www.highflame.com' } },
+      { id: 'aiw3-att-29', name: 'Abdel Fane', role: 'CEO & Founder', affiliation: 'OpenA2A', socialLinks: { website: 'https://opena2a.org' } },
+      { id: 'aiw3-att-30', name: 'Janak Amarasena', role: 'Technical Lead', affiliation: 'WSO2' },
+      { id: 'aiw3-att-31', name: 'Robin Monks', role: 'CTO', socialLinks: { website: 'https://robinmonks.com' } },
+      { id: 'aiw3-att-32', name: 'Sam Curren' },
+      { id: 'aiw3-att-33', name: 'Joe Andrieu', role: 'President', affiliation: 'Legendary Requirements', socialLinks: { website: 'https://legreq.com' } },
+      { id: 'aiw3-att-34', name: 'Margeigh Novotny', role: 'Strategy & Operations', affiliation: 'First Person Cooperative', socialLinks: { website: 'https://www.firstperson.network' } },
+      { id: 'aiw3-att-35', name: 'Aditya Desai' },
+      { id: 'aiw3-att-36', name: 'Jamie Clark', role: 'Counsel', affiliation: 'Independent' },
+      { id: 'aiw3-att-37', name: 'Jaime Caso', role: 'Innovation Engineer', affiliation: 'Veridian Attributions AG', socialLinks: { website: 'https://veridian.id' } },
+      { id: 'aiw3-att-38', name: 'Roberto Carlos Morano', role: 'Lead DevOps Advocate', affiliation: 'Veridian Attributions AG', socialLinks: { website: 'https://veridian.id' } },
+      { id: 'aiw3-att-39', name: 'Dan Leininger', role: 'Director, Experimental Engineering', affiliation: 'Consumer Reports', socialLinks: { website: 'https://consumerreports.org' } },
+      { id: 'aiw3-att-40', name: 'Prasenjit Shil', role: 'Cofounder', affiliation: 'Unforge', socialLinks: { website: 'https://www.unforge.io' } },
+      { id: 'aiw3-att-41', name: 'Deva Senapathy', role: 'Founder and CEO' },
+      { id: 'aiw3-att-42', name: 'Sam Rajan', role: 'Vice President' },
+      { id: 'aiw3-att-43', name: 'Abhishek Goswami', role: 'Strategic Leader in Data & AI' },
+      { id: 'aiw3-att-44', name: 'Ivan Moreno Mendoza', role: 'CTO', affiliation: 'Trustlayer Foundation', socialLinks: { website: 'https://www.trustlayer.foundation' } },
+      { id: 'aiw3-att-45', name: 'Adolfo Grego Micha', role: 'Secretary', affiliation: 'Trustlayer Foundation', socialLinks: { website: 'https://www.trustlayer.foundation' } },
+      { id: 'aiw3-att-46', name: 'Aaron Grego', role: 'Presidente', affiliation: 'Trustlayer Foundation', socialLinks: { website: 'https://www.trustlayer.foundation' } },
+      { id: 'aiw3-att-47', name: 'Vladimir Berger', role: 'Field CTO', affiliation: 'PlainID', socialLinks: { website: 'https://plainid.com' } },
+      { id: 'aiw3-att-48', name: 'Emiliano Berenbaum' },
+      { id: 'aiw3-att-49', name: 'Kyle Marsh', role: 'Identity Architect', affiliation: 'Duende Software', socialLinks: { website: 'https://duendesoftware.com/' } },
+      { id: 'aiw3-att-50', name: 'Vinod Choyi', role: 'Security Architect', socialLinks: { linkedin: 'https://www.linkedin.com/in/vinodchoyi/' } },
+      { id: 'aiw3-att-51', name: 'Keiron McCammon', role: 'Founder', affiliation: 'Spark of Trust', socialLinks: { website: 'https://www.sparkoftrust.com/' } },
+      { id: 'aiw3-att-52', name: 'Haodong Wang', role: 'Software Engineer Manager', affiliation: 'Amazon' },
+      { id: 'aiw3-att-53', name: 'Mark Armstrong' },
+      { id: 'aiw3-att-54', name: 'Richard Schaefer', role: 'Principal AI/ML Architect & Team Lead', affiliation: 'Abaxx Technologies', socialLinks: { website: 'https://abaxx.tech' } },
+      { id: 'aiw3-att-55', name: 'Jason Law' },
+      { id: 'aiw3-att-56', name: 'Naveed Ihsanullah', role: 'CTO', affiliation: 'Known Systems', socialLinks: { website: 'https://www.knownsystems.ai' } },
+      { id: 'aiw3-att-57', name: 'Andrea Belen Vega Talledo', role: 'Policy and Programme Specialist, Digital Rights', affiliation: 'Consumers International', socialLinks: { website: 'https://www.consumersinternational.org/' } },
+      { id: 'aiw3-att-58', name: 'Anton Sokolov', role: 'Researcher', affiliation: 'Tyche Institute', socialLinks: { website: 'https://tyche.institute' } },
+      { id: 'aiw3-att-59', name: 'Eric Forst', role: 'CEO', affiliation: 'Blocksee', socialLinks: { website: 'https://www.blocksee.co/' } },
+      { id: 'aiw3-att-60', name: 'Peter Kaminski', role: 'Principal', affiliation: 'peterkaminski.ai', socialLinks: { website: 'https://peterkaminski.ai/' } },
+      { id: 'aiw3-att-61', name: 'Dmitri Zagidulin', affiliation: 'Interop Alliance', socialLinks: { website: 'https://interopalliance.org' } },
+      { id: 'aiw3-att-62', name: 'Carey Janecka', role: 'Staff Software Engineer', affiliation: 'Turnkey', socialLinks: { website: 'https://turnkey.com' } }
+    ],
     sponsors: [
       {
         id: 'sponsor-aiw3-1',
@@ -848,12 +926,13 @@ export const events: Record<string, Event> = {
       },
       {
         id: 'sponsor-aiw3-2',
-        name: 'Breakfast Sponsor',
+        name: 'Amazon Web Services',
         tier: 'Breakfast',
-        logoUrl: '/sponsors/placeholder.png',
-        websiteUrl: '#',
+        logoUrl: '/sponsors/AWS_logo_RGB_1c_Gray850.png',
+        websiteUrl: 'https://aws.amazon.com',
         description: 'Breakfast Sponsor',
-        isAvailable: true
+        isSold: true,
+        isAvailable: false
       },
       {
         id: 'sponsor-aiw3-3',
@@ -884,21 +963,33 @@ export const events: Record<string, Event> = {
       },
       {
         id: 'sponsor-aiw3-6',
-        name: 'Open Gifting Sponsor',
+        name: 'Mace AI',
         tier: 'Open Gifting',
-        logoUrl: '/sponsors/placeholder.png',
-        websiteUrl: '#',
-        description: 'Open Gifting Sponsor',
-        isAvailable: true
+        logoUrl: '/sponsors/mace-ai.svg',
+        websiteUrl: 'https://mace.ai',
+        description: 'Mace AI (Closing Circle and Open Gifting Sponsor)',
+        isSold: true,
+        isAvailable: false
       },
       {
         id: 'sponsor-aiw3-7',
-        name: 'Documentation Center Sponsor',
+        name: 'OpenA2A',
         tier: 'Documentation Center',
-        logoUrl: '/sponsors/placeholder.png',
-        websiteUrl: '#',
+        logoUrl: '/sponsors/opena2a.png',
+        websiteUrl: 'https://opena2a.org',
         description: 'Documentation Center Sponsor',
-        isAvailable: true
+        isSold: true,
+        isAvailable: false
+      },
+      {
+        id: 'sponsor-aiw3-8',
+        name: 'Mission',
+        tier: 'Qiqochat Workshop Hub',
+        logoUrl: '/sponsors/mission.svg',
+        websiteUrl: 'https://agentlab.choosemission.com/',
+        description: 'Mission (Qiqochat Workshop Hub Sponsor)',
+        isSold: true,
+        isAvailable: false
       }
     ],
     schedule: [],
